@@ -9,28 +9,37 @@ Read-only research / instant alerts. Fake signals are never invented. **Default 
 - Passed all 3 (including already-alerted): **10**
 - Discovered: 228835 unique mints
 - Deeply inspected: 53
-- Runtime: 57.59s
+- Runtime: 79.44s
 - Data sources: dexscreener, geckoterminal, rugcheck, solana_rpc, solana_rpc_pumpswap, solana_rpc_raydium_v4, pumpfun_api, geckoterminal_dex_pools, solana_rpc_meteora_dbc, fomopad_registry
 
 ## Fresh pairs & graduating
 
-- Fresh scan at 2026-11-20 09:51:53 HST (2026-11-20T19:51:53Z) in 57.59s
+- Fresh scan at 2026-11-21 17:30:44 HST (2026-11-22T03:30:44Z) in 79.44s
 - Window: last 3600s
-- Discovered: 203 | in scope: 128 | gated: 4 | inspected: 4
-- Passed all 3: **0** | near passes: 4 | newly flagged: 0
+- Discovered: 223 | in scope: 111 | gated: 7 | inspected: 7
+- Passed all 3: **0** | near passes: 7 | newly flagged: 0
 
-- NEAR runner `RUnnEr6YskBKYibKeUZRHaDQAAfdgYZPoikkmv4NnLx` score=46 [Fomo](https://fomo.family/tokens/solana/RUnnEr6YskBKYibKeUZRHaDQAAfdgYZPoikkmv4NnLx)
-  - WHY THIS COULD FAIL: Liquidity is only $4,938; a modest sell can move the price sharply
-  - WHY THIS COULD FAIL: Primary trading history is only 1.1 hours old
-- NEAR BABYDOG `J5LFPpCqk2B7o2wRrsyuXs6euLRHgcuEFZDmCip5CeKp` score=46 [Fomo](https://fomo.family/tokens/solana/J5LFPpCqk2B7o2wRrsyuXs6euLRHgcuEFZDmCip5CeKp)
+- NEAR HUSSMAS `2ffmm3EfCjgueUr7MKWmdRuP1bSGgJF7a4jvqMnppump` score=37 [Fomo](https://fomo.family/tokens/solana/2ffmm3EfCjgueUr7MKWmdRuP1bSGgJF7a4jvqMnppump)
+  - WHY THIS COULD FAIL: Top-10 non-LP wallets control 25.0% of supply
+  - WHY THIS COULD FAIL: Already up 285% in 24h - late entry risk even if under the blowoff cap
+- NEAR WIF `8VkAt7TQjpkwKg3Ywa9Ysg6AmwNNc4vvHvGrj8jQVrTZ` score=40 [Fomo](https://fomo.family/tokens/solana/8VkAt7TQjpkwKg3Ywa9Ysg6AmwNNc4vvHvGrj8jQVrTZ)
   - WHY THIS COULD FAIL: Only 0.0% of LP is locked/burned on a liquidity-weighted basis
-  - WHY THIS COULD FAIL: Primary trading history is only 0.1 hours old
-- NEAR PAY `BNCJjifHtnLQEusYadF59D72gLYHzBkinHHyWmx4QoWy` score=36 [Fomo](https://fomo.family/tokens/solana/BNCJjifHtnLQEusYadF59D72gLYHzBkinHHyWmx4QoWy)
+  - WHY THIS COULD FAIL: Liquidity is only $31,586; a modest sell can move the price sharply
+- NEAR Tiger `8HusqhhyrYwNSbxqtK56tucqMXhLx4EatWkYD3sQpump` score=39 [Fomo](https://fomo.family/tokens/solana/8HusqhhyrYwNSbxqtK56tucqMXhLx4EatWkYD3sQpump)
+  - WHY THIS COULD FAIL: Top-10 non-LP wallets control 26.3% of supply
+  - WHY THIS COULD FAIL: Already up 672% in 24h - late entry risk even if under the blowoff cap
+- NEAR CATEMAS `G4zVeLq9PH8vxzb5uemh38vifc8KkLYrg6GhW1rTsnHb` score=34 [Fomo](https://fomo.family/tokens/solana/G4zVeLq9PH8vxzb5uemh38vifc8KkLYrg6GhW1rTsnHb)
   - WHY THIS COULD FAIL: Only 0.0% of LP is locked/burned on a liquidity-weighted basis
-  - WHY THIS COULD FAIL: Liquidity is only $36,999; a modest sell can move the price sharply
-- NEAR Horned cat `788zdRjKFZmDD64tBA4ojfMUpcb7RjsPa2mG2PnRzFQM` score=33 [Fomo](https://fomo.family/tokens/solana/788zdRjKFZmDD64tBA4ojfMUpcb7RjsPa2mG2PnRzFQM)
+  - WHY THIS COULD FAIL: A single non-LP wallet holds 4.6% and can dump
+- NEAR CATEMAS `4p81MKvUkndrrH92XX5jebsg5WgF4bbAnP4gk8S82X6h` score=33 [Fomo](https://fomo.family/tokens/solana/4p81MKvUkndrrH92XX5jebsg5WgF4bbAnP4gk8S82X6h)
+  - WHY THIS COULD FAIL: Primary pool LP lock % unavailable
   - WHY THIS COULD FAIL: Only 0.0% of LP is locked/burned on a liquidity-weighted basis
-  - WHY THIS COULD FAIL: Liquidity is only $33,315; a modest sell can move the price sharply
+- NEAR CATEMAS `7q7nNn1hPKoRAqYQkvDMsySZr8sqW1QhMbuLPHbvuU4U` score=32 [Fomo](https://fomo.family/tokens/solana/7q7nNn1hPKoRAqYQkvDMsySZr8sqW1QhMbuLPHbvuU4U)
+  - WHY THIS COULD FAIL: Primary pool LP lock % unavailable
+  - WHY THIS COULD FAIL: Only 0.0% of LP is locked/burned on a liquidity-weighted basis
+- NEAR Xin chào `CMgXRqoR92HcRVfqiA8hYXXNmFD3pwZ54nQkatrtCijU` score=32 [Fomo](https://fomo.family/tokens/solana/CMgXRqoR92HcRVfqiA8hYXXNmFD3pwZ54nQkatrtCijU)
+  - WHY THIS COULD FAIL: Primary pool LP lock % unavailable
+  - WHY THIS COULD FAIL: Only 0.0% of LP is locked/burned on a liquidity-weighted basis
 
 ## Coverage
 
