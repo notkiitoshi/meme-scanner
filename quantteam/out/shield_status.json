@@ -1,6 +1,6 @@
 {
-  "ts_utc": "2026-11-20T19:59:18.775326+00:00",
-  "hst_date": "2026-11-20",
+  "ts_utc": "2026-11-22T03:10:55.920192+00:00",
+  "hst_date": "2026-11-21",
   "halted": false,
   "halt": null,
   "new_flags": false,
@@ -9,12 +9,12 @@
     "daily_pnl_pct": 0.0,
     "equity": 146.0,
     "losing_streak": 0,
-    "price_feed_age_min": 10.9
+    "price_feed_age_min": 0.4
   },
   "leader_vs_runner_ups": [
     {
       "runner_up": "TP_S@4h",
-      "days_compared": 2,
+      "days_compared": 3,
       "days_runner_up_stronger": 0,
       "leader_ret_pct": 0.0,
       "runner_up_ret_pct": 0.0,
@@ -22,7 +22,7 @@
     },
     {
       "runner_up": "DC_L@4h",
-      "days_compared": 2,
+      "days_compared": 3,
       "days_runner_up_stronger": 0,
       "leader_ret_pct": 0.0,
       "runner_up_ret_pct": 0.0,
