@@ -1,0 +1,36 @@
+{
+  "ts_utc": "2026-11-20T19:59:18.775326+00:00",
+  "hst_date": "2026-11-20",
+  "halted": false,
+  "halt": null,
+  "new_flags": false,
+  "flags": [],
+  "checks": {
+    "daily_pnl_pct": 0.0,
+    "equity": 146.0,
+    "losing_streak": 0,
+    "price_feed_age_min": 10.9
+  },
+  "leader_vs_runner_ups": [
+    {
+      "runner_up": "TP_S@4h",
+      "days_compared": 2,
+      "days_runner_up_stronger": 0,
+      "leader_ret_pct": 0.0,
+      "runner_up_ret_pct": 0.0,
+      "swap_recommended": false
+    },
+    {
+      "runner_up": "DC_L@4h",
+      "days_compared": 2,
+      "days_runner_up_stronger": 0,
+      "leader_ret_pct": 0.0,
+      "runner_up_ret_pct": 0.0,
+      "swap_recommended": false
+    }
+  ],
+  "notify_now": false,
+  "notify_rule": "message the user only 7 AM-10 PM HST, except a new halt which is sent any time",
+  "leader": "LAG_S@4h",
+  "leader_standby": false
+}

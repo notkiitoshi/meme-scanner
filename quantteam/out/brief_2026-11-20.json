@@ -1,0 +1,74 @@
+{
+  "kind": "brief",
+  "generated_utc": "2026-11-20T17:34:29.668394+00:00",
+  "hst_date": "2026-11-20",
+  "paper_only": true,
+  "market_3_lines": [
+    "BTC is volatile on 4h (trend down, 7d -9.13%, 24h -2.29%).",
+    "Meme perps by 4h regime: trending 16, ranging 4; median 7d move -11.9%.",
+    "Top opportunity scores: FARTCOIN (short, trending), PENGU (short, trending), PEPE (short, trending)."
+  ],
+  "top3_setups_ESTIMATES": [
+    {
+      "key": "LAG_S@4h",
+      "name": "Short memes that haven't dropped yet as BTC falls",
+      "score_est": 5,
+      "oos_ret_pct_est": 47.2,
+      "oos_max_dd_pct_est": -8.38,
+      "oos_trades": 58,
+      "trades_total": 180,
+      "buy_hold_oos_pct": -51.31,
+      "walk_forward_ret_pct_est": 33.42,
+      "passed_all_filters": true,
+      "killed": false,
+      "kill_reasons": []
+    },
+    {
+      "key": "TP_S@4h",
+      "name": "Downtrend rally to EMA50 short",
+      "score_est": 4,
+      "oos_ret_pct_est": 4.15,
+      "oos_max_dd_pct_est": -11.33,
+      "oos_trades": 89,
+      "trades_total": 297,
+      "buy_hold_oos_pct": -51.31,
+      "walk_forward_ret_pct_est": 2.19,
+      "passed_all_filters": false,
+      "killed": false,
+      "kill_reasons": []
+    },
+    {
+      "key": "DC_L@4h",
+      "name": "55-bar-equivalent (220h) channel breakout long in uptrend",
+      "score_est": 4,
+      "oos_ret_pct_est": 2.39,
+      "oos_max_dd_pct_est": -11.29,
+      "oos_trades": 41,
+      "trades_total": 160,
+      "buy_hold_oos_pct": -51.31,
+      "walk_forward_ret_pct_est": 78.99,
+      "passed_all_filters": false,
+      "killed": false,
+      "kill_reasons": []
+    }
+  ],
+  "paper_last_24h": {
+    "trades": [],
+    "net_pnl_usd": 0,
+    "equity_usd": 146.0,
+    "start_equity_usd": 146.0,
+    "total_return_pct": 0.0,
+    "open_positions": {},
+    "leader": "LAG_S@4h",
+    "leader_standby": false
+  },
+  "shield": {
+    "halted_now": false,
+    "halt": null,
+    "flags": [],
+    "events_24h": [],
+    "blocked_signals_24h": []
+  },
+  "decision": "Keep paper-trading LAG_S@4h as the leader? (No change needed if yes.)",
+  "missing_inputs": []
+}

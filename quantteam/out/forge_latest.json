@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "leader": "LAG_S@4h",
+  "standby": false,
+  "why": "kept current leader LAG_S@4h: still alive in tonight's Lab run. Leaders change only via Shield's 7-day runner-up rule (forge.py --promote KEY), a kill by Lab, or forge.py --reselect",
+  "shadows": [
+    "TP_S@4h",
+    "DC_L@4h"
+  ],
+  "selftest_ok": true,
+  "selftest_failures": [],
+  "config": "/workspace/quantteam/config/active_setup.json"
+}

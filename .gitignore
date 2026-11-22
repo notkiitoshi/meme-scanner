@@ -1,0 +1,25 @@
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+memescanner/out/cache/
+memescanner/out/*.tmp
+quantteam/logs/
+*.log
+
+# local secrets, environments, and tooling caches
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.python-version
+node_modules/
+.idea/
+.vscode/
+*.swp

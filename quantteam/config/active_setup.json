@@ -1,0 +1,96 @@
+{
+  "generated_utc": "2026-11-20T13:16:35.987091+00:00",
+  "paper_only": true,
+  "source_lab": "/workspace/quantteam/out/lab_latest.json",
+  "why": "kept current leader LAG_S@4h: still alive in tonight's Lab run. Leaders change only via Shield's 7-day runner-up rule (forge.py --promote KEY), a kill by Lab, or forge.py --reselect",
+  "leader": {
+    "key": "LAG_S@4h",
+    "id": "LAG_S",
+    "tf": "4h",
+    "role": "leader",
+    "family": "alt_lag_btc",
+    "name": "Short memes that haven't dropped yet as BTC falls",
+    "reason": "When BTC falls in a bear regime, memes usually follow down harder with a delay.",
+    "regimes": [
+      "ranging",
+      "trending"
+    ],
+    "params": {
+      "dir": -1,
+      "win_h": 24,
+      "btc_pct": 3,
+      "lag_pct": 0.5
+    },
+    "exit": {
+      "stop_atr": 1.5,
+      "tp_r": 2.0,
+      "max_hold_h": 48
+    },
+    "lab_rank": 1,
+    "lab_score_estimate": 5,
+    "lab_passed_all_filters": true,
+    "lab_killed": false,
+    "lab_oos_ret_pct_estimate": 47.2,
+    "lab_oos_max_dd_pct_estimate": -8.38,
+    "standby": false
+  },
+  "shadows": [
+    {
+      "key": "TP_S@4h",
+      "id": "TP_S",
+      "tf": "4h",
+      "role": "runner_up_shadow",
+      "family": "trend_pullback",
+      "name": "Downtrend rally to EMA50 short",
+      "reason": "In a stacked downtrend, bounces into the 50 EMA are where trapped longs sell.",
+      "regimes": [
+        "trending"
+      ],
+      "params": {
+        "dir": -1,
+        "ema": 50,
+        "touch_pct": 0.5,
+        "rsi_floor": 40
+      },
+      "exit": {
+        "stop_atr": 1.5,
+        "tp_r": 2.0,
+        "max_hold_h": 72
+      },
+      "lab_rank": 2,
+      "lab_score_estimate": 4,
+      "lab_passed_all_filters": false,
+      "lab_killed": false,
+      "lab_oos_ret_pct_estimate": 4.15,
+      "lab_oos_max_dd_pct_estimate": -11.33
+    },
+    {
+      "key": "DC_L@4h",
+      "id": "DC_L",
+      "tf": "4h",
+      "role": "runner_up_shadow",
+      "family": "donchian_trend",
+      "name": "55-bar-equivalent (220h) channel breakout long in uptrend",
+      "reason": "Classic trend following: new multi-week highs in an uptrend tend to persist in memes.",
+      "regimes": [
+        "trending"
+      ],
+      "params": {
+        "dir": 1,
+        "lookback_h": 220
+      },
+      "exit": {
+        "stop_atr": 2.5,
+        "tp_r": 3.0,
+        "max_hold_h": 240
+      },
+      "lab_rank": 3,
+      "lab_score_estimate": 4,
+      "lab_passed_all_filters": false,
+      "lab_killed": false,
+      "lab_oos_ret_pct_estimate": 2.39,
+      "lab_oos_max_dd_pct_estimate": -11.29
+    }
+  ],
+  "note": "Edit or replace this one file to swap setups. bot.py reads it every run."
+}

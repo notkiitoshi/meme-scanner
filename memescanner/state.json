@@ -1,0 +1,200 @@
+{
+  "run_count": 6,
+  "last_run_utc": "2026-11-20T07:38:02Z",
+  "last_run_hst": "2026-11-19 21:38:02 HST",
+  "notification_mode": "instant",
+  "alerted": {
+    "9hjBLBrc7WZW2H8UQvBAvG5WiTZotXUv2Bdcn4f4pump": {
+      "symbol": "DCTY",
+      "name": "DacityCoin",
+      "first_alerted_at_utc": "2026-11-20T05:09:34Z",
+      "last_alerted_at_utc": "2026-11-20T05:09:34Z",
+      "last_upside_score": 93,
+      "last_insider_pct": 11.477,
+      "last_top10_non_lp_pct": 14.649,
+      "last_lp_locked_pct": 41.036,
+      "last_notify_reason": "new"
+    },
+    "Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump": {
+      "symbol": "SHIT",
+      "name": "Ah Shit, Here We Go Again",
+      "first_alerted_at_utc": "2026-11-20T05:09:34Z",
+      "last_alerted_at_utc": "2026-11-20T05:09:34Z",
+      "last_upside_score": 85,
+      "last_insider_pct": 0.0,
+      "last_top10_non_lp_pct": 10.042,
+      "last_lp_locked_pct": 100.0,
+      "last_notify_reason": "new"
+    },
+    "9rbKkz2BDQBVgZmrHY6d7PTq2ge91gkpEyE4y9PPpump": {
+      "symbol": "Leonida",
+      "name": "The State of Leonida",
+      "first_alerted_at_utc": "2026-11-20T05:09:34Z",
+      "last_alerted_at_utc": "2026-11-20T05:09:34Z",
+      "last_upside_score": 83,
+      "last_insider_pct": 0.0,
+      "last_top10_non_lp_pct": 12.619,
+      "last_lp_locked_pct": 100.0,
+      "last_notify_reason": "new"
+    },
+    "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump": {
+      "symbol": "GATO",
+      "name": "GTA6CAT",
+      "first_alerted_at_utc": "2026-11-20T05:09:34Z",
+      "last_alerted_at_utc": "2026-11-20T05:09:34Z",
+      "last_upside_score": 85,
+      "last_insider_pct": 2.134,
+      "last_top10_non_lp_pct": 18.052,
+      "last_lp_locked_pct": 90.743,
+      "last_notify_reason": "new"
+    },
+    "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump": {
+      "symbol": "JEANPHIL",
+      "name": "Jean Phil",
+      "first_alerted_at_utc": "2026-11-20T05:09:34Z",
+      "last_alerted_at_utc": "2026-11-20T05:09:34Z",
+      "last_upside_score": 81,
+      "last_insider_pct": 5.094,
+      "last_top10_non_lp_pct": 21.246,
+      "last_lp_locked_pct": 83.32,
+      "last_notify_reason": "new"
+    },
+    "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump": {
+      "symbol": "mihao",
+      "name": "ni hao cat",
+      "first_alerted_at_utc": "2026-11-20T05:09:34Z",
+      "last_alerted_at_utc": "2026-11-20T05:09:34Z",
+      "last_upside_score": 84,
+      "last_insider_pct": 7.501,
+      "last_top10_non_lp_pct": 15.963,
+      "last_lp_locked_pct": 44.378,
+      "last_notify_reason": "new"
+    },
+    "7bCiddGLe5aM8HE2pigT9jsqkmC1HSPxyXN6GkHEpump": {
+      "symbol": "OGTA",
+      "name": "OFFICIALGTA",
+      "first_alerted_at_utc": "2026-11-20T06:58:58Z",
+      "last_alerted_at_utc": "2026-11-20T06:58:58Z",
+      "last_upside_score": 79,
+      "last_insider_pct": 0.0,
+      "last_top10_non_lp_pct": 1.217,
+      "last_lp_locked_pct": 100.0,
+      "last_notify_reason": "new"
+    },
+    "gHZhqEnFnitWCJ1MA2i9BzqTReFMhsGmbdL17xypump": {
+      "symbol": "SWJ",
+      "name": "Stand With Jensen",
+      "first_alerted_at_utc": "2026-11-20T06:58:58Z",
+      "last_alerted_at_utc": "2026-11-20T06:58:58Z",
+      "last_upside_score": 69,
+      "last_insider_pct": 0.0,
+      "last_top10_non_lp_pct": 3.956,
+      "last_lp_locked_pct": 100.0,
+      "last_notify_reason": "new"
+    },
+    "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump": {
+      "symbol": "DESSA",
+      "name": "Dessa",
+      "first_alerted_at_utc": "2026-11-20T06:58:58Z",
+      "last_alerted_at_utc": "2026-11-20T06:58:58Z",
+      "last_upside_score": 77,
+      "last_insider_pct": 0.0,
+      "last_top10_non_lp_pct": 2.769,
+      "last_lp_locked_pct": 100.0,
+      "last_notify_reason": "new"
+    },
+    "VAYMVikuYQpWz5sXCeCsQDeho2QcGqDSNq9rhCspump": {
+      "symbol": "JESTER",
+      "name": "JESTER",
+      "first_alerted_at_utc": "2026-11-20T06:58:58Z",
+      "last_alerted_at_utc": "2026-11-20T06:58:58Z",
+      "last_upside_score": 80,
+      "last_insider_pct": 0.0,
+      "last_top10_non_lp_pct": 2.061,
+      "last_lp_locked_pct": 100.0,
+      "last_notify_reason": "new"
+    },
+    "CUg7AzWL5p8imZVqqdjEPgRhUsXAkBMW5JxkSJ9fpump": {
+      "symbol": "Huss",
+      "name": "Huss",
+      "first_alerted_at_utc": "2026-11-20T06:58:58Z",
+      "last_alerted_at_utc": "2026-11-20T06:58:58Z",
+      "last_upside_score": 81,
+      "last_insider_pct": 4.594,
+      "last_top10_non_lp_pct": 24.42,
+      "last_lp_locked_pct": 94.698,
+      "last_notify_reason": "new"
+    },
+    "AKotzk1dhcNangAJBtvNKtT9bhbSVZc2mMhRFgkFpump": {
+      "symbol": "Macca",
+      "name": "Macca The Gator",
+      "first_alerted_at_utc": "2026-11-20T06:58:58Z",
+      "last_alerted_at_utc": "2026-11-20T06:58:58Z",
+      "last_upside_score": 78,
+      "last_insider_pct": 4.804,
+      "last_top10_non_lp_pct": 19.689,
+      "last_lp_locked_pct": 91.331,
+      "last_notify_reason": "new"
+    },
+    "FSkyjfqB26u6c2GSgpACrjbxp9yQAR8rutxprVNppump": {
+      "symbol": ":3",
+      "name": ":3",
+      "first_alerted_at_utc": "2026-11-20T06:58:58Z",
+      "last_alerted_at_utc": "2026-11-20T06:58:58Z",
+      "last_upside_score": 71,
+      "last_insider_pct": 3.046,
+      "last_top10_non_lp_pct": 21.253,
+      "last_lp_locked_pct": 77.252,
+      "last_notify_reason": "new"
+    },
+    "BsbsB3WLq7vbY5En3MBCAsTrcwaCxNKY2Mp5pGuLpump": {
+      "symbol": "GTA",
+      "name": "GTA memes",
+      "first_alerted_at_utc": "2026-11-20T06:58:58Z",
+      "last_alerted_at_utc": "2026-11-20T06:58:58Z",
+      "last_upside_score": 74,
+      "last_insider_pct": 1.349,
+      "last_top10_non_lp_pct": 19.47,
+      "last_lp_locked_pct": 92.302,
+      "last_notify_reason": "new"
+    },
+    "7HgfXftRBBqsYtAEYcqjGLQrNJLL6Tww9ek4rE3Apump": {
+      "symbol": "RKC",
+      "name": "Red Kitten Crew",
+      "first_alerted_at_utc": "2026-11-20T07:38:02Z",
+      "last_alerted_at_utc": "2026-11-20T07:38:02Z",
+      "last_upside_score": 86,
+      "last_insider_pct": 5.359,
+      "last_top10_non_lp_pct": 19.14,
+      "last_lp_locked_pct": 94.354,
+      "last_notify_reason": "new",
+      "launchpad": "pumpfun"
+    },
+    "FyCaKh6wXuot5NmqQMt5oBrSHh3wFk14w5M9dHQDpump": {
+      "symbol": "HNYDRIP",
+      "name": "Honey Drip",
+      "first_alerted_at_utc": "2026-11-20T07:38:02Z",
+      "last_alerted_at_utc": "2026-11-20T07:38:02Z",
+      "last_upside_score": 69,
+      "last_insider_pct": 0.0,
+      "last_top10_non_lp_pct": 16.952,
+      "last_lp_locked_pct": 99.986,
+      "last_notify_reason": "new",
+      "launchpad": "pumpfun"
+    },
+    "8mnJZnxaNLqVwkaWWGH7dKmoEzyYzGJx5pHaCp7spump": {
+      "symbol": "PATRICK",
+      "name": "Retard Patrick",
+      "first_alerted_at_utc": "2026-11-20T19:49:49Z",
+      "last_alerted_at_utc": "2026-11-20T19:49:49Z",
+      "last_upside_score": 76,
+      "last_insider_pct": 1.354,
+      "last_top10_non_lp_pct": 23.456,
+      "last_lp_locked_pct": 64.158,
+      "last_notify_reason": "new",
+      "launchpad": "pumpfun"
+    }
+  },
+  "last_fresh_run_utc": "2026-11-20T19:51:53Z",
+  "last_fresh_run_hst": "2026-11-20 09:51:53 HST"
+}

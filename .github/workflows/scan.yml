@@ -1,0 +1,58 @@
+name: Fresh meme scan
+
+"on":
+  schedule:
+    # GitHub cron is UTC. 7 AM–10 PM HST = 17:00–07:59 UTC.
+    - cron: "*/10 17-23,0-7 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run fresh scanner
+        working-directory: memescanner
+        run: python scanner.py --fresh --json > /tmp/fresh_scan_stdout.json
+
+      - name: Publish coins.json for Pages
+        run: python memescanner/publish_docs.py
+
+      - name: Notify on new passing coins
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: python memescanner/notify_ntfy.py
+
+      - name: Commit state, cooldown, and Pages data
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            memescanner/state.json \
+            memescanner/flagged.csv \
+            memescanner/out/latest_scan.json \
+            memescanner/out/latest_report.md \
+            docs/coins.json \
+            docs/index.html
+          if git diff --cached --quiet; then
+            echo "No file changes to commit"
+            exit 0
+          fi
+          git commit -m "chore: refresh fresh scan [skip ci]"
+          git push

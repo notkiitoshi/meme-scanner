@@ -1,0 +1,64 @@
+name: Shield + paper bot
+
+"on":
+  schedule:
+    # Every 15 minutes, UTC. The script itself stays silent outside 7 AM–10 PM HST.
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  paper:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run paper bot and Shield
+        working-directory: quantteam
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: python gha_cycle.py
+
+      - name: Commit paper state
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Several of these files are created only after a halt or a closed
+          # trade. `git add` with a missing pathspec stages nothing, so add
+          # each path that exists. decisions.jsonl stays ignored by .gitignore.
+          files=(
+            quantteam/state.json
+            quantteam/config/halt.json
+            quantteam/config/active_setup.json
+            quantteam/trades.csv
+            quantteam/trades_shadow.csv
+            quantteam/data/paper_daily.json
+            quantteam/out/shield_status.json
+            quantteam/out/shield_events.jsonl
+            quantteam/logs/decisions.jsonl
+          )
+          for f in "${files[@]}"; do
+            if [ -e "$f" ]; then
+              git add -- "$f" || true
+            fi
+          done
+          if git diff --cached --quiet; then
+            echo "No paper-state changes to commit"
+            exit 0
+          fi
+          git commit -m "chore: paper bot + shield cycle [skip ci]"
+          git push

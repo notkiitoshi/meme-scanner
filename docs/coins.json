@@ -1,0 +1,131 @@
+{
+  "scan_time_hst": "2026-11-20 09:51:53 HST",
+  "scan_time_utc": "2026-11-20T19:51:53Z",
+  "runtime_sec": 57.59,
+  "passed_count": 0,
+  "near_pass_count": 4,
+  "newly_flagged_count": 0,
+  "discovered": 203,
+  "in_scope": 128,
+  "inspected": 4,
+  "research_only": true,
+  "coins": [
+    {
+      "mint": "RUnnEr6YskBKYibKeUZRHaDQAAfdgYZPoikkmv4NnLx",
+      "symbol": "runner",
+      "name": "runner",
+      "status": "near",
+      "mcap": 13666.68,
+      "liquidity": 4938.4162,
+      "change_24h_pct": 49.05,
+      "upside_score": 46,
+      "age_hours": 1.1470936030555556,
+      "near_graduation": true,
+      "fresh_graduation": false,
+      "graduation_progress_pct": 92.58,
+      "fail_note": [
+        "Liquidity is only $4,938; a modest sell can move the price sharply",
+        "Primary trading history is only 1.1 hours old",
+        "High meme-coin beta: even a clean setup can go to zero on a sector fade or a dev dump"
+      ],
+      "failed_criteria": [
+        "Uniform split-wallet cluster: 8 non-LP wallets each hold ~1.15% (range 1.01-1.31%, together 9.23%) - looks like a bundled launch split",
+        "Liquidity $4,938 below $30,000; Upside score 46/100 below 60"
+      ],
+      "links": {
+        "fomo": "https://fomo.family/tokens/solana/RUnnEr6YskBKYibKeUZRHaDQAAfdgYZPoikkmv4NnLx",
+        "pumpfun": null,
+        "dexscreener": "https://dexscreener.com/solana/e1m6tkbfyhfegay6vxhjlbzv6ah1nwo3rn5ng7wjwuib"
+      }
+    },
+    {
+      "mint": "J5LFPpCqk2B7o2wRrsyuXs6euLRHgcuEFZDmCip5CeKp",
+      "symbol": "BABYDOG",
+      "name": "BabyDogMeme",
+      "status": "near",
+      "mcap": 60876.0,
+      "liquidity": 105117.22,
+      "change_24h_pct": 36.35,
+      "upside_score": 46,
+      "age_hours": 0.09764913333333333,
+      "near_graduation": false,
+      "fresh_graduation": true,
+      "graduation_progress_pct": null,
+      "fail_note": [
+        "Only 0.0% of LP is locked/burned on a liquidity-weighted basis",
+        "Primary trading history is only 0.1 hours old",
+        "High meme-coin beta: even a clean setup can go to zero on a sector fade or a dev dump"
+      ],
+      "failed_criteria": [
+        "RugCheck bundle/safety flags: Large Amount of LP Unlocked",
+        "Weighted LP locked/burned 0.00% (min 40%); Primary pool LP locked/burned 0.00% (min 90%)",
+        "Upside score 46/100 below 60"
+      ],
+      "links": {
+        "fomo": "https://fomo.family/tokens/solana/J5LFPpCqk2B7o2wRrsyuXs6euLRHgcuEFZDmCip5CeKp",
+        "pumpfun": null,
+        "dexscreener": "https://dexscreener.com/solana/78hbnbmywjcz484gmmk45ajdfncetapqkiwve5kjaywn"
+      }
+    },
+    {
+      "mint": "BNCJjifHtnLQEusYadF59D72gLYHzBkinHHyWmx4QoWy",
+      "symbol": "PAY",
+      "name": "Payout",
+      "status": "near",
+      "mcap": 24887.0,
+      "liquidity": 36999.21,
+      "change_24h_pct": 73.07,
+      "upside_score": 36,
+      "age_hours": 0.0940380061111111,
+      "near_graduation": false,
+      "fresh_graduation": true,
+      "graduation_progress_pct": null,
+      "fail_note": [
+        "Only 0.0% of LP is locked/burned on a liquidity-weighted basis",
+        "Liquidity is only $36,999; a modest sell can move the price sharply",
+        "Primary trading history is only 0.1 hours old",
+        "High meme-coin beta: even a clean setup can go to zero on a sector fade or a dev dump"
+      ],
+      "failed_criteria": [
+        "RugCheck bundle/safety flags: Large Amount of LP Unlocked",
+        "Weighted LP locked/burned 0.00% (min 40%); Primary pool LP locked/burned 0.00% (min 90%)",
+        "Upside score 36/100 below 60"
+      ],
+      "links": {
+        "fomo": "https://fomo.family/tokens/solana/BNCJjifHtnLQEusYadF59D72gLYHzBkinHHyWmx4QoWy",
+        "pumpfun": null,
+        "dexscreener": "https://dexscreener.com/solana/pavqfiwtxxyiluneigai1zeswg59oumxiptp7scvtq6"
+      }
+    },
+    {
+      "mint": "788zdRjKFZmDD64tBA4ojfMUpcb7RjsPa2mG2PnRzFQM",
+      "symbol": "Horned cat",
+      "name": "Horned cat",
+      "status": "near",
+      "mcap": 19376.0,
+      "liquidity": 33315.29,
+      "change_24h_pct": 31.8,
+      "upside_score": 33,
+      "age_hours": 0.07403793333333333,
+      "near_graduation": false,
+      "fresh_graduation": true,
+      "graduation_progress_pct": null,
+      "fail_note": [
+        "Only 0.0% of LP is locked/burned on a liquidity-weighted basis",
+        "Liquidity is only $33,315; a modest sell can move the price sharply",
+        "Primary trading history is only 0.1 hours old",
+        "High meme-coin beta: even a clean setup can go to zero on a sector fade or a dev dump"
+      ],
+      "failed_criteria": [
+        "RugCheck bundle/safety flags: Large Amount of LP Unlocked",
+        "Weighted LP locked/burned 0.00% (min 40%); Primary pool LP locked/burned 0.00% (min 90%)",
+        "Upside score 33/100 below 60"
+      ],
+      "links": {
+        "fomo": "https://fomo.family/tokens/solana/788zdRjKFZmDD64tBA4ojfMUpcb7RjsPa2mG2PnRzFQM",
+        "pumpfun": null,
+        "dexscreener": "https://dexscreener.com/solana/9bwih6mrnfspvsokmr4c3okefjgrcucu4zirfyorf338"
+      }
+    }
+  ]
+}

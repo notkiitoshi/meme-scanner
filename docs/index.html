@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meme Coin Scanner</title>
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0b1017;
+      color: #e8eef6;
+      padding: 16px 14px 40px;
+    }
+    h1 { font-size: 1.35rem; margin: 0 0 4px; }
+    .sub { color: #8b97a8; font-size: 0.85rem; margin-bottom: 16px; line-height: 1.4; }
+    .warn {
+      background: #3a2418;
+      border: 1px solid #6a3d22;
+      color: #ffd7b0;
+      padding: 10px 12px;
+      border-radius: 10px;
+      font-size: 0.85rem;
+      margin-bottom: 16px;
+    }
+    .card {
+      background: #151c26;
+      border: 1px solid #2a3544;
+      border-radius: 12px;
+      padding: 12px;
+      margin-bottom: 10px;
+    }
+    .row { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+    .sym { font-weight: 700; font-size: 1.05rem; }
+    .name { color: #8b97a8; font-size: 0.85rem; margin-left: 6px; }
+    .badge { font-size: 0.7rem; padding: 2px 6px; border-radius: 999px; background: #1f2a38; color: #6ee7d2; }
+    .badge.near { color: #ffd7b0; background: #3a2418; }
+    .px { font-variant-numeric: tabular-nums; font-weight: 600; }
+    .up { color: #3ee0a0; }
+    .down { color: #ff7a7a; }
+    .meta { color: #8b97a8; font-size: 0.8rem; margin-top: 8px; }
+    .links a { color: #6ee7d2; margin-right: 10px; font-size: 0.8rem; text-decoration: none; }
+    .fail { margin-top: 10px; padding: 8px 10px; background: #2a1518; border-radius: 8px; font-size: 0.8rem; color: #ffb4b4; }
+    .fail b { display: block; margin-bottom: 4px; }
+    .fail li { margin: 0 0 4px 16px; }
+    .live { color: #8b97a8; font-size: 0.8rem; margin: 8px 0 14px; }
+  </style>
+</head>
+<body>
+  <h1>Meme Coin Scanner</h1>
+  <div class="sub" id="stamp">Loading coins.json…</div>
+  <div class="warn">Research only, not financial advice. Meme coins can go to zero. Paste the mint into Fomo rather than searching by name.</div>
+  <div class="live" id="live">Checking DexScreener for live prices…</div>
+  <div id="list"></div>
+  <script>
+    const fmtUsd = (n) => {
+      if (n == null || !isFinite(n)) return "—";
+      const abs = Math.abs(n), sign = n < 0 ? "-" : "";
+      if (abs >= 1e6) return sign + "$" + (abs / 1e6).toFixed(2) + "M";
+      if (abs >= 1e3) return sign + "$" + (abs / 1e3).toFixed(1) + "K";
+      return sign + "$" + abs.toFixed(2);
+    };
+    const fmtPx = (n) => {
+      if (n == null || !isFinite(n)) return "—";
+      const abs = Math.abs(n);
+      const d = abs >= 1 ? 4 : abs >= 0.01 ? 5 : abs >= 0.0001 ? 6 : 8;
+      return "$" + n.toFixed(d).replace(/\.?0+$/, "");
+    };
+    const fmtChg = (n) => {
+      if (n == null || !isFinite(n)) return { text: "—", cls: "" };
+      const up = n > 0, down = n < 0;
+      return { text: (up ? "▲ +" : down ? "▼ " : "") + n.toFixed(2) + "%", cls: up ? "up" : down ? "down" : "" };
+    };
+    function parseDex(pairs) {
+      const by = {};
+      if (!Array.isArray(pairs)) return by;
+      for (const p of pairs) {
+        const mint = p && p.baseToken && p.baseToken.address;
+        if (!mint) continue;
+        const liq = Number(p.liquidity && p.liquidity.usd) || 0;
+        if (!by[mint] || liq > by[mint].liquidity) {
+          const price = p.priceUsd == null || p.priceUsd === "" ? null : Number(p.priceUsd);
+          const chg = p.priceChange && p.priceChange.h24;
+          const change24h = chg == null || chg === "" ? null : Number(chg);
+          by[mint] = { price: isFinite(price) ? price : null, change24h: isFinite(change24h) ? change24h : null, liquidity: liq };
+        }
+      }
+      return by;
+    }
+    async function loadQuotes(mints) {
+      const out = {};
+      for (let i = 0; i < mints.length; i += 30) {
+        const chunk = mints.slice(i, i + 30);
+        const res = await fetch("https://api.dexscreener.com/tokens/v1/solana/" + chunk.join(","));
+        if (!res.ok) throw new Error("DexScreener HTTP " + res.status);
+        Object.assign(out, parseDex(await res.json()));
+      }
+      return out;
+    }
+    function render(data, quotes, liveErr) {
+      const stamp = document.getElementById("stamp");
+      stamp.textContent = "Fresh scan " + (data.scan_time_hst || "unknown") +
+        " · " + (data.coins || []).length + " coins · " +
+        (data.passed_count || 0) + " passed · " + (data.near_pass_count || 0) + " near-passes";
+      const live = document.getElementById("live");
+      live.textContent = liveErr
+        ? ("Live DexScreener prices unavailable (" + liveErr + "). Showing the scan snapshot.")
+        : "Live prices from DexScreener, polled every 60s. Green is up, red is down.";
+      const list = document.getElementById("list");
+      list.innerHTML = "";
+      for (const c of (data.coins || [])) {
+        const q = quotes[c.mint] || {};
+        const chg = fmtChg(q.change24h != null ? q.change24h : c.change_24h_pct);
+        const el = document.createElement("div");
+        el.className = "card";
+        const links = c.links || {};
+        const notes = (c.fail_note || []).map((w) => "<li>" + w.replace(/</g, "&lt;") + "</li>").join("");
+        el.innerHTML =
+          '<div class="row"><div><span class="sym">' + (c.symbol || "") +
+          '</span><span class="name">' + (c.name || "") +
+          '</span> <span class="badge ' + (c.status === "near" ? "near" : "") + '">' +
+          (c.status === "passed" ? "Passed all three" : "Near-pass") +
+          '</span></div><div class="px ' + chg.cls + '">' + chg.text +
+          (q.price != null ? " · " + fmtPx(q.price) : "") + "</div></div>" +
+          '<div class="meta">mcap ' + fmtUsd(c.mcap) + " · liq " + fmtUsd(c.liquidity) +
+          (c.graduation_progress_pct != null ? " · curve " + c.graduation_progress_pct.toFixed(1) + "%" : "") +
+          '</div><div class="links">' +
+          (links.fomo ? '<a href="' + links.fomo + '">Fomo</a>' : "") +
+          (links.pumpfun ? '<a href="' + links.pumpfun + '">pump.fun</a>' : "") +
+          (links.dexscreener ? '<a href="' + links.dexscreener + '">DexScreener</a>' : "") +
+          "</div>" +
+          (notes ? '<div class="fail"><b>WHY THIS COULD FAIL</b><ul>' + notes + "</ul></div>" : "");
+        list.appendChild(el);
+      }
+      if (!(data.coins || []).length) {
+        list.innerHTML = '<div class="card">No passed or near-pass coins in the last fresh scan.</div>';
+      }
+    }
+    async function boot() {
+      const res = await fetch("coins.json?t=" + Date.now());
+      if (!res.ok) throw new Error("coins.json HTTP " + res.status);
+      const data = await res.json();
+      let quotes = {}, err = null;
+      try { quotes = await loadQuotes((data.coins || []).map((c) => c.mint).filter(Boolean)); }
+      catch (e) { err = e.message || String(e); }
+      render(data, quotes, err);
+      setInterval(async () => {
+        try {
+          const q = await loadQuotes((data.coins || []).map((c) => c.mint).filter(Boolean));
+          render(data, q, null);
+        } catch (e) { /* keep last snapshot */ }
+      }, 60000);
+    }
+    boot().catch((e) => {
+      document.getElementById("stamp").textContent = "Could not load coins.json: " + e.message;
+    });
+  </script>
+</body>
+</html>

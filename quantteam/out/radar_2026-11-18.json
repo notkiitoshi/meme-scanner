@@ -1,0 +1,2685 @@
+{
+  "kind": "radar",
+  "generated_utc": "2026-11-19T06:53:32.465702+00:00",
+  "hst_date": "2026-11-18",
+  "paper_only": true,
+  "market_summary_3_lines": [
+    "BTC is volatile on 4h (trend down, 7d -13.9%, 24h -2.03%).",
+    "Meme perps by 4h regime: trending 17, ranging 3; median 7d move -11.6%.",
+    "Top opportunity scores: PENGU (short, trending), BOME (short, trending), FARTCOIN (short, trending)."
+  ],
+  "btc": {
+    "coin": "BTC",
+    "regime_1h": "ranging",
+    "regime_4h": "volatile",
+    "last_close": 63330.0,
+    "last_bar_utc": "2026-11-19T06:00:00+00:00",
+    "trend": -0.1553,
+    "mom_24h_pct": -2.03,
+    "mom_7d_pct": -13.9,
+    "vol_24h_usd": 8007233748,
+    "vol_ratio_vs_30d": 1.23,
+    "funding_last_pct": -0.001,
+    "funding_interval_h": 8.0,
+    "funding_7d_avg_pct": 0.0022,
+    "funding_annualized_pct": 2.4,
+    "funding_z": -1.74,
+    "oi_usd": 2115466182,
+    "oi_chg_24h_pct": 6.37,
+    "atr_4h_pct": 1.87,
+    "realized_vol_30d_ann_pct": 43.2
+  },
+  "ranking": [
+    {
+      "coin": "PENGU",
+      "regime_1h": "ranging",
+      "regime_4h": "trending",
+      "last_close": 0.004724,
+      "last_bar_utc": "2026-11-19T06:00:00+00:00",
+      "trend": -0.2965,
+      "mom_24h_pct": -0.17,
+      "mom_7d_pct": -23.63,
+      "vol_24h_usd": 10594930,
+      "vol_ratio_vs_30d": 0.73,
+      "funding_last_pct": 0.005,
+      "funding_interval_h": 4.0,
+      "funding_7d_avg_pct": 0.0007,
+      "funding_annualized_pct": 1.4,
+      "funding_z": 0.65,
+      "oi_usd": 5287572,
+      "oi_chg_24h_pct": -7.23,
+      "atr_4h_pct": 3.82,
+      "realized_vol_30d_ann_pct": 93.7,
+      "opportunity_score": 0.892,
+      "bias": "short",
+      "rank_trend": 2,
+      "rank_momentum": 1,
+      "rank_volume": 5,
+      "rank_funding": 6,
+      "rank_oi": 3,
+      "rank_volatility": 2,
+      "rank": 1
+    },
+    {
+      "coin": "BOME",
+      "regime_1h": "ranging",
+      "regime_4h": "trending",
+      "last_close": 0.0004983,
+      "last_bar_utc": "2026-11-19T06:00:00+00:00",
+      "trend": -0.2009,
+      "mom_24h_pct": -1.93,
+      "mom_7d_pct": -16.17,
+      "vol_24h_usd": 2227896,
+      "vol_ratio_vs_30d": 0.68,
+      "funding_last_pct": 0.005,
+      "funding_interval_h": 4.0,
+      "funding_7d_avg_pct": -0.001,
+      "funding_annualized_pct": -2.3,
+      "funding_z": 0.59,
+      "oi_usd": 739171,
+      "oi_chg_24h_pct": -8.28,
+      "atr_4h_pct": 3.19,
+      "realized_vol_30d_ann_pct": 95.2,
+      "opportunity_score": 0.758,
+      "bias": "short",
+      "rank_trend": 9,
+      "rank_momentum": 4,
+      "rank_volume": 7,
+      "rank_funding": 9,
+      "rank_oi": 1,
+      "rank_volatility": 5,
+      "rank": 2
+    },
+    {
+      "coin": "FARTCOIN",
+      "regime_1h": "ranging",
+      "regime_4h": "trending",
+      "last_close": 0.0874,
+      "last_bar_utc": "2026-11-19T06:00:00+00:00",
+      "trend": -0.2853,
+      "mom_24h_pct": -2.56,
+      "mom_7d_pct": -21.96,
+      "vol_24h_usd": 3708340,
+      "vol_ratio_vs_30d": 0.85,
+      "funding_last_pct": 0.005,
+      "funding_interval_h": 4.0,
+      "funding_7d_avg_pct": 0.0043,
+      "funding_annualized_pct": 9.5,
+      "funding_z": -0.13,
+      "oi_usd": 2099339,
+      "oi_chg_24h_pct": 4.14,
+      "atr_4h_pct": 3.84,
+      "realized_vol_30d_ann_pct": 100.7,
+      "opportunity_score": 0.733,
+      "bias": "short",
+      "rank_trend": 3,
+      "rank_momentum": 2,
+      "rank_volume": 4,
+      "rank_funding": 19,
+      "rank_oi": 9,
+      "rank_volatility": 1,
+      "rank": 3
+    },
+    {
+      "coin": "MEME",
+      "regime_1h": "ranging",
+      "regime_4h": "trending",
+      "last_close": 0.0003196,
+      "last_bar_utc": "2026-11-19T06:00:00+00:00",
+      "trend": -0.2361,
+      "mom_24h_pct": -1.05,
+      "mom_7d_pct": -15.4,
+      "vol_24h_usd": 528881,
+      "vol_ratio_vs_30d": 0.91,
+      "funding_last_pct": -0.0039,
+      "funding_interval_h": 4.0,
+      "funding_7d_avg_pct": -0.0003,
+      "funding_annualized_pct": -0.7,
+      "funding_z": -1.5,
+      "oi_usd": 285316,
+      "oi_chg_24h_pct": -0.44,
+      "atr_4h_pct": 2.89,
+      "realized_vol_30d_ann_pct": 81.0,
+      "opportunity_score": 0.733,
+      "bias": "short",
+      "rank_trend": 5,
+      "rank_momentum": 5,
+      "rank_volume": 2,
+      "rank_funding": 1,
+      "rank_oi": 18,
+      "rank_volatility": 7,
+      "rank": 4
+    },
+    {
+      "coin": "POPCAT",
+      "regime_1h": "ranging",
+      "regime_4h": "trending",
+      "last_close": 0.02778,
+      "last_bar_utc": "2026-11-19T06:00:00+00:00",
+      "trend": -0.2582,
+      "mom_24h_pct": -1.14,
+      "mom_7d_pct": -14.97,
+      "vol_24h_usd": 223818,
+      "vol_ratio_vs_30d": 0.6,
+      "funding_last_pct": 0.0015,
+      "funding_interval_h": 4.0,
+      "funding_7d_avg_pct": -0.0007,
+      "funding_annualized_pct": -1.6,
+      "funding_z": -0.79,
+      "oi_usd": 283896,
+      "oi_chg_24h_pct": -4.53,
+      "atr_4h_pct": 2.86,
+      "realized_vol_30d_ann_pct": 88.9,
+      "opportunity_score": 0.688,
+      "bias": "short",
+      "rank_trend": 4,
+      "rank_momentum": 6,
+      "rank_volume": 12,
+      "rank_funding": 5,
+      "rank_oi": 8,
+      "rank_volatility": 8,
+      "rank": 5
+    },
+    {
+      "coin": "TRUMP",
+      "regime_1h": "ranging",
+      "regime_4h": "trending",
+      "last_close": 0.964,
+      "last_bar_utc": "2026-11-19T06:00:00+00:00",
+      "trend": -0.3011,
+      "mom_24h_pct": 0.0,
+      "mom_7d_pct": -13.85,
+      "vol_24h_usd": 37102274,
+      "vol_ratio_vs_30d": 0.49,
+      "funding_last_pct": -0.0026,
+      "funding_interval_h": 4.0,
+      "funding_7d_avg_pct": -0.0014,
+      "funding_annualized_pct": -3.0,
+      "funding_z": -0.33,
+      "oi_usd": 9345732,
+      "oi_chg_24h_pct": 5.92,
+      "atr_4h_pct": 3.08,
+      "realized_vol_30d_ann_pct": 99.9,
+      "opportunity_score": 0.633,
+      "bias": "short",
+      "rank_trend": 1,
+      "rank_momentum": 7,
+      "rank_volume": 16,
+      "rank_funding": 14,
+      "rank_oi": 6,
+      "rank_volatility": 6,
+      "rank": 6
+    },
+    {
+      "coin": "NEIRO",
+      "regime_1h": "ranging",
+      "regime_4h": "trending",
+      "last_close": 5.043e-05,
+      "last_bar_utc": "2026-11-19T06:00:00+00:00",
+      "trend": -0.1767,
+      "mom_24h_pct": 0.22,
+      "mom_7d_pct": -11.37,
+      "vol_24h_usd": 761287,
+      "vol_ratio_vs_30d": 1.11,
+      "funding_last_pct": 0.005,
+      "funding_interval_h": 4.0,
+      "funding_7d_avg_pct": 0.0024,
+      "funding_annualized_pct": 5.2,
+      "funding_z": 0.47,
+      "oi_usd": 371914,
+      "oi_chg_24h_pct": -5.57,
+      "atr_4h_pct": 2.84,
+      "realized_vol_30d_ann_pct": 85.8,
+      "opportunity_score": 0.6,
+      "bias": "short",
+      "rank_trend": 14,
+      "rank_momentum": 12,
+      "rank_volume": 1,
+      "rank_funding": 10,
+      "rank_oi": 7,
+      "rank_volatility": 10,
+      "rank": 7
+    },
+    {
+      "coin": "PNUT",
+      "regime_1h": "ranging",
+      "regime_4h": "trending",
+      "last_close": 0.02871,
+      "last_bar_utc": "2026-11-19T06:00:00+00:00",
+      "trend": -0.2186,
+      "mom_24h_pct": -2.11,
+      "mom_7d_pct": -10.67,
+      "vol_24h_usd": 1319512,
+      "vol_ratio_vs_30d": 0.67,
+      "funding_last_pct": 0.005,
+      "funding_interval_h": 4.0,
+      "funding_7d_avg_pct": -0.0035,
+      "funding_annualized_pct": -7.6,
+      "funding_z": 0.6,
+      "oi_usd": 786329,
+      "oi_chg_24h_pct": -6.84,
+      "atr_4h_pct": 2.56,
+      "realized_vol_30d_ann_pct": 81.3,
+      "opportunity_score": 0.588,
+      "bias": "short",
+      "rank_trend": 6,
+      "rank_momentum": 16,
+      "rank_volume": 8,
+      "rank_funding": 8,
+      "rank_oi": 4,
+      "rank_volatility": 13,
+      "rank": 8
+    },
+    {
+      "coin": "DOGE",
+      "regime_1h": "ranging",
+      "regime_4h": "trending",
+      "last_close": 0.05912,
+      "last_bar_utc": "2026-11-19T06:00:00+00:00",
+      "trend": -0.1818,
+      "mom_24h_pct": -0.71,
+      "mom_7d_pct": -11.67,
+      "vol_24h_usd": 130625190,
+      "vol_ratio_vs_30d": 0.7,
+      "funding_last_pct": 0.0015,
+      "funding_interval_h": 8.0,
+      "funding_7d_avg_pct": -0.0001,
+      "funding_annualized_pct": -0.2,
+      "funding_z": -0.9,
+      "oi_usd": 61724143,
+      "oi_chg_24h_pct": -3.34,
+      "atr_4h_pct": 2.36,
+      "realized_vol_30d_ann_pct": 62.2,
+      "opportunity_score": 0.55,
+      "bias": "short",
+      "rank_trend": 13,
+      "rank_momentum": 10,
+      "rank_volume": 6,
+      "rank_funding": 3,
+      "rank_oi": 10,
+      "rank_volatility": 18,
+      "rank": 9
+    },
+    {
+      "coin": "MOODENG",
+      "regime_1h": "ranging",
+      "regime_4h": "trending",
+      "last_close": 0.02707,
+      "last_bar_utc": "2026-11-19T06:00:00+00:00",
+      "trend": -0.1904,
+      "mom_24h_pct": -2.56,
+      "mom_7d_pct": -10.9,
+      "vol_24h_usd": 1087073,
+      "vol_ratio_vs_30d": 0.64,
+      "funding_last_pct": 0.005,
+      "funding_interval_h": 4.0,
+      "funding_7d_avg_pct": 0.0017,
+      "funding_annualized_pct": 3.6,
+      "funding_z": 0.38,
+      "oi_usd": 747112,
+      "oi_chg_24h_pct": -6.73,
+      "atr_4h_pct": 2.81,
+      "realized_vol_30d_ann_pct": 86.9,
+      "opportunity_score": 0.517,
+      "bias": "short",
+      "rank_trend": 11,
+      "rank_momentum": 15,
+      "rank_volume": 9,
+      "rank_funding": 13,
+      "rank_oi": 5,
+      "rank_volatility": 11,
+      "rank": 10
+    },
+    {
+      "coin": "WIF",
+      "regime_1h": "ranging",
+      "regime_4h": "trending",
+      "last_close": 0.1336,
+      "last_bar_utc": "2026-11-19T06:00:00+00:00",
+      "trend": -0.2054,
+      "mom_24h_pct": -0.82,
+      "mom_7d_pct": -13.08,
+      "vol_24h_usd": 2475216,
+      "vol_ratio_vs_30d": 0.59,
+      "funding_last_pct": 0.005,
+      "funding_interval_h": 4.0,
+      "funding_7d_avg_pct": 0.0022,
+      "funding_annualized_pct": 4.8,
+      "funding_z": 0.43,
+      "oi_usd": 3067455,
+      "oi_chg_24h_pct": -0.73,
+      "atr_4h_pct": 2.56,
+      "realized_vol_30d_ann_pct": 78.3,
+      "opportunity_score": 0.488,
+      "bias": "short",
+      "rank_trend": 8,
+      "rank_momentum": 9,
+      "rank_volume": 13,
+      "rank_funding": 11,
+      "rank_oi": 13,
+      "rank_volatility": 13,
+      "rank": 11
+    },
+    {
+      "coin": "SPX",
+      "regime_1h": "ranging",
+      "regime_4h": "ranging",
+      "last_close": 0.3195,
+      "last_bar_utc": "2026-11-19T06:00:00+00:00",
+      "trend": -0.0977,
+      "mom_24h_pct": 0.19,
+      "mom_7d_pct": -10.28,
+      "vol_24h_usd": 799002,
+      "vol_ratio_vs_30d": 0.63,
+      "funding_last_pct": 0.005,
+      "funding_interval_h": 4.0,
+      "funding_7d_avg_pct": -0.0055,
+      "funding_annualized_pct": -12.1,
+      "funding_z": 0.19,
+      "oi_usd": 426676,
+      "oi_chg_24h_pct": 7.45,
+      "atr_4h_pct": 3.35,
+      "realized_vol_30d_ann_pct": 102.4,
+      "opportunity_score": 0.467,
+      "bias": "short",
+      "rank_trend": 20,
+      "rank_momentum": 17,
+      "rank_volume": 10,
+      "rank_funding": 17,
+      "rank_oi": 2,
+      "rank_volatility": 3,
+      "rank": 12
+    },
+    {
+      "coin": "FLOKI",
+      "regime_1h": "ranging",
+      "regime_4h": "trending",
+      "last_close": 1.777e-05,
+      "last_bar_utc": "2026-11-19T06:00:00+00:00",
+      "trend": -0.1848,
+      "mom_24h_pct": -0.78,
+      "mom_7d_pct": -13.11,
+      "vol_24h_usd": 475727,
+      "vol_ratio_vs_30d": 0.54,
+      "funding_last_pct": 0.01,
+      "funding_interval_h": 8.0,
+      "funding_7d_avg_pct": 0.0007,
+      "funding_annualized_pct": 0.7,
+      "funding_z": 0.63,
+      "oi_usd": 566428,
+      "oi_chg_24h_pct": 0.71,
+      "atr_4h_pct": 2.47,
+      "realized_vol_30d_ann_pct": 76.3,
+      "opportunity_score": 0.45,
+      "bias": "short",
+      "rank_trend": 12,
+      "rank_momentum": 8,
+      "rank_volume": 15,
+      "rank_funding": 7,
+      "rank_oi": 14,
+      "rank_volatility": 16,
+      "rank": 13
+    },
+    {
+      "coin": "BONK",
+      "regime_1h": "ranging",
+      "regime_4h": "trending",
+      "last_close": 2.364e-06,
+      "last_bar_utc": "2026-11-19T06:00:00+00:00",
+      "trend": -0.1625,
+      "mom_24h_pct": -0.55,
+      "mom_7d_pct": -11.26,
+      "vol_24h_usd": 1160095,
+      "vol_ratio_vs_30d": 0.36,
+      "funding_last_pct": -0.005,
+      "funding_interval_h": 8.0,
+      "funding_7d_avg_pct": -0.012,
+      "funding_annualized_pct": -13.1,
+      "funding_z": -0.83,
+      "oi_usd": 1172149,
+      "oi_chg_24h_pct": 1.59,
+      "atr_4h_pct": 2.86,
+      "realized_vol_30d_ann_pct": 93.2,
+      "opportunity_score": 0.429,
+      "bias": "short",
+      "rank_trend": 17,
+      "rank_momentum": 14,
+      "rank_volume": 19,
+      "rank_funding": 4,
+      "rank_oi": 12,
+      "rank_volatility": 8,
+      "rank": 14
+    },
+    {
+      "coin": "PEPE",
+      "regime_1h": "ranging",
+      "regime_4h": "trending",
+      "last_close": 3.7963e-06,
+      "last_bar_utc": "2026-11-19T06:00:00+00:00",
+      "trend": -0.1584,
+      "mom_24h_pct": 0.34,
+      "mom_7d_pct": -16.66,
+      "vol_24h_usd": 108376349,
+      "vol_ratio_vs_30d": 0.44,
+      "funding_last_pct": 0.0016,
+      "funding_interval_h": 8.0,
+      "funding_7d_avg_pct": -0.007,
+      "funding_annualized_pct": -7.7,
+      "funding_z": -0.17,
+      "oi_usd": 26367275,
+      "oi_chg_24h_pct": 0.68,
+      "atr_4h_pct": 3.35,
+      "realized_vol_30d_ann_pct": 117.5,
+      "opportunity_score": 0.425,
+      "bias": "short",
+      "rank_trend": 18,
+      "rank_momentum": 3,
+      "rank_volume": 17,
+      "rank_funding": 18,
+      "rank_oi": 15,
+      "rank_volatility": 3,
+      "rank": 15
+    },
+    {
+      "coin": "TURBO",
+      "regime_1h": "ranging",
+      "regime_4h": "trending",
+      "last_close": 0.0005982,
+      "last_bar_utc": "2026-11-19T06:00:00+00:00",
+      "trend": -0.1973,
+      "mom_24h_pct": -1.04,
+      "mom_7d_pct": -11.57,
+      "vol_24h_usd": 230298,
+      "vol_ratio_vs_30d": 0.55,
+      "funding_last_pct": 0.005,
+      "funding_interval_h": 4.0,
+      "funding_7d_avg_pct": 0.0035,
+      "funding_annualized_pct": 7.6,
+      "funding_z": 0.28,
+      "oi_usd": 447655,
+      "oi_chg_24h_pct": -0.58,
+      "atr_4h_pct": 2.55,
+      "realized_vol_30d_ann_pct": 75.0,
+      "opportunity_score": 0.375,
+      "bias": "short",
+      "rank_trend": 10,
+      "rank_momentum": 11,
+      "rank_volume": 14,
+      "rank_funding": 15,
+      "rank_oi": 16,
+      "rank_volatility": 15,
+      "rank": 16
+    },
+    {
+      "coin": "PEOPLE",
+      "regime_1h": "ranging",
+      "regime_4h": "trending",
+      "last_close": 0.005078,
+      "last_bar_utc": "2026-11-19T06:00:00+00:00",
+      "trend": -0.2069,
+      "mom_24h_pct": -0.68,
+      "mom_7d_pct": -9.96,
+      "vol_24h_usd": 1062802,
+      "vol_ratio_vs_30d": 0.37,
+      "funding_last_pct": -0.0059,
+      "funding_interval_h": 8.0,
+      "funding_7d_avg_pct": 0.0017,
+      "funding_annualized_pct": 1.8,
+      "funding_z": -1.3,
+      "oi_usd": 1342737,
+      "oi_chg_24h_pct": 0.02,
+      "atr_4h_pct": 2.41,
+      "realized_vol_30d_ann_pct": 85.4,
+      "opportunity_score": 0.367,
+      "bias": "short",
+      "rank_trend": 7,
+      "rank_momentum": 18,
+      "rank_volume": 18,
+      "rank_funding": 2,
+      "rank_oi": 20,
+      "rank_volatility": 17,
+      "rank": 17
+    },
+    {
+      "coin": "BRETT",
+      "regime_1h": "ranging",
+      "regime_4h": "ranging",
+      "last_close": 0.003432,
+      "last_bar_utc": "2026-11-19T06:00:00+00:00",
+      "trend": -0.1584,
+      "mom_24h_pct": -0.64,
+      "mom_7d_pct": -5.97,
+      "vol_24h_usd": 139171,
+      "vol_ratio_vs_30d": 0.87,
+      "funding_last_pct": 0.005,
+      "funding_interval_h": 4.0,
+      "funding_7d_avg_pct": 0.0023,
+      "funding_annualized_pct": 5.1,
+      "funding_z": -0.06,
+      "oi_usd": 96623,
+      "oi_chg_24h_pct": -2.97,
+      "atr_4h_pct": 2.65,
+      "realized_vol_30d_ann_pct": 91.6,
+      "opportunity_score": 0.346,
+      "bias": "short",
+      "rank_trend": 18,
+      "rank_momentum": 20,
+      "rank_volume": 3,
+      "rank_funding": 20,
+      "rank_oi": 11,
+      "rank_volatility": 12,
+      "rank": 18
+    },
+    {
+      "coin": "SHIB",
+      "regime_1h": "ranging",
+      "regime_4h": "trending",
+      "last_close": 3.827e-06,
+      "last_bar_utc": "2026-11-19T06:00:00+00:00",
+      "trend": -0.163,
+      "mom_24h_pct": -0.7,
+      "mom_7d_pct": -11.35,
+      "vol_24h_usd": 5691734,
+      "vol_ratio_vs_30d": 0.63,
+      "funding_last_pct": 0.0083,
+      "funding_interval_h": 8.0,
+      "funding_7d_avg_pct": 0.0013,
+      "funding_annualized_pct": 1.5,
+      "funding_z": 0.39,
+      "oi_usd": 5203949,
+      "oi_chg_24h_pct": 0.5,
+      "atr_4h_pct": 2.04,
+      "realized_vol_30d_ann_pct": 60.1,
+      "opportunity_score": 0.312,
+      "bias": "short",
+      "rank_trend": 16,
+      "rank_momentum": 13,
+      "rank_volume": 10,
+      "rank_funding": 12,
+      "rank_oi": 17,
+      "rank_volatility": 20,
+      "rank": 19
+    },
+    {
+      "coin": "MEW",
+      "regime_1h": "ranging",
+      "regime_4h": "ranging",
+      "last_close": 0.0003076,
+      "last_bar_utc": "2026-11-19T06:00:00+00:00",
+      "trend": -0.1764,
+      "mom_24h_pct": -0.42,
+      "mom_7d_pct": -7.82,
+      "vol_24h_usd": 360070,
+      "vol_ratio_vs_30d": 0.13,
+      "funding_last_pct": 0.005,
+      "funding_interval_h": 4.0,
+      "funding_7d_avg_pct": 0.0019,
+      "funding_annualized_pct": 4.2,
+      "funding_z": 0.2,
+      "oi_usd": 430574,
+      "oi_chg_24h_pct": -0.2,
+      "atr_4h_pct": 2.33,
+      "realized_vol_30d_ann_pct": 101.1,
+      "opportunity_score": 0.15,
+      "bias": "short",
+      "rank_trend": 15,
+      "rank_momentum": 19,
+      "rank_volume": 20,
+      "rank_funding": 16,
+      "rank_oi": 19,
+      "rank_volatility": 19,
+      "rank": 20
+    }
+  ],
+  "setup_ideas": [
+    {
+      "id": "RB_L",
+      "family": "range_breakout",
+      "name": "Tight-range breakout long on rising volume",
+      "reason": "A tight 24h range broken on 1.5x volume often starts a leg as trapped shorts cover.",
+      "required_regime": [
+        "ranging",
+        "trending"
+      ],
+      "params": {
+        "dir": 1,
+        "lookback_h": 24,
+        "max_range_pct": 8,
+        "vol_mult": 1.5
+      },
+      "exit": {
+        "stop_atr": 1.5,
+        "tp_r": 2.0,
+        "max_hold_h": 48
+      },
+      "tunable": [
+        "lookback_h",
+        "vol_mult"
+      ],
+      "coins_in_required_regime_now_4h": [
+        "DOGE",
+        "SHIB",
+        "PEPE",
+        "WIF",
+        "BONK",
+        "FLOKI",
+        "BRETT",
+        "POPCAT",
+        "TRUMP",
+        "FARTCOIN",
+        "PENGU",
+        "SPX",
+        "MEME",
+        "NEIRO",
+        "PNUT",
+        "BOME",
+        "MEW",
+        "TURBO",
+        "MOODENG",
+        "PEOPLE"
+      ],
+      "live_signals_now": []
+    },
+    {
+      "id": "RB_S",
+      "family": "range_breakout",
+      "name": "Tight-range breakdown short on rising volume",
+      "reason": "Losing a tight range on heavy volume forces late longs out, extending the drop.",
+      "required_regime": [
+        "ranging",
+        "trending"
+      ],
+      "params": {
+        "dir": -1,
+        "lookback_h": 24,
+        "max_range_pct": 8,
+        "vol_mult": 1.5
+      },
+      "exit": {
+        "stop_atr": 1.5,
+        "tp_r": 2.0,
+        "max_hold_h": 48
+      },
+      "tunable": [
+        "lookback_h",
+        "vol_mult"
+      ],
+      "coins_in_required_regime_now_4h": [
+        "DOGE",
+        "SHIB",
+        "PEPE",
+        "WIF",
+        "BONK",
+        "FLOKI",
+        "BRETT",
+        "POPCAT",
+        "TRUMP",
+        "FARTCOIN",
+        "PENGU",
+        "SPX",
+        "MEME",
+        "NEIRO",
+        "PNUT",
+        "BOME",
+        "MEW",
+        "TURBO",
+        "MOODENG",
+        "PEOPLE"
+      ],
+      "live_signals_now": []
+    },
+    {
+      "id": "RB_L_WIDE",
+      "family": "range_breakout",
+      "name": "72h range breakout long on 2x volume",
+      "reason": "A multi-day base broken on double volume shows new buyers overpowering sellers.",
+      "required_regime": [
+        "ranging",
+        "trending"
+      ],
+      "params": {
+        "dir": 1,
+        "lookback_h": 72,
+        "max_range_pct": 15,
+        "vol_mult": 2.0
+      },
+      "exit": {
+        "stop_atr": 2.0,
+        "tp_r": 2.5,
+        "max_hold_h": 96
+      },
+      "tunable": [
+        "lookback_h",
+        "vol_mult"
+      ],
+      "coins_in_required_regime_now_4h": [
+        "DOGE",
+        "SHIB",
+        "PEPE",
+        "WIF",
+        "BONK",
+        "FLOKI",
+        "BRETT",
+        "POPCAT",
+        "TRUMP",
+        "FARTCOIN",
+        "PENGU",
+        "SPX",
+        "MEME",
+        "NEIRO",
+        "PNUT",
+        "BOME",
+        "MEW",
+        "TURBO",
+        "MOODENG",
+        "PEOPLE"
+      ],
+      "live_signals_now": []
+    },
+    {
+      "id": "DC_L",
+      "family": "donchian_trend",
+      "name": "55-bar-equivalent (220h) channel breakout long in uptrend",
+      "reason": "Classic trend following: new multi-week highs in an uptrend tend to persist in memes.",
+      "required_regime": [
+        "trending"
+      ],
+      "params": {
+        "dir": 1,
+        "lookback_h": 220
+      },
+      "exit": {
+        "stop_atr": 2.5,
+        "tp_r": 3.0,
+        "max_hold_h": 240
+      },
+      "tunable": [
+        "lookback_h"
+      ],
+      "coins_in_required_regime_now_4h": [
+        "DOGE",
+        "SHIB",
+        "PEPE",
+        "WIF",
+        "BONK",
+        "FLOKI",
+        "POPCAT",
+        "TRUMP",
+        "FARTCOIN",
+        "PENGU",
+        "MEME",
+        "NEIRO",
+        "PNUT",
+        "BOME",
+        "TURBO",
+        "MOODENG",
+        "PEOPLE"
+      ],
+      "live_signals_now": []
+    },
+    {
+      "id": "DC_S",
+      "family": "donchian_trend",
+      "name": "220h channel breakdown short in downtrend",
+      "reason": "Meme downtrends grind as holders capitulate; new multi-week lows tend to continue.",
+      "required_regime": [
+        "trending"
+      ],
+      "params": {
+        "dir": -1,
+        "lookback_h": 220
+      },
+      "exit": {
+        "stop_atr": 2.5,
+        "tp_r": 3.0,
+        "max_hold_h": 240
+      },
+      "tunable": [
+        "lookback_h"
+      ],
+      "coins_in_required_regime_now_4h": [
+        "DOGE",
+        "SHIB",
+        "PEPE",
+        "WIF",
+        "BONK",
+        "FLOKI",
+        "POPCAT",
+        "TRUMP",
+        "FARTCOIN",
+        "PENGU",
+        "MEME",
+        "NEIRO",
+        "PNUT",
+        "BOME",
+        "TURBO",
+        "MOODENG",
+        "PEOPLE"
+      ],
+      "live_signals_now": []
+    },
+    {
+      "id": "TP_L",
+      "family": "trend_pullback",
+      "name": "Uptrend pullback to EMA50 long",
+      "reason": "In a stacked uptrend, dips to the 50 EMA are where trend buyers reload.",
+      "required_regime": [
+        "trending"
+      ],
+      "params": {
+        "dir": 1,
+        "ema": 50,
+        "touch_pct": 0.5,
+        "rsi_floor": 40
+      },
+      "exit": {
+        "stop_atr": 1.5,
+        "tp_r": 2.0,
+        "max_hold_h": 72
+      },
+      "tunable": [
+        "touch_pct",
+        "rsi_floor"
+      ],
+      "coins_in_required_regime_now_4h": [
+        "DOGE",
+        "SHIB",
+        "PEPE",
+        "WIF",
+        "BONK",
+        "FLOKI",
+        "POPCAT",
+        "TRUMP",
+        "FARTCOIN",
+        "PENGU",
+        "MEME",
+        "NEIRO",
+        "PNUT",
+        "BOME",
+        "TURBO",
+        "MOODENG",
+        "PEOPLE"
+      ],
+      "live_signals_now": []
+    },
+    {
+      "id": "TP_S",
+      "family": "trend_pullback",
+      "name": "Downtrend rally to EMA50 short",
+      "reason": "In a stacked downtrend, bounces into the 50 EMA are where trapped longs sell.",
+      "required_regime": [
+        "trending"
+      ],
+      "params": {
+        "dir": -1,
+        "ema": 50,
+        "touch_pct": 0.5,
+        "rsi_floor": 40
+      },
+      "exit": {
+        "stop_atr": 1.5,
+        "tp_r": 2.0,
+        "max_hold_h": 72
+      },
+      "tunable": [
+        "touch_pct",
+        "rsi_floor"
+      ],
+      "coins_in_required_regime_now_4h": [
+        "DOGE",
+        "SHIB",
+        "PEPE",
+        "WIF",
+        "BONK",
+        "FLOKI",
+        "POPCAT",
+        "TRUMP",
+        "FARTCOIN",
+        "PENGU",
+        "MEME",
+        "NEIRO",
+        "PNUT",
+        "BOME",
+        "TURBO",
+        "MOODENG",
+        "PEOPLE"
+      ],
+      "live_signals_now": []
+    },
+    {
+      "id": "TP20_L",
+      "family": "trend_pullback",
+      "name": "Uptrend pullback to EMA20 long (shallow dip)",
+      "reason": "Strong meme trends rarely reach the 50 EMA; the 20 EMA is the first reload zone.",
+      "required_regime": [
+        "trending"
+      ],
+      "params": {
+        "dir": 1,
+        "ema": 20,
+        "touch_pct": 0.3,
+        "rsi_floor": 45
+      },
+      "exit": {
+        "stop_atr": 1.2,
+        "tp_r": 2.0,
+        "max_hold_h": 48
+      },
+      "tunable": [
+        "touch_pct",
+        "rsi_floor"
+      ],
+      "coins_in_required_regime_now_4h": [
+        "DOGE",
+        "SHIB",
+        "PEPE",
+        "WIF",
+        "BONK",
+        "FLOKI",
+        "POPCAT",
+        "TRUMP",
+        "FARTCOIN",
+        "PENGU",
+        "MEME",
+        "NEIRO",
+        "PNUT",
+        "BOME",
+        "TURBO",
+        "MOODENG",
+        "PEOPLE"
+      ],
+      "live_signals_now": []
+    },
+    {
+      "id": "FL_L",
+      "family": "flush_reversal",
+      "name": "Long after a liquidation-like down flush",
+      "reason": "Forced long liquidations overshoot fair value; the wick shows buyers absorbing it.",
+      "required_regime": [
+        "volatile",
+        "ranging",
+        "trending"
+      ],
+      "params": {
+        "dir": 1,
+        "range_atr": 3.0,
+        "vol_mult": 3.0,
+        "min_wick": 0.35
+      },
+      "exit": {
+        "stop_atr": 1.5,
+        "tp_r": 1.5,
+        "max_hold_h": 24
+      },
+      "tunable": [
+        "range_atr",
+        "vol_mult"
+      ],
+      "coins_in_required_regime_now_4h": [
+        "DOGE",
+        "SHIB",
+        "PEPE",
+        "WIF",
+        "BONK",
+        "FLOKI",
+        "BRETT",
+        "POPCAT",
+        "TRUMP",
+        "FARTCOIN",
+        "PENGU",
+        "SPX",
+        "MEME",
+        "NEIRO",
+        "PNUT",
+        "BOME",
+        "MEW",
+        "TURBO",
+        "MOODENG",
+        "PEOPLE"
+      ],
+      "live_signals_now": []
+    },
+    {
+      "id": "FL_S",
+      "family": "flush_reversal",
+      "name": "Short after a short-squeeze spike up",
+      "reason": "Short squeezes overshoot; a long upper wick on huge volume shows sellers returning.",
+      "required_regime": [
+        "volatile",
+        "ranging",
+        "trending"
+      ],
+      "params": {
+        "dir": -1,
+        "range_atr": 3.0,
+        "vol_mult": 3.0,
+        "min_wick": 0.35
+      },
+      "exit": {
+        "stop_atr": 1.5,
+        "tp_r": 1.5,
+        "max_hold_h": 24
+      },
+      "tunable": [
+        "range_atr",
+        "vol_mult"
+      ],
+      "coins_in_required_regime_now_4h": [
+        "DOGE",
+        "SHIB",
+        "PEPE",
+        "WIF",
+        "BONK",
+        "FLOKI",
+        "BRETT",
+        "POPCAT",
+        "TRUMP",
+        "FARTCOIN",
+        "PENGU",
+        "SPX",
+        "MEME",
+        "NEIRO",
+        "PNUT",
+        "BOME",
+        "MEW",
+        "TURBO",
+        "MOODENG",
+        "PEOPLE"
+      ],
+      "live_signals_now": []
+    },
+    {
+      "id": "FUND_S",
+      "family": "funding_extreme",
+      "name": "Short when funding is extreme positive after a run-up",
+      "reason": "Very high funding means crowded leveraged longs paying to stay in; they unwind fast.",
+      "required_regime": [
+        "trending",
+        "volatile",
+        "ranging"
+      ],
+      "params": {
+        "dir": -1,
+        "fund_thr": 0.02,
+        "mom_h": 24,
+        "mom_pct": 5
+      },
+      "exit": {
+        "stop_atr": 1.5,
+        "tp_r": 2.0,
+        "max_hold_h": 48
+      },
+      "tunable": [
+        "fund_thr",
+        "mom_pct"
+      ],
+      "coins_in_required_regime_now_4h": [
+        "DOGE",
+        "SHIB",
+        "PEPE",
+        "WIF",
+        "BONK",
+        "FLOKI",
+        "BRETT",
+        "POPCAT",
+        "TRUMP",
+        "FARTCOIN",
+        "PENGU",
+        "SPX",
+        "MEME",
+        "NEIRO",
+        "PNUT",
+        "BOME",
+        "MEW",
+        "TURBO",
+        "MOODENG",
+        "PEOPLE"
+      ],
+      "live_signals_now": []
+    },
+    {
+      "id": "FUND_L",
+      "family": "funding_extreme",
+      "name": "Long when funding is extreme negative after a dump",
+      "reason": "Deeply negative funding means crowded shorts; a green bar can start a squeeze.",
+      "required_regime": [
+        "trending",
+        "volatile",
+        "ranging"
+      ],
+      "params": {
+        "dir": 1,
+        "fund_thr": 0.02,
+        "mom_h": 24,
+        "mom_pct": 5
+      },
+      "exit": {
+        "stop_atr": 1.5,
+        "tp_r": 2.0,
+        "max_hold_h": 48
+      },
+      "tunable": [
+        "fund_thr",
+        "mom_pct"
+      ],
+      "coins_in_required_regime_now_4h": [
+        "DOGE",
+        "SHIB",
+        "PEPE",
+        "WIF",
+        "BONK",
+        "FLOKI",
+        "BRETT",
+        "POPCAT",
+        "TRUMP",
+        "FARTCOIN",
+        "PENGU",
+        "SPX",
+        "MEME",
+        "NEIRO",
+        "PNUT",
+        "BOME",
+        "MEW",
+        "TURBO",
+        "MOODENG",
+        "PEOPLE"
+      ],
+      "live_signals_now": []
+    },
+    {
+      "id": "OI_RALLY_S",
+      "family": "oi_divergence",
+      "name": "Short a rally that comes with falling open interest",
+      "reason": "Price up while OI falls is short covering, not new buying, so the rally lacks fuel.",
+      "required_regime": [
+        "ranging",
+        "trending",
+        "volatile"
+      ],
+      "params": {
+        "mode": "weak_rally_short",
+        "win_h": 24,
+        "px_pct": 6,
+        "oi_pct": 5
+      },
+      "exit": {
+        "stop_atr": 1.5,
+        "tp_r": 2.0,
+        "max_hold_h": 48
+      },
+      "tunable": [
+        "px_pct",
+        "oi_pct"
+      ],
+      "coins_in_required_regime_now_4h": [
+        "DOGE",
+        "SHIB",
+        "PEPE",
+        "WIF",
+        "BONK",
+        "FLOKI",
+        "BRETT",
+        "POPCAT",
+        "TRUMP",
+        "FARTCOIN",
+        "PENGU",
+        "SPX",
+        "MEME",
+        "NEIRO",
+        "PNUT",
+        "BOME",
+        "MEW",
+        "TURBO",
+        "MOODENG",
+        "PEOPLE"
+      ],
+      "live_signals_now": []
+    },
+    {
+      "id": "OI_DUMP_L",
+      "family": "oi_divergence",
+      "name": "Long after a dump that flushed open interest",
+      "reason": "Price down with OI collapsing means longs got liquidated; selling pressure is spent.",
+      "required_regime": [
+        "volatile",
+        "ranging"
+      ],
+      "params": {
+        "mode": "weak_dump_long",
+        "win_h": 24,
+        "px_pct": 8,
+        "oi_pct": 8
+      },
+      "exit": {
+        "stop_atr": 1.5,
+        "tp_r": 2.0,
+        "max_hold_h": 48
+      },
+      "tunable": [
+        "px_pct",
+        "oi_pct"
+      ],
+      "coins_in_required_regime_now_4h": [
+        "BRETT",
+        "SPX",
+        "MEW"
+      ],
+      "live_signals_now": []
+    },
+    {
+      "id": "OI_BO_L",
+      "family": "oi_divergence",
+      "name": "Breakout long confirmed by rising open interest",
+      "reason": "A breakout with fresh OI shows new positions entering, not just shorts covering.",
+      "required_regime": [
+        "trending",
+        "ranging"
+      ],
+      "params": {
+        "mode": "oi_breakout_long",
+        "win_h": 24,
+        "px_pct": 0,
+        "oi_pct": 5
+      },
+      "exit": {
+        "stop_atr": 1.5,
+        "tp_r": 2.0,
+        "max_hold_h": 48
+      },
+      "tunable": [
+        "oi_pct"
+      ],
+      "coins_in_required_regime_now_4h": [
+        "DOGE",
+        "SHIB",
+        "PEPE",
+        "WIF",
+        "BONK",
+        "FLOKI",
+        "BRETT",
+        "POPCAT",
+        "TRUMP",
+        "FARTCOIN",
+        "PENGU",
+        "SPX",
+        "MEME",
+        "NEIRO",
+        "PNUT",
+        "BOME",
+        "MEW",
+        "TURBO",
+        "MOODENG",
+        "PEOPLE"
+      ],
+      "live_signals_now": []
+    },
+    {
+      "id": "SESS_ASIA",
+      "family": "session_open",
+      "name": "Follow a strong Asia-open (00 UTC) bar",
+      "reason": "Asia open brings a wave of fresh flow; a strong first bar on volume often follows through.",
+      "required_regime": [
+        "trending",
+        "volatile",
+        "ranging"
+      ],
+      "params": {
+        "dir": 0,
+        "hour_utc": 0,
+        "body_atr": 0.8,
+        "vol_mult": 1.3
+      },
+      "exit": {
+        "stop_atr": 1.2,
+        "tp_r": 1.5,
+        "max_hold_h": 8
+      },
+      "tunable": [
+        "body_atr",
+        "vol_mult"
+      ],
+      "coins_in_required_regime_now_4h": [
+        "DOGE",
+        "SHIB",
+        "PEPE",
+        "WIF",
+        "BONK",
+        "FLOKI",
+        "BRETT",
+        "POPCAT",
+        "TRUMP",
+        "FARTCOIN",
+        "PENGU",
+        "SPX",
+        "MEME",
+        "NEIRO",
+        "PNUT",
+        "BOME",
+        "MEW",
+        "TURBO",
+        "MOODENG",
+        "PEOPLE"
+      ],
+      "live_signals_now": []
+    },
+    {
+      "id": "SESS_LDN",
+      "family": "session_open",
+      "name": "Follow a strong London-open (08 UTC) bar",
+      "reason": "London open adds European flow; a decisive first bar tends to set the day's direction.",
+      "required_regime": [
+        "trending",
+        "volatile",
+        "ranging"
+      ],
+      "params": {
+        "dir": 0,
+        "hour_utc": 8,
+        "body_atr": 0.8,
+        "vol_mult": 1.3
+      },
+      "exit": {
+        "stop_atr": 1.2,
+        "tp_r": 1.5,
+        "max_hold_h": 8
+      },
+      "tunable": [
+        "body_atr",
+        "vol_mult"
+      ],
+      "coins_in_required_regime_now_4h": [
+        "DOGE",
+        "SHIB",
+        "PEPE",
+        "WIF",
+        "BONK",
+        "FLOKI",
+        "BRETT",
+        "POPCAT",
+        "TRUMP",
+        "FARTCOIN",
+        "PENGU",
+        "SPX",
+        "MEME",
+        "NEIRO",
+        "PNUT",
+        "BOME",
+        "MEW",
+        "TURBO",
+        "MOODENG",
+        "PEOPLE"
+      ],
+      "live_signals_now": []
+    },
+    {
+      "id": "SESS_US",
+      "family": "session_open",
+      "name": "Follow a strong US-open (13-14 UTC) bar",
+      "reason": "US equity open is the heaviest flow window; a strong first bar often continues.",
+      "required_regime": [
+        "trending",
+        "volatile",
+        "ranging"
+      ],
+      "params": {
+        "dir": 0,
+        "hour_utc": 13,
+        "body_atr": 0.8,
+        "vol_mult": 1.3
+      },
+      "exit": {
+        "stop_atr": 1.2,
+        "tp_r": 1.5,
+        "max_hold_h": 8
+      },
+      "tunable": [
+        "body_atr",
+        "vol_mult"
+      ],
+      "coins_in_required_regime_now_4h": [
+        "DOGE",
+        "SHIB",
+        "PEPE",
+        "WIF",
+        "BONK",
+        "FLOKI",
+        "BRETT",
+        "POPCAT",
+        "TRUMP",
+        "FARTCOIN",
+        "PENGU",
+        "SPX",
+        "MEME",
+        "NEIRO",
+        "PNUT",
+        "BOME",
+        "MEW",
+        "TURBO",
+        "MOODENG",
+        "PEOPLE"
+      ],
+      "live_signals_now": []
+    },
+    {
+      "id": "LAG_L",
+      "family": "alt_lag_btc",
+      "name": "Long memes lagging a BTC rally",
+      "reason": "When BTC rallies in a bull regime, risk appetite spills into memes with a delay.",
+      "required_regime": [
+        "ranging",
+        "trending"
+      ],
+      "params": {
+        "dir": 1,
+        "win_h": 24,
+        "btc_pct": 3,
+        "lag_pct": 0.5
+      },
+      "exit": {
+        "stop_atr": 1.5,
+        "tp_r": 2.0,
+        "max_hold_h": 48
+      },
+      "tunable": [
+        "btc_pct",
+        "win_h"
+      ],
+      "coins_in_required_regime_now_4h": [
+        "DOGE",
+        "SHIB",
+        "PEPE",
+        "WIF",
+        "BONK",
+        "FLOKI",
+        "BRETT",
+        "POPCAT",
+        "TRUMP",
+        "FARTCOIN",
+        "PENGU",
+        "SPX",
+        "MEME",
+        "NEIRO",
+        "PNUT",
+        "BOME",
+        "MEW",
+        "TURBO",
+        "MOODENG",
+        "PEOPLE"
+      ],
+      "live_signals_now": []
+    },
+    {
+      "id": "LAG_S",
+      "family": "alt_lag_btc",
+      "name": "Short memes that haven't dropped yet as BTC falls",
+      "reason": "When BTC falls in a bear regime, memes usually follow down harder with a delay.",
+      "required_regime": [
+        "ranging",
+        "trending"
+      ],
+      "params": {
+        "dir": -1,
+        "win_h": 24,
+        "btc_pct": 3,
+        "lag_pct": 0.5
+      },
+      "exit": {
+        "stop_atr": 1.5,
+        "tp_r": 2.0,
+        "max_hold_h": 48
+      },
+      "tunable": [
+        "btc_pct",
+        "win_h"
+      ],
+      "coins_in_required_regime_now_4h": [
+        "DOGE",
+        "SHIB",
+        "PEPE",
+        "WIF",
+        "BONK",
+        "FLOKI",
+        "BRETT",
+        "POPCAT",
+        "TRUMP",
+        "FARTCOIN",
+        "PENGU",
+        "SPX",
+        "MEME",
+        "NEIRO",
+        "PNUT",
+        "BOME",
+        "MEW",
+        "TURBO",
+        "MOODENG",
+        "PEOPLE"
+      ],
+      "live_signals_now": []
+    },
+    {
+      "id": "MR_L",
+      "family": "rsi_meanrev",
+      "name": "Oversold bounce long in a flat market",
+      "reason": "Without a trend (low ADX), oversold readings tend to snap back to the mean.",
+      "required_regime": [
+        "ranging"
+      ],
+      "params": {
+        "dir": 1,
+        "rsi_lvl": 30,
+        "adx_max": 25
+      },
+      "exit": {
+        "stop_atr": 1.5,
+        "tp_r": 1.5,
+        "max_hold_h": 24
+      },
+      "tunable": [
+        "rsi_lvl",
+        "adx_max"
+      ],
+      "coins_in_required_regime_now_4h": [
+        "BRETT",
+        "SPX",
+        "MEW"
+      ],
+      "live_signals_now": []
+    },
+    {
+      "id": "MR_S",
+      "family": "rsi_meanrev",
+      "name": "Overbought fade short in a flat market",
+      "reason": "Without a trend, overbought pops in memes get sold back into the range.",
+      "required_regime": [
+        "ranging"
+      ],
+      "params": {
+        "dir": -1,
+        "rsi_lvl": 30,
+        "adx_max": 25
+      },
+      "exit": {
+        "stop_atr": 1.5,
+        "tp_r": 1.5,
+        "max_hold_h": 24
+      },
+      "tunable": [
+        "rsi_lvl",
+        "adx_max"
+      ],
+      "coins_in_required_regime_now_4h": [
+        "BRETT",
+        "SPX",
+        "MEW"
+      ],
+      "live_signals_now": []
+    },
+    {
+      "id": "BBSQ_L",
+      "family": "bb_squeeze",
+      "name": "Bollinger squeeze breakout long",
+      "reason": "Volatility compresses before expansion; the first close outside the band picks a side.",
+      "required_regime": [
+        "ranging",
+        "trending"
+      ],
+      "params": {
+        "dir": 1,
+        "squeeze_h": 120,
+        "tol": 0.1
+      },
+      "exit": {
+        "stop_atr": 1.5,
+        "tp_r": 2.5,
+        "max_hold_h": 72
+      },
+      "tunable": [
+        "squeeze_h",
+        "tol"
+      ],
+      "coins_in_required_regime_now_4h": [
+        "DOGE",
+        "SHIB",
+        "PEPE",
+        "WIF",
+        "BONK",
+        "FLOKI",
+        "BRETT",
+        "POPCAT",
+        "TRUMP",
+        "FARTCOIN",
+        "PENGU",
+        "SPX",
+        "MEME",
+        "NEIRO",
+        "PNUT",
+        "BOME",
+        "MEW",
+        "TURBO",
+        "MOODENG",
+        "PEOPLE"
+      ],
+      "live_signals_now": []
+    },
+    {
+      "id": "BBSQ_S",
+      "family": "bb_squeeze",
+      "name": "Bollinger squeeze breakdown short",
+      "reason": "Same volatility-expansion logic, taking the downside break.",
+      "required_regime": [
+        "ranging",
+        "trending"
+      ],
+      "params": {
+        "dir": -1,
+        "squeeze_h": 120,
+        "tol": 0.1
+      },
+      "exit": {
+        "stop_atr": 1.5,
+        "tp_r": 2.5,
+        "max_hold_h": 72
+      },
+      "tunable": [
+        "squeeze_h",
+        "tol"
+      ],
+      "coins_in_required_regime_now_4h": [
+        "DOGE",
+        "SHIB",
+        "PEPE",
+        "WIF",
+        "BONK",
+        "FLOKI",
+        "BRETT",
+        "POPCAT",
+        "TRUMP",
+        "FARTCOIN",
+        "PENGU",
+        "SPX",
+        "MEME",
+        "NEIRO",
+        "PNUT",
+        "BOME",
+        "MEW",
+        "TURBO",
+        "MOODENG",
+        "PEOPLE"
+      ],
+      "live_signals_now": []
+    },
+    {
+      "id": "EMAX_L",
+      "family": "ema_cross",
+      "name": "EMA 20/50 golden cross long, only when BTC is above its 200 EMA",
+      "reason": "Trend changes in memes work best when the whole market is risk-on.",
+      "required_regime": [
+        "trending",
+        "ranging"
+      ],
+      "params": {
+        "dir": 1,
+        "fast": 20,
+        "slow": 50
+      },
+      "exit": {
+        "stop_atr": 2.0,
+        "tp_r": 3.0,
+        "max_hold_h": 168
+      },
+      "tunable": [
+        "fast",
+        "slow"
+      ],
+      "coins_in_required_regime_now_4h": [
+        "DOGE",
+        "SHIB",
+        "PEPE",
+        "WIF",
+        "BONK",
+        "FLOKI",
+        "BRETT",
+        "POPCAT",
+        "TRUMP",
+        "FARTCOIN",
+        "PENGU",
+        "SPX",
+        "MEME",
+        "NEIRO",
+        "PNUT",
+        "BOME",
+        "MEW",
+        "TURBO",
+        "MOODENG",
+        "PEOPLE"
+      ],
+      "live_signals_now": []
+    },
+    {
+      "id": "EMAX_S",
+      "family": "ema_cross",
+      "name": "EMA 20/50 death cross short, only when BTC is below its 200 EMA",
+      "reason": "Meme downtrends accelerate when BTC is also in a bear regime.",
+      "required_regime": [
+        "trending",
+        "ranging"
+      ],
+      "params": {
+        "dir": -1,
+        "fast": 20,
+        "slow": 50
+      },
+      "exit": {
+        "stop_atr": 2.0,
+        "tp_r": 3.0,
+        "max_hold_h": 168
+      },
+      "tunable": [
+        "fast",
+        "slow"
+      ],
+      "coins_in_required_regime_now_4h": [
+        "DOGE",
+        "SHIB",
+        "PEPE",
+        "WIF",
+        "BONK",
+        "FLOKI",
+        "BRETT",
+        "POPCAT",
+        "TRUMP",
+        "FARTCOIN",
+        "PENGU",
+        "SPX",
+        "MEME",
+        "NEIRO",
+        "PNUT",
+        "BOME",
+        "MEW",
+        "TURBO",
+        "MOODENG",
+        "PEOPLE"
+      ],
+      "live_signals_now": []
+    },
+    {
+      "id": "PUMP_FADE",
+      "family": "pump_fade",
+      "name": "Fade a +30%/24h pump on the first red bar",
+      "reason": "Meme pumps are driven by late FOMO buyers who become forced sellers once momentum stalls.",
+      "required_regime": [
+        "volatile",
+        "trending"
+      ],
+      "params": {
+        "dir": -1,
+        "win_h": 24,
+        "move_pct": 30,
+        "rsi_min": 65
+      },
+      "exit": {
+        "stop_atr": 2.0,
+        "tp_r": 2.0,
+        "max_hold_h": 48
+      },
+      "tunable": [
+        "move_pct",
+        "rsi_min"
+      ],
+      "coins_in_required_regime_now_4h": [
+        "DOGE",
+        "SHIB",
+        "PEPE",
+        "WIF",
+        "BONK",
+        "FLOKI",
+        "POPCAT",
+        "TRUMP",
+        "FARTCOIN",
+        "PENGU",
+        "MEME",
+        "NEIRO",
+        "PNUT",
+        "BOME",
+        "TURBO",
+        "MOODENG",
+        "PEOPLE"
+      ],
+      "live_signals_now": []
+    },
+    {
+      "id": "DUMP_BOUNCE",
+      "family": "pump_fade",
+      "name": "Buy the first green bar after a -25%/24h dump",
+      "reason": "Panic dumps overshoot as stops cascade; the first green bar shows sellers exhausted.",
+      "required_regime": [
+        "volatile",
+        "trending"
+      ],
+      "params": {
+        "dir": 1,
+        "win_h": 24,
+        "move_pct": 25,
+        "rsi_min": 65
+      },
+      "exit": {
+        "stop_atr": 2.0,
+        "tp_r": 1.5,
+        "max_hold_h": 24
+      },
+      "tunable": [
+        "move_pct",
+        "rsi_min"
+      ],
+      "coins_in_required_regime_now_4h": [
+        "DOGE",
+        "SHIB",
+        "PEPE",
+        "WIF",
+        "BONK",
+        "FLOKI",
+        "POPCAT",
+        "TRUMP",
+        "FARTCOIN",
+        "PENGU",
+        "MEME",
+        "NEIRO",
+        "PNUT",
+        "BOME",
+        "TURBO",
+        "MOODENG",
+        "PEOPLE"
+      ],
+      "live_signals_now": []
+    },
+    {
+      "id": "CONT_L",
+      "family": "contraction_continuation",
+      "name": "Uptrend volatility-contraction breakout long",
+      "reason": "A quiet pause inside an uptrend that breaks higher is the trend resuming.",
+      "required_regime": [
+        "trending",
+        "ranging"
+      ],
+      "params": {
+        "dir": 1,
+        "lookback_h": 24,
+        "contract": 0.8
+      },
+      "exit": {
+        "stop_atr": 1.5,
+        "tp_r": 2.5,
+        "max_hold_h": 72
+      },
+      "tunable": [
+        "lookback_h",
+        "contract"
+      ],
+      "coins_in_required_regime_now_4h": [
+        "DOGE",
+        "SHIB",
+        "PEPE",
+        "WIF",
+        "BONK",
+        "FLOKI",
+        "BRETT",
+        "POPCAT",
+        "TRUMP",
+        "FARTCOIN",
+        "PENGU",
+        "SPX",
+        "MEME",
+        "NEIRO",
+        "PNUT",
+        "BOME",
+        "MEW",
+        "TURBO",
+        "MOODENG",
+        "PEOPLE"
+      ],
+      "live_signals_now": []
+    },
+    {
+      "id": "CONT_S",
+      "family": "contraction_continuation",
+      "name": "Downtrend volatility-contraction breakdown short",
+      "reason": "A quiet pause inside a downtrend that breaks lower is the trend resuming.",
+      "required_regime": [
+        "trending",
+        "ranging"
+      ],
+      "params": {
+        "dir": -1,
+        "lookback_h": 24,
+        "contract": 0.8
+      },
+      "exit": {
+        "stop_atr": 1.5,
+        "tp_r": 2.5,
+        "max_hold_h": 72
+      },
+      "tunable": [
+        "lookback_h",
+        "contract"
+      ],
+      "coins_in_required_regime_now_4h": [
+        "DOGE",
+        "SHIB",
+        "PEPE",
+        "WIF",
+        "BONK",
+        "FLOKI",
+        "BRETT",
+        "POPCAT",
+        "TRUMP",
+        "FARTCOIN",
+        "PENGU",
+        "SPX",
+        "MEME",
+        "NEIRO",
+        "PNUT",
+        "BOME",
+        "MEW",
+        "TURBO",
+        "MOODENG",
+        "PEOPLE"
+      ],
+      "live_signals_now": []
+    },
+    {
+      "id": "BTCG_S",
+      "family": "btc_gated_breakdown",
+      "name": "48h-low breakdown short only while BTC is below its 200 EMA",
+      "reason": "In a BTC bear regime, buyers of memes disappear and fresh lows tend to keep going.",
+      "required_regime": [
+        "trending",
+        "volatile",
+        "ranging"
+      ],
+      "params": {
+        "lookback_h": 48,
+        "vol_mult": 1.2
+      },
+      "exit": {
+        "stop_atr": 2.0,
+        "tp_r": 2.0,
+        "max_hold_h": 72
+      },
+      "tunable": [
+        "lookback_h",
+        "vol_mult"
+      ],
+      "coins_in_required_regime_now_4h": [
+        "DOGE",
+        "SHIB",
+        "PEPE",
+        "WIF",
+        "BONK",
+        "FLOKI",
+        "BRETT",
+        "POPCAT",
+        "TRUMP",
+        "FARTCOIN",
+        "PENGU",
+        "SPX",
+        "MEME",
+        "NEIRO",
+        "PNUT",
+        "BOME",
+        "MEW",
+        "TURBO",
+        "MOODENG",
+        "PEOPLE"
+      ],
+      "live_signals_now": []
+    }
+  ],
+  "setup_count": 31,
+  "news": {
+    "status": "scanned",
+    "scanned_hst": "2026-11-18 20:58 HST",
+    "method": "X News search (last 48h) + web search; summaries paraphrase source headlines, nothing invented",
+    "no_specific_news_found_for": [
+      "BOME",
+      "FARTCOIN",
+      "POPCAT",
+      "NEIRO",
+      "PNUT",
+      "MOODENG",
+      "WIF",
+      "FLOKI",
+      "BONK",
+      "PEPE",
+      "TURBO",
+      "PEOPLE",
+      "BRETT",
+      "SHIB",
+      "MEW"
+    ],
+    "items": [
+      {
+        "coins": [
+          "TRUMP"
+        ],
+        "headline": "President Trump's meme coin hits new lows after midterms (search summary: near $0.90 amid post-midterm selling, subpoena concerns and upcoming unlocks)",
+        "source": "Decrypt",
+        "url": "https://decrypt.co/383524/doomed-from-the-start-president-trumps-meme-coin-hits-new-lows-after-midterms",
+        "channel": "web"
+      },
+      {
+        "coins": [
+          "PENGU"
+        ],
+        "headline": "PENGU fell ~20% on Nov 14 to lowest close since April 2025; Abstract chain wind-down and monthly insider unlocks weigh",
+        "source": "MABOnChain",
+        "url": "https://mabonchain.com/news/pengu-falls-20-percent-lowest-close-since-april-abstract-wind-down/",
+        "channel": "web"
+      },
+      {
+        "coins": [
+          "PENGU"
+        ],
+        "headline": "Leveraged PENGU bets add $5.8M in four days; perp OI up 18.2% to $37.7M",
+        "source": "OptimistFi",
+        "url": "https://optimistfi.com/perps/news/pengu-perp-contracts-grow-18-2-over-four-days",
+        "channel": "web"
+      },
+      {
+        "coins": [
+          "DOGE"
+        ],
+        "headline": "Dogecoin price forecast: DOGE stuck in bearish trend after new lows",
+        "source": "FXStreet",
+        "url": "https://www.fxstreet.com/cryptocurrencies/news/dogecoin-price-forecast-doge-stuck-in-bearish-trend-after-new-lows-202611180458",
+        "channel": "web"
+      },
+      {
+        "coins": [
+          "DOGE"
+        ],
+        "headline": "Dogecoin ETFs haven't taken in a dollar since October",
+        "source": "BeInCrypto",
+        "url": "https://beincrypto.com/dogecoin-etfs-stall-whales-keep-buying/",
+        "channel": "web"
+      },
+      {
+        "coins": [
+          "DOGE"
+        ],
+        "headline": "DogeOS 'very, very close' to launching DeFi features/app layer; no mainnet date set (Nov 11)",
+        "source": "The Block",
+        "url": "https://www.theblock.co/news/defi/2026-11-11-dogeos-very-very-close-launching-defi-features-app-layer-dogecoin-ceo-438392",
+        "channel": "web"
+      },
+      {
+        "coins": [
+          "SECTOR"
+        ],
+        "headline": "GTA 6-inspired DCTY Solana meme coin spikes after leaked footage shows in-game ticker; trader turns $307 into $202,278",
+        "source": "crypto.news / Decrypt",
+        "url": "https://crypto.news/gta-6-dcty-meme-coin-trade/",
+        "channel": "web"
+      },
+      {
+        "coins": [
+          "SPX"
+        ],
+        "headline": "SPX6900 community sticks to daily token buys amid price dip",
+        "source": "X News",
+        "channel": "x",
+        "updated_utc": "2026-11-18T03:18:57Z",
+        "x_news_story_id": "2122850638203928974"
+      },
+      {
+        "coins": [
+          "SECTOR"
+        ],
+        "headline": "Traders question whether memecoin days are over and perps potential",
+        "source": "X News",
+        "channel": "x",
+        "updated_utc": "2026-11-18T13:30:42Z",
+        "x_news_story_id": "2123045056504586375"
+      },
+      {
+        "coins": [
+          "SECTOR"
+        ],
+        "headline": "William Shatner calls out Pump.fun for scam coins exploiting his charity",
+        "source": "X News",
+        "channel": "x",
+        "updated_utc": "2026-11-18T20:58:08Z",
+        "x_news_story_id": "2123104088896459194"
+      },
+      {
+        "coins": [
+          "SECTOR"
+        ],
+        "headline": "Altcoins in deep crisis after 2025 peak losses (27 of top 40 altcoins down >50%, per Crypto Rover)",
+        "source": "X News",
+        "channel": "x",
+        "updated_utc": "2026-11-17T16:22:49Z",
+        "x_news_story_id": "2122683202628407619"
+      },
+      {
+        "coins": [
+          "MEME"
+        ],
+        "headline": "No OKX delisting announcement found for MEME-USDT-SWAP in search results; still listed",
+        "source": "OKX / web search",
+        "url": "https://www.okx.com/en-us/help/section/announcements-delistings",
+        "channel": "web"
+      }
+    ]
+  },
+  "coingecko_crosscheck": {
+    "DOGE": {
+      "status": "ok",
+      "points_compared": 169,
+      "median_abs_price_diff_pct": 0.028,
+      "max_abs_price_diff_pct": 0.192,
+      "okx_perp_vol_24h_usd": 130625190,
+      "coingecko_all_venue_vol_24h_usd": 366553349,
+      "flag": false
+    },
+    "SHIB": {
+      "status": "ok",
+      "points_compared": 168,
+      "median_abs_price_diff_pct": 0.044,
+      "max_abs_price_diff_pct": 0.211,
+      "okx_perp_vol_24h_usd": 5691734,
+      "coingecko_all_venue_vol_24h_usd": 41802737,
+      "flag": false
+    },
+    "PEPE": {
+      "status": "ok",
+      "points_compared": 168,
+      "median_abs_price_diff_pct": 0.046,
+      "max_abs_price_diff_pct": 0.228,
+      "okx_perp_vol_24h_usd": 108376349,
+      "coingecko_all_venue_vol_24h_usd": 186465480,
+      "flag": false
+    },
+    "WIF": {
+      "status": "ok",
+      "points_compared": 169,
+      "median_abs_price_diff_pct": 0.101,
+      "max_abs_price_diff_pct": 0.397,
+      "okx_perp_vol_24h_usd": 2475216,
+      "coingecko_all_venue_vol_24h_usd": 22345442,
+      "flag": false
+    },
+    "BONK": {
+      "status": "ok",
+      "points_compared": 168,
+      "median_abs_price_diff_pct": 0.109,
+      "max_abs_price_diff_pct": 0.458,
+      "okx_perp_vol_24h_usd": 1160095,
+      "coingecko_all_venue_vol_24h_usd": 23148993,
+      "flag": false
+    },
+    "FLOKI": {
+      "status": "ok",
+      "points_compared": 169,
+      "median_abs_price_diff_pct": 0.105,
+      "max_abs_price_diff_pct": 0.55,
+      "okx_perp_vol_24h_usd": 475727,
+      "coingecko_all_venue_vol_24h_usd": 11397616,
+      "flag": false
+    },
+    "BRETT": {
+      "status": "ok",
+      "points_compared": 169,
+      "median_abs_price_diff_pct": 0.155,
+      "max_abs_price_diff_pct": 0.707,
+      "okx_perp_vol_24h_usd": 139171,
+      "coingecko_all_venue_vol_24h_usd": 3100519,
+      "flag": false
+    },
+    "POPCAT": {
+      "status": "ok",
+      "points_compared": 168,
+      "median_abs_price_diff_pct": 0.12,
+      "max_abs_price_diff_pct": 0.492,
+      "okx_perp_vol_24h_usd": 223818,
+      "coingecko_all_venue_vol_24h_usd": 4217001,
+      "flag": false
+    },
+    "TRUMP": {
+      "status": "ok",
+      "points_compared": 168,
+      "median_abs_price_diff_pct": 0.063,
+      "max_abs_price_diff_pct": 0.353,
+      "okx_perp_vol_24h_usd": 37102274,
+      "coingecko_all_venue_vol_24h_usd": 72381194,
+      "flag": false
+    },
+    "FARTCOIN": {
+      "status": "ok",
+      "points_compared": 169,
+      "median_abs_price_diff_pct": 0.098,
+      "max_abs_price_diff_pct": 0.345,
+      "okx_perp_vol_24h_usd": 3708340,
+      "coingecko_all_venue_vol_24h_usd": 15235251,
+      "flag": false
+    },
+    "PENGU": {
+      "status": "ok",
+      "points_compared": 168,
+      "median_abs_price_diff_pct": 0.074,
+      "max_abs_price_diff_pct": 0.966,
+      "okx_perp_vol_24h_usd": 10594930,
+      "coingecko_all_venue_vol_24h_usd": 56518281,
+      "flag": false
+    },
+    "SPX": {
+      "status": "ok",
+      "points_compared": 169,
+      "median_abs_price_diff_pct": 0.072,
+      "max_abs_price_diff_pct": 0.411,
+      "okx_perp_vol_24h_usd": 799002,
+      "coingecko_all_venue_vol_24h_usd": 3720918,
+      "flag": false
+    },
+    "MEME": {
+      "status": "ok",
+      "points_compared": 169,
+      "median_abs_price_diff_pct": 0.112,
+      "max_abs_price_diff_pct": 1.113,
+      "okx_perp_vol_24h_usd": 528881,
+      "coingecko_all_venue_vol_24h_usd": 4414870,
+      "flag": false
+    },
+    "NEIRO": {
+      "status": "ok",
+      "points_compared": 169,
+      "median_abs_price_diff_pct": 0.069,
+      "max_abs_price_diff_pct": 0.875,
+      "okx_perp_vol_24h_usd": 761287,
+      "coingecko_all_venue_vol_24h_usd": 3266149,
+      "flag": false
+    },
+    "PNUT": {
+      "status": "ok",
+      "points_compared": 169,
+      "median_abs_price_diff_pct": 0.099,
+      "max_abs_price_diff_pct": 0.651,
+      "okx_perp_vol_24h_usd": 1319512,
+      "coingecko_all_venue_vol_24h_usd": 4638009,
+      "flag": false
+    },
+    "BOME": {
+      "status": "ok",
+      "points_compared": 169,
+      "median_abs_price_diff_pct": 0.043,
+      "max_abs_price_diff_pct": 0.276,
+      "okx_perp_vol_24h_usd": 2227896,
+      "coingecko_all_venue_vol_24h_usd": 6023232,
+      "flag": false
+    },
+    "MEW": {
+      "status": "ok",
+      "points_compared": 169,
+      "median_abs_price_diff_pct": 0.085,
+      "max_abs_price_diff_pct": 0.43,
+      "okx_perp_vol_24h_usd": 360070,
+      "coingecko_all_venue_vol_24h_usd": 1497549,
+      "flag": false
+    },
+    "TURBO": {
+      "status": "ok",
+      "points_compared": 169,
+      "median_abs_price_diff_pct": 0.091,
+      "max_abs_price_diff_pct": 0.385,
+      "okx_perp_vol_24h_usd": 230298,
+      "coingecko_all_venue_vol_24h_usd": 3391997,
+      "flag": false
+    },
+    "MOODENG": {
+      "status": "ok",
+      "points_compared": 169,
+      "median_abs_price_diff_pct": 0.108,
+      "max_abs_price_diff_pct": 0.397,
+      "okx_perp_vol_24h_usd": 1087073,
+      "coingecko_all_venue_vol_24h_usd": 6269076,
+      "flag": false
+    },
+    "PEOPLE": {
+      "status": "ok",
+      "points_compared": 169,
+      "median_abs_price_diff_pct": 0.114,
+      "max_abs_price_diff_pct": 0.358,
+      "okx_perp_vol_24h_usd": 1062802,
+      "coingecko_all_venue_vol_24h_usd": 4745372,
+      "flag": false
+    },
+    "BTC": {
+      "status": "ok",
+      "points_compared": 169,
+      "median_abs_price_diff_pct": 0.041,
+      "max_abs_price_diff_pct": 0.314,
+      "okx_perp_vol_24h_usd": 8007233748,
+      "coingecko_all_venue_vol_24h_usd": 30921810917,
+      "flag": false
+    }
+  },
+  "data_coverage": {
+    "MOODENG": {
+      "exhausted": true,
+      "bars_1h": 18647,
+      "start_utc": "2024-10-03T07:00:00+00:00",
+      "end_utc": "2026-11-19T05:00:00+00:00",
+      "start_is_listing_or_okx_limit": true,
+      "added_rows": 99,
+      "delisted_or_stale": false,
+      "missing_1h_bars": 0,
+      "funding_rows": 563,
+      "funding_start_utc": "2026-08-17T12:00:00+00:00",
+      "funding_interval_h": 4.0,
+      "oi_rows": 1445,
+      "oi_start_utc": "2026-09-20T02:00:00+00:00"
+    },
+    "_updated_utc": "2026-11-19T06:53:24.896665+00:00",
+    "WIF": {
+      "exhausted": true,
+      "bars_1h": 22749,
+      "start_utc": "2024-04-15T09:00:00+00:00",
+      "end_utc": "2026-11-19T05:00:00+00:00",
+      "start_is_listing_or_okx_limit": true,
+      "added_rows": 99,
+      "delisted_or_stale": false,
+      "missing_1h_bars": 0,
+      "funding_rows": 564,
+      "funding_start_utc": "2026-08-17T08:00:00+00:00",
+      "funding_interval_h": 4.0,
+      "oi_rows": 1445,
+      "oi_start_utc": "2026-09-20T02:00:00+00:00"
+    },
+    "PEPE": {
+      "exhausted": true,
+      "bars_1h": 31107,
+      "start_utc": "2023-05-03T03:00:00+00:00",
+      "end_utc": "2026-11-19T05:00:00+00:00",
+      "start_is_listing_or_okx_limit": true,
+      "added_rows": 99,
+      "delisted_or_stale": false,
+      "missing_1h_bars": 0,
+      "funding_rows": 281,
+      "funding_start_utc": "2026-08-17T16:00:00+00:00",
+      "funding_interval_h": 8.0,
+      "oi_rows": 1445,
+      "oi_start_utc": "2026-09-20T02:00:00+00:00"
+    },
+    "DOGE": {
+      "exhausted": true,
+      "bars_1h": 35063,
+      "start_utc": "2022-11-19T07:00:00+00:00",
+      "end_utc": "2026-11-19T05:00:00+00:00",
+      "start_is_listing_or_okx_limit": false,
+      "added_rows": 99,
+      "delisted_or_stale": false,
+      "missing_1h_bars": 0,
+      "funding_rows": 282,
+      "funding_start_utc": "2026-08-17T08:00:00+00:00",
+      "funding_interval_h": 8.0,
+      "oi_rows": 1445,
+      "oi_start_utc": "2026-09-20T02:00:00+00:00"
+    },
+    "SHIB": {
+      "exhausted": true,
+      "bars_1h": 35063,
+      "start_utc": "2022-11-19T07:00:00+00:00",
+      "end_utc": "2026-11-19T05:00:00+00:00",
+      "start_is_listing_or_okx_limit": false,
+      "added_rows": 99,
+      "delisted_or_stale": false,
+      "missing_1h_bars": 0,
+      "funding_rows": 282,
+      "funding_start_utc": "2026-08-17T08:00:00+00:00",
+      "funding_interval_h": 8.0,
+      "oi_rows": 1445,
+      "oi_start_utc": "2026-09-20T02:00:00+00:00"
+    },
+    "BONK": {
+      "exhausted": true,
+      "bars_1h": 25104,
+      "start_utc": "2024-01-08T06:00:00+00:00",
+      "end_utc": "2026-11-19T05:00:00+00:00",
+      "start_is_listing_or_okx_limit": true,
+      "added_rows": 99,
+      "delisted_or_stale": false,
+      "missing_1h_bars": 0,
+      "funding_rows": 281,
+      "funding_start_utc": "2026-08-17T16:00:00+00:00",
+      "funding_interval_h": 8.0,
+      "oi_rows": 1445,
+      "oi_start_utc": "2026-09-20T02:00:00+00:00"
+    },
+    "BRETT": {
+      "exhausted": true,
+      "bars_1h": 19292,
+      "start_utc": "2024-09-06T10:00:00+00:00",
+      "end_utc": "2026-11-19T05:00:00+00:00",
+      "start_is_listing_or_okx_limit": true,
+      "added_rows": 99,
+      "delisted_or_stale": false,
+      "missing_1h_bars": 0,
+      "funding_rows": 563,
+      "funding_start_utc": "2026-08-17T12:00:00+00:00",
+      "funding_interval_h": 4.0,
+      "oi_rows": 1445,
+      "oi_start_utc": "2026-09-20T02:00:00+00:00"
+    },
+    "POPCAT": {
+      "exhausted": true,
+      "bars_1h": 19485,
+      "start_utc": "2024-08-29T09:00:00+00:00",
+      "end_utc": "2026-11-19T05:00:00+00:00",
+      "start_is_listing_or_okx_limit": true,
+      "added_rows": 99,
+      "delisted_or_stale": false,
+      "missing_1h_bars": 0,
+      "funding_rows": 563,
+      "funding_start_utc": "2026-08-17T12:00:00+00:00",
+      "funding_interval_h": 4.0,
+      "oi_rows": 1445,
+      "oi_start_utc": "2026-09-20T02:00:00+00:00"
+    },
+    "FLOKI": {
+      "exhausted": true,
+      "bars_1h": 32832,
+      "start_utc": "2023-02-20T06:00:00+00:00",
+      "end_utc": "2026-11-19T05:00:00+00:00",
+      "start_is_listing_or_okx_limit": true,
+      "added_rows": 99,
+      "delisted_or_stale": false,
+      "missing_1h_bars": 0,
+      "funding_rows": 282,
+      "funding_start_utc": "2026-08-17T08:00:00+00:00",
+      "funding_interval_h": 8.0,
+      "oi_rows": 1445,
+      "oi_start_utc": "2026-09-20T02:00:00+00:00"
+    },
+    "TRUMP": {
+      "exhausted": true,
+      "bars_1h": 16057,
+      "start_utc": "2025-01-19T05:00:00+00:00",
+      "end_utc": "2026-11-19T05:00:00+00:00",
+      "start_is_listing_or_okx_limit": true,
+      "added_rows": 99,
+      "delisted_or_stale": false,
+      "missing_1h_bars": 0,
+      "funding_rows": 563,
+      "funding_start_utc": "2026-08-17T12:00:00+00:00",
+      "funding_interval_h": 4.0,
+      "oi_rows": 1445,
+      "oi_start_utc": "2026-09-20T02:00:00+00:00"
+    },
+    "FARTCOIN": {
+      "exhausted": true,
+      "bars_1h": 16773,
+      "start_utc": "2024-12-20T09:00:00+00:00",
+      "end_utc": "2026-11-19T05:00:00+00:00",
+      "start_is_listing_or_okx_limit": true,
+      "added_rows": 99,
+      "delisted_or_stale": false,
+      "missing_1h_bars": 0,
+      "funding_rows": 563,
+      "funding_start_utc": "2026-08-17T12:00:00+00:00",
+      "funding_interval_h": 4.0,
+      "oi_rows": 1445,
+      "oi_start_utc": "2026-09-20T02:00:00+00:00"
+    },
+    "PENGU": {
+      "exhausted": true,
+      "bars_1h": 16839,
+      "start_utc": "2024-12-17T15:00:00+00:00",
+      "end_utc": "2026-11-19T05:00:00+00:00",
+      "start_is_listing_or_okx_limit": true,
+      "added_rows": 99,
+      "delisted_or_stale": false,
+      "missing_1h_bars": 0,
+      "funding_rows": 563,
+      "funding_start_utc": "2026-08-17T12:00:00+00:00",
+      "funding_interval_h": 4.0,
+      "oi_rows": 1445,
+      "oi_start_utc": "2026-09-20T02:00:00+00:00"
+    },
+    "SPX": {
+      "exhausted": true,
+      "bars_1h": 11761,
+      "start_utc": "2025-07-17T05:00:00+00:00",
+      "end_utc": "2026-11-19T05:00:00+00:00",
+      "start_is_listing_or_okx_limit": true,
+      "added_rows": 99,
+      "delisted_or_stale": false,
+      "missing_1h_bars": 0,
+      "funding_rows": 564,
+      "funding_start_utc": "2026-08-17T08:00:00+00:00",
+      "funding_interval_h": 4.0,
+      "oi_rows": 1445,
+      "oi_start_utc": "2026-09-20T02:00:00+00:00"
+    },
+    "NEIRO": {
+      "exhausted": true,
+      "bars_1h": 18647,
+      "start_utc": "2024-10-03T07:00:00+00:00",
+      "end_utc": "2026-11-19T05:00:00+00:00",
+      "start_is_listing_or_okx_limit": true,
+      "added_rows": 99,
+      "delisted_or_stale": false,
+      "missing_1h_bars": 0,
+      "funding_rows": 564,
+      "funding_start_utc": "2026-08-17T08:00:00+00:00",
+      "funding_interval_h": 4.0,
+      "oi_rows": 1445,
+      "oi_start_utc": "2026-09-20T02:00:00+00:00"
+    },
+    "MEME": {
+      "exhausted": true,
+      "bars_1h": 26686,
+      "start_utc": "2023-11-03T08:00:00+00:00",
+      "end_utc": "2026-11-19T05:00:00+00:00",
+      "start_is_listing_or_okx_limit": true,
+      "added_rows": 99,
+      "delisted_or_stale": false,
+      "missing_1h_bars": 0,
+      "funding_rows": 563,
+      "funding_start_utc": "2026-08-17T12:00:00+00:00",
+      "funding_interval_h": 4.0,
+      "oi_rows": 1445,
+      "oi_start_utc": "2026-09-20T02:00:00+00:00"
+    },
+    "PNUT": {
+      "exhausted": true,
+      "bars_1h": 17691,
+      "start_utc": "2024-11-12T03:00:00+00:00",
+      "end_utc": "2026-11-19T05:00:00+00:00",
+      "start_is_listing_or_okx_limit": true,
+      "added_rows": 99,
+      "delisted_or_stale": false,
+      "missing_1h_bars": 0,
+      "funding_rows": 563,
+      "funding_start_utc": "2026-08-17T12:00:00+00:00",
+      "funding_interval_h": 4.0,
+      "oi_rows": 1445,
+      "oi_start_utc": "2026-09-20T02:00:00+00:00"
+    },
+    "BOME": {
+      "exhausted": true,
+      "bars_1h": 19820,
+      "start_utc": "2024-08-15T10:00:00+00:00",
+      "end_utc": "2026-11-19T05:00:00+00:00",
+      "start_is_listing_or_okx_limit": true,
+      "added_rows": 99,
+      "delisted_or_stale": false,
+      "missing_1h_bars": 0,
+      "funding_rows": 563,
+      "funding_start_utc": "2026-08-17T12:00:00+00:00",
+      "funding_interval_h": 4.0,
+      "oi_rows": 1445,
+      "oi_start_utc": "2026-09-20T02:00:00+00:00"
+    },
+    "MEW": {
+      "exhausted": true,
+      "bars_1h": 22750,
+      "start_utc": "2024-04-15T08:00:00+00:00",
+      "end_utc": "2026-11-19T05:00:00+00:00",
+      "start_is_listing_or_okx_limit": true,
+      "added_rows": 99,
+      "delisted_or_stale": false,
+      "missing_1h_bars": 0,
+      "funding_rows": 573,
+      "funding_start_utc": "2026-08-17T08:00:00+00:00",
+      "funding_interval_h": 4.0,
+      "oi_rows": 1445,
+      "oi_start_utc": "2026-09-20T02:00:00+00:00"
+    },
+    "TURBO": {
+      "exhausted": true,
+      "bars_1h": 25701,
+      "start_utc": "2023-12-14T09:00:00+00:00",
+      "end_utc": "2026-11-19T05:00:00+00:00",
+      "start_is_listing_or_okx_limit": true,
+      "added_rows": 99,
+      "delisted_or_stale": false,
+      "missing_1h_bars": 0,
+      "funding_rows": 563,
+      "funding_start_utc": "2026-08-17T12:00:00+00:00",
+      "funding_interval_h": 4.0,
+      "oi_rows": 1445,
+      "oi_start_utc": "2026-09-20T02:00:00+00:00"
+    },
+    "PEOPLE": {
+      "exhausted": true,
+      "bars_1h": 35063,
+      "start_utc": "2022-11-19T07:00:00+00:00",
+      "end_utc": "2026-11-19T05:00:00+00:00",
+      "start_is_listing_or_okx_limit": false,
+      "added_rows": 99,
+      "delisted_or_stale": false,
+      "missing_1h_bars": 0,
+      "funding_rows": 282,
+      "funding_start_utc": "2026-08-17T08:00:00+00:00",
+      "funding_interval_h": 8.0,
+      "oi_rows": 1445,
+      "oi_start_utc": "2026-09-20T02:00:00+00:00"
+    },
+    "BTC": {
+      "exhausted": true,
+      "bars_1h": 35063,
+      "start_utc": "2022-11-19T07:00:00+00:00",
+      "end_utc": "2026-11-19T05:00:00+00:00",
+      "start_is_listing_or_okx_limit": false,
+      "added_rows": 99,
+      "delisted_or_stale": false,
+      "missing_1h_bars": 0,
+      "funding_rows": 282,
+      "funding_start_utc": "2026-08-17T08:00:00+00:00",
+      "funding_interval_h": 8.0,
+      "oi_rows": 1445,
+      "oi_start_utc": "2026-09-20T02:00:00+00:00"
+    }
+  },
+  "errors": {},
+  "runtime_sec": 18.5
+}
