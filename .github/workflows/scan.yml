@@ -6,6 +6,12 @@ name: Fresh meme scan
     - cron: "*/10 17-23,0-7 * * *"
   workflow_dispatch:
 
+# Share the push lock with Shield. Do not cancel a run that is already
+# scanning; the waiting run starts after the in-progress one pushes.
+concurrency:
+  group: main-writers
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -16,6 +22,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -40,19 +48,10 @@ jobs:
 
       - name: Commit state, cooldown, and Pages data
         run: |
-          set -e
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add \
+          bash .github/scripts/push-main.sh "chore: refresh fresh scan [skip ci]" \
             memescanner/state.json \
             memescanner/flagged.csv \
             memescanner/out/latest_scan.json \
             memescanner/out/latest_report.md \
             docs/coins.json \
             docs/index.html
-          if git diff --cached --quiet; then
-            echo "No file changes to commit"
-            exit 0
-          fi
-          git commit -m "chore: refresh fresh scan [skip ci]"
-          git push

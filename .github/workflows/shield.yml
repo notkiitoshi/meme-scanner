@@ -6,6 +6,12 @@ name: Shield + paper bot
     - cron: "*/15 * * * *"
   workflow_dispatch:
 
+# Share the push lock with the fresh scan. Do not cancel a paper cycle that
+# is already running; the waiting run starts after that cycle pushes.
+concurrency:
+  group: main-writers
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -16,6 +22,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -34,31 +42,15 @@ jobs:
 
       - name: Commit paper state
         run: |
-          set -e
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          # Several of these files are created only after a halt or a closed
-          # trade. `git add` with a missing pathspec stages nothing, so add
-          # each path that exists. decisions.jsonl stays ignored by .gitignore.
-          files=(
-            quantteam/state.json
-            quantteam/config/halt.json
-            quantteam/config/active_setup.json
-            quantteam/trades.csv
-            quantteam/trades_shadow.csv
-            quantteam/data/paper_daily.json
-            quantteam/out/shield_status.json
-            quantteam/out/shield_events.jsonl
+          # Missing halt/trade files are skipped. A rejected push rebases onto
+          # main and retries, so a scan commit that landed mid-cycle is kept.
+          bash .github/scripts/push-main.sh "chore: paper bot + shield cycle [skip ci]" \
+            quantteam/state.json \
+            quantteam/config/halt.json \
+            quantteam/config/active_setup.json \
+            quantteam/trades.csv \
+            quantteam/trades_shadow.csv \
+            quantteam/data/paper_daily.json \
+            quantteam/out/shield_status.json \
+            quantteam/out/shield_events.jsonl \
             quantteam/logs/decisions.jsonl
-          )
-          for f in "${files[@]}"; do
-            if [ -e "$f" ]; then
-              git add -- "$f" || true
-            fi
-          done
-          if git diff --cached --quiet; then
-            echo "No paper-state changes to commit"
-            exit 0
-          fi
-          git commit -m "chore: paper bot + shield cycle [skip ci]"
-          git push
