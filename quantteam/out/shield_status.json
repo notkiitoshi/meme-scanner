@@ -1,30 +1,30 @@
 {
-  "ts_utc": "2026-11-23T04:00:11.487748+00:00",
-  "hst_date": "2026-11-22",
+  "ts_utc": "2026-11-23T14:11:09.832255+00:00",
+  "hst_date": "2026-11-23",
   "halted": false,
   "halt": null,
   "new_flags": false,
   "flags": [],
   "checks": {
-    "daily_pnl_pct": 0.389,
-    "equity": 146.0136,
-    "losing_streak": 0,
+    "daily_pnl_pct": 0.0,
+    "equity": 142.8452,
+    "losing_streak": 2,
     "price_feed_age_min": 0.4
   },
   "leader_vs_runner_ups": [
     {
       "runner_up": "TP_S@4h",
-      "days_compared": 4,
+      "days_compared": 5,
       "days_runner_up_stronger": 0,
-      "leader_ret_pct": -0.378,
-      "runner_up_ret_pct": -0.378,
+      "leader_ret_pct": -2.161,
+      "runner_up_ret_pct": -2.161,
       "swap_recommended": false
     },
     {
       "runner_up": "DC_L@4h",
-      "days_compared": 4,
-      "days_runner_up_stronger": 1,
-      "leader_ret_pct": -0.378,
+      "days_compared": 5,
+      "days_runner_up_stronger": 2,
+      "leader_ret_pct": -2.161,
       "runner_up_ret_pct": 0.0,
       "swap_recommended": false
     }
