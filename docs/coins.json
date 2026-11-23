@@ -1,100 +1,70 @@
 {
-  "scan_time_hst": "2026-11-22 12:22:58 HST",
-  "scan_time_utc": "2026-11-22T22:22:58Z",
-  "runtime_sec": 127.75,
+  "scan_time_hst": "2026-11-22 17:01:59 HST",
+  "scan_time_utc": "2026-11-23T03:01:59Z",
+  "runtime_sec": 127.59,
   "passed_count": 0,
   "near_pass_count": 8,
   "newly_flagged_count": 0,
-  "discovered": 228,
-  "in_scope": 107,
-  "inspected": 9,
+  "discovered": 229,
+  "in_scope": 108,
+  "inspected": 11,
   "research_only": true,
   "coins": [
     {
-      "mint": "BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump",
-      "symbol": "COPIUM",
-      "name": "COPIUM",
+      "mint": "HZ3v1udvxPbZoi93y9NDNmYDdbn5H8sXxJRNTDagpump",
+      "symbol": "NodeCraft",
+      "name": "NodeCraft",
       "status": "near",
-      "mcap": 296489.0,
-      "liquidity": 38175.3,
-      "change_24h_pct": 812.0,
-      "upside_score": 65,
-      "age_hours": 0.709847815,
-      "near_graduation": false,
-      "fresh_graduation": true,
-      "graduation_progress_pct": 100.0,
-      "fail_note": [
-        "Already up 812% in 24h - late entry risk even if under the blowoff cap",
-        "Liquidity is only $38,175; a modest sell can move the price sharply",
-        "Primary trading history is only 0.7 hours old",
-        "High meme-coin beta: even a clean setup can go to zero on a sector fade or a dev dump"
-      ],
-      "failed_criteria": [
-        "Uniform split-wallet cluster: 15 non-LP wallets each hold ~0.62% (range 0.60-0.63%, together 9.24%) - looks like a bundled launch split"
-      ],
-      "links": {
-        "fomo": "https://fomo.family/tokens/solana/BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump",
-        "pumpfun": "https://pump.fun/coin/BAKsQrynzwadyACDMsg3J5R8a4CTvj1u7kEYyjq7pump",
-        "dexscreener": "https://dexscreener.com/solana/8rjw3dbbzfzkyf5tinesjqpyjtepzg8dz7dnb2sebupp"
-      }
-    },
-    {
-      "mint": "Ex4qQDnV7LXeLFymQZZebrohCn3dxqr9NXDYxavfLoat",
-      "symbol": "COCKROACH",
-      "name": "COCKROACH",
-      "status": "near",
-      "mcap": 34083.0,
-      "liquidity": 32248.81,
-      "change_24h_pct": -67.22,
-      "upside_score": 47,
-      "age_hours": 0.4467922658333333,
-      "near_graduation": false,
-      "fresh_graduation": true,
-      "graduation_progress_pct": null,
-      "fail_note": [
-        "A single non-LP wallet holds 4.3% and can dump",
-        "Top-10 non-LP wallets control 19.3% of supply",
-        "Already down -67% in 24h - momentum is damaged and another leg down is common",
-        "Liquidity is only $32,249; a modest sell can move the price sharply",
-        "Primary trading history is only 0.5 hours old",
-        "High meme-coin beta: even a clean setup can go to zero on a sector fade or a dev dump"
-      ],
-      "failed_criteria": [
-        "Upside score 47/100 below 60"
-      ],
-      "links": {
-        "fomo": "https://fomo.family/tokens/solana/Ex4qQDnV7LXeLFymQZZebrohCn3dxqr9NXDYxavfLoat",
-        "pumpfun": null,
-        "dexscreener": "https://dexscreener.com/solana/3hc2ozcpbm79oyay6jo3ksfhhzsuk52qevte1s8qp48w"
-      }
-    },
-    {
-      "mint": "B5PD4d1YXJXJGBQyh5b7Y4eGe6SR4gqG1JZ6hwtfpump",
-      "symbol": "TOOLS",
-      "name": "Ring Tools",
-      "status": "near",
-      "mcap": 16515.84,
-      "liquidity": 5482.7329,
-      "change_24h_pct": 722.0,
-      "upside_score": 45,
-      "age_hours": 5.4929034111111115,
+      "mcap": 10830.3,
+      "liquidity": 80695.17717478925,
+      "change_24h_pct": 225.0,
+      "upside_score": 46,
+      "age_hours": 22.63387841138889,
       "near_graduation": true,
       "fresh_graduation": false,
-      "graduation_progress_pct": 103.67,
+      "graduation_progress_pct": 2089.41,
       "fail_note": [
-        "Top-10 non-LP wallets control 24.7% of supply",
-        "Already up 722% in 24h - late entry risk even if under the blowoff cap",
-        "Liquidity is only $5,483; a modest sell can move the price sharply",
-        "Primary trading history is only 5.5 hours old",
+        "Top-10 non-LP wallets control 24.0% of supply",
+        "Already up 225% in 24h - late entry risk even if under the blowoff cap",
+        "Primary trading history is only 22.6 hours old",
         "High meme-coin beta: even a clean setup can go to zero on a sector fade or a dev dump"
       ],
       "failed_criteria": [
-        "Liquidity $5,483 below $30,000; Upside score 45/100 below 60"
+        "Upside score 46/100 below 60"
       ],
       "links": {
-        "fomo": "https://fomo.family/tokens/solana/B5PD4d1YXJXJGBQyh5b7Y4eGe6SR4gqG1JZ6hwtfpump",
-        "pumpfun": "https://pump.fun/coin/B5PD4d1YXJXJGBQyh5b7Y4eGe6SR4gqG1JZ6hwtfpump",
-        "dexscreener": "https://dexscreener.com/solana/jcsidfogpfurdwxduwxxgqqkj9tsur7wsqdk9vmqgceg"
+        "fomo": "https://fomo.family/tokens/solana/HZ3v1udvxPbZoi93y9NDNmYDdbn5H8sXxJRNTDagpump",
+        "pumpfun": "https://pump.fun/coin/HZ3v1udvxPbZoi93y9NDNmYDdbn5H8sXxJRNTDagpump",
+        "dexscreener": "https://dexscreener.com/solana/fhlw5snecsguspacq9wtkzgdjuog5ujkfskbwzgycmyt"
+      }
+    },
+    {
+      "mint": "DL1LDi4CHxoYnJkrRznzCfjmCRBWAsycQ7dRcsmmpump",
+      "symbol": "HELIAD",
+      "name": "HELIAD",
+      "status": "near",
+      "mcap": 20700.67052,
+      "liquidity": 8042.3214,
+      "change_24h_pct": 505.289,
+      "upside_score": 46,
+      "age_hours": 10.006378445833333,
+      "near_graduation": true,
+      "fresh_graduation": false,
+      "graduation_progress_pct": 115.49,
+      "fail_note": [
+        "Top-10 non-LP wallets control 24.3% of supply",
+        "Already up 505% in 24h - late entry risk even if under the blowoff cap",
+        "Liquidity is only $8,042; a modest sell can move the price sharply",
+        "Primary trading history is only 10.0 hours old",
+        "High meme-coin beta: even a clean setup can go to zero on a sector fade or a dev dump"
+      ],
+      "failed_criteria": [
+        "Liquidity $8,042 below $30,000; Upside score 46/100 below 60"
+      ],
+      "links": {
+        "fomo": "https://fomo.family/tokens/solana/DL1LDi4CHxoYnJkrRznzCfjmCRBWAsycQ7dRcsmmpump",
+        "pumpfun": "https://pump.fun/coin/DL1LDi4CHxoYnJkrRznzCfjmCRBWAsycQ7dRcsmmpump",
+        "dexscreener": "https://dexscreener.com/solana/hrx6pcxmr8tvkzwxkqzwddlkpd9nv4i9vptp3eaqud2y"
       }
     },
     {
@@ -102,23 +72,22 @@
       "symbol": "\u8fd1\u85e4\u3042\u3044",
       "name": "Ai Kondo",
       "status": "near",
-      "mcap": 20037.96,
-      "liquidity": 5733.3757,
-      "change_24h_pct": 693.0,
-      "upside_score": 35,
-      "age_hours": 4.073736739166667,
+      "mcap": 11901.47,
+      "liquidity": 4942.8016,
+      "change_24h_pct": 371.0,
+      "upside_score": 45,
+      "age_hours": 8.7208228675,
       "near_graduation": true,
       "fresh_graduation": false,
-      "graduation_progress_pct": 119.83,
+      "graduation_progress_pct": 79.8,
       "fail_note": [
-        "Top-10 non-LP wallets control 19.2% of supply",
-        "Already up 693% in 24h - late entry risk even if under the blowoff cap",
-        "Liquidity is only $5,733; a modest sell can move the price sharply",
-        "Primary trading history is only 4.1 hours old",
+        "Already up 371% in 24h - late entry risk even if under the blowoff cap",
+        "Liquidity is only $4,943; a modest sell can move the price sharply",
+        "Primary trading history is only 8.7 hours old",
         "High meme-coin beta: even a clean setup can go to zero on a sector fade or a dev dump"
       ],
       "failed_criteria": [
-        "Liquidity $5,733 below $30,000; Upside score 35/100 below 60"
+        "Liquidity $4,943 below $30,000; Upside score 45/100 below 60"
       ],
       "links": {
         "fomo": "https://fomo.family/tokens/solana/8kuTa99BUYuapBTEoTJY2gdhxc6MtXjUX1kEJeZepump",
@@ -127,122 +96,152 @@
       }
     },
     {
-      "mint": "5XJd2yzRtjQTxaNnEdJwBCTut9jJLhLAoWkDJyiNpump",
-      "symbol": "GLORP",
-      "name": "Mighty Glorp",
+      "mint": "Ccg5kfiXVkmSsgixLcwTAuoibMFXT1Nny6g34q4kpump",
+      "symbol": "wifout",
+      "name": "wifout",
       "status": "near",
-      "mcap": 16933.11,
-      "liquidity": 3665.5903,
-      "change_24h_pct": 709.0,
+      "mcap": 10222.02,
+      "liquidity": 4577.5879,
+      "change_24h_pct": 323.0,
+      "upside_score": 45,
+      "age_hours": 3.1036006369444444,
+      "near_graduation": true,
+      "fresh_graduation": false,
+      "graduation_progress_pct": 73.59,
+      "fail_note": [
+        "Top-10 non-LP wallets control 18.9% of supply",
+        "Already up 323% in 24h - late entry risk even if under the blowoff cap",
+        "Liquidity is only $4,578; a modest sell can move the price sharply",
+        "Primary trading history is only 3.1 hours old",
+        "High meme-coin beta: even a clean setup can go to zero on a sector fade or a dev dump"
+      ],
+      "failed_criteria": [
+        "Liquidity $4,578 below $30,000; Upside score 45/100 below 60"
+      ],
+      "links": {
+        "fomo": "https://fomo.family/tokens/solana/Ccg5kfiXVkmSsgixLcwTAuoibMFXT1Nny6g34q4kpump",
+        "pumpfun": "https://pump.fun/coin/Ccg5kfiXVkmSsgixLcwTAuoibMFXT1Nny6g34q4kpump",
+        "dexscreener": "https://dexscreener.com/solana/dgezgzc27wlvanixyor45gtdruzff5tyxfyn1t6uzx7a"
+      }
+    },
+    {
+      "mint": "FhggJa6dCqehdFtEkvjJXkeVhFUBLpnghaZEddF6pump",
+      "symbol": "REDACTED",
+      "name": "\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588",
+      "status": "near",
+      "mcap": 27265.64628,
+      "liquidity": 14478.0492,
+      "change_24h_pct": 73.179,
+      "upside_score": 40,
+      "age_hours": 3.5308228841666667,
+      "near_graduation": true,
+      "fresh_graduation": false,
+      "graduation_progress_pct": 35042.31,
+      "fail_note": [
+        "A single non-LP wallet holds 4.0% and can dump",
+        "Top-10 non-LP wallets control 23.3% of supply",
+        "Liquidity is only $14,478; a modest sell can move the price sharply",
+        "Primary trading history is only 3.5 hours old",
+        "High meme-coin beta: even a clean setup can go to zero on a sector fade or a dev dump"
+      ],
+      "failed_criteria": [
+        "Liquidity $14,478 below $30,000; Upside score 40/100 below 60"
+      ],
+      "links": {
+        "fomo": "https://fomo.family/tokens/solana/FhggJa6dCqehdFtEkvjJXkeVhFUBLpnghaZEddF6pump",
+        "pumpfun": "https://pump.fun/coin/FhggJa6dCqehdFtEkvjJXkeVhFUBLpnghaZEddF6pump",
+        "dexscreener": "https://dexscreener.com/solana/cexyvmicytdyhtvayrljt3a63zamyqcrw727kpwojhga"
+      }
+    },
+    {
+      "mint": "DAsTfxWswYnYj2e4qDxoXATZ6yhK1AnwdR9RVKwJpump",
+      "symbol": "suscat",
+      "name": "suscat",
+      "status": "near",
+      "mcap": 12085.79,
+      "liquidity": 5139.7095,
+      "change_24h_pct": 353.0,
+      "upside_score": 44,
+      "age_hours": 10.485267315277778,
+      "near_graduation": true,
+      "fresh_graduation": false,
+      "graduation_progress_pct": 80.84,
+      "fail_note": [
+        "Top-10 non-LP wallets control 25.5% of supply",
+        "Already up 353% in 24h - late entry risk even if under the blowoff cap",
+        "Liquidity is only $5,140; a modest sell can move the price sharply",
+        "Primary trading history is only 10.5 hours old",
+        "High meme-coin beta: even a clean setup can go to zero on a sector fade or a dev dump"
+      ],
+      "failed_criteria": [
+        "Top-10 non-LP wallets hold 25.47% (max 25%)",
+        "Liquidity $5,140 below $30,000; Upside score 44/100 below 60"
+      ],
+      "links": {
+        "fomo": "https://fomo.family/tokens/solana/DAsTfxWswYnYj2e4qDxoXATZ6yhK1AnwdR9RVKwJpump",
+        "pumpfun": "https://pump.fun/coin/DAsTfxWswYnYj2e4qDxoXATZ6yhK1AnwdR9RVKwJpump",
+        "dexscreener": "https://dexscreener.com/solana/j9nukp72m3tg6tnjkqvy4zvok5s9jsdb8awc2ncqdf5s"
+      }
+    },
+    {
+      "mint": "DXjjrY1AgCccU7mNw8zqAZkNMBEFTKHUtitLY1edpump",
+      "symbol": "Rug",
+      "name": "Rug",
+      "status": "near",
+      "mcap": 22657.20296,
+      "liquidity": 13839.5456,
+      "change_24h_pct": 48.093,
+      "upside_score": 37,
+      "age_hours": 3.7508228875,
+      "near_graduation": true,
+      "fresh_graduation": false,
+      "graduation_progress_pct": 28258.21,
+      "fail_note": [
+        "Insider networks still cluster ~67.8% of supply (upper bound; wallets may overlap)",
+        "A single non-LP wallet holds 5.0% and can dump",
+        "Top-10 non-LP wallets control 20.3% of supply",
+        "Liquidity is only $13,840; a modest sell can move the price sharply",
+        "Primary trading history is only 3.8 hours old",
+        "High meme-coin beta: even a clean setup can go to zero on a sector fade or a dev dump"
+      ],
+      "failed_criteria": [
+        "Insider networks hold ~67.82% of supply (max 15%; sum may overlap)",
+        "Liquidity $13,840 below $30,000; Upside score 37/100 below 60"
+      ],
+      "links": {
+        "fomo": "https://fomo.family/tokens/solana/DXjjrY1AgCccU7mNw8zqAZkNMBEFTKHUtitLY1edpump",
+        "pumpfun": "https://pump.fun/coin/DXjjrY1AgCccU7mNw8zqAZkNMBEFTKHUtitLY1edpump",
+        "dexscreener": "https://dexscreener.com/solana/42kk2ufmhacmprfxvmzzdslarwbbpjt9921wjhxcbtuw"
+      }
+    },
+    {
+      "mint": "13ckDUoCe9wmtwvgu644CS6pDJfvBJEdjFENgXSedG31",
+      "symbol": "fudchud",
+      "name": "fud the chud",
+      "status": "near",
+      "mcap": 20340.0,
+      "liquidity": 33840.87,
+      "change_24h_pct": 44.85,
       "upside_score": 34,
-      "age_hours": 0.07706993944444444,
-      "near_graduation": true,
-      "fresh_graduation": false,
-      "graduation_progress_pct": 113.43,
-      "fail_note": [
-        "Top-10 non-LP wallets control 23.5% of supply",
-        "Already up 709% in 24h - late entry risk even if under the blowoff cap",
-        "Liquidity is only $3,666; a modest sell can move the price sharply",
-        "Primary trading history is only 0.1 hours old",
-        "High meme-coin beta: even a clean setup can go to zero on a sector fade or a dev dump"
-      ],
-      "failed_criteria": [
-        "Liquidity $3,666 below $30,000; Upside score 34/100 below 60"
-      ],
-      "links": {
-        "fomo": "https://fomo.family/tokens/solana/5XJd2yzRtjQTxaNnEdJwBCTut9jJLhLAoWkDJyiNpump",
-        "pumpfun": "https://pump.fun/coin/5XJd2yzRtjQTxaNnEdJwBCTut9jJLhLAoWkDJyiNpump",
-        "dexscreener": "https://dexscreener.com/solana/2xqwwem6ttqnuuanrufv7l19xyqwangjvafbtkuwgmsk"
-      }
-    },
-    {
-      "mint": "58MxvPSQYi7PLWMfQH9r8R98AMGqkRPTSfAde7i3NESd",
-      "symbol": "ANON",
-      "name": "AnonPad",
-      "status": "near",
-      "mcap": 15878.86614,
-      "liquidity": 7149.6419,
-      "change_24h_pct": 396.852,
-      "upside_score": 52,
-      "age_hours": 21.955958957777778,
-      "near_graduation": true,
-      "fresh_graduation": false,
-      "graduation_progress_pct": 92.83,
-      "fail_note": [
-        "Top-10 non-LP wallets control 27.2% of supply",
-        "Already up 397% in 24h - late entry risk even if under the blowoff cap",
-        "Liquidity is only $7,150; a modest sell can move the price sharply",
-        "Primary trading history is only 22.0 hours old",
-        "High meme-coin beta: even a clean setup can go to zero on a sector fade or a dev dump"
-      ],
-      "failed_criteria": [
-        "Top-10 non-LP wallets hold 27.24% (max 25%)",
-        "Liquidity $7,150 below $30,000; Upside score 52/100 below 60"
-      ],
-      "links": {
-        "fomo": "https://fomo.family/tokens/solana/58MxvPSQYi7PLWMfQH9r8R98AMGqkRPTSfAde7i3NESd",
-        "pumpfun": null,
-        "dexscreener": "https://dexscreener.com/solana/4vkxjwwhfierwxoz2vonhxeu1q1ruwg5tvrpf3ddabe8"
-      }
-    },
-    {
-      "mint": "FwSy225GBhQ9M29r8tHQELYEFpmT79tXzDEUb78fpump",
-      "symbol": "CATEGIVING",
-      "name": "Categiving",
-      "status": "near",
-      "mcap": 12720.05,
-      "liquidity": 6277.5676,
-      "change_24h_pct": 209.0,
-      "upside_score": 41,
-      "age_hours": 18.142347844444444,
-      "near_graduation": true,
-      "fresh_graduation": false,
-      "graduation_progress_pct": 329.06,
-      "fail_note": [
-        "Top-10 non-LP wallets control 26.6% of supply",
-        "Already up 209% in 24h - late entry risk even if under the blowoff cap",
-        "Liquidity is only $6,278; a modest sell can move the price sharply",
-        "Primary trading history is only 18.1 hours old",
-        "High meme-coin beta: even a clean setup can go to zero on a sector fade or a dev dump"
-      ],
-      "failed_criteria": [
-        "Top-10 non-LP wallets hold 26.57% (max 25%)",
-        "Liquidity $6,278 below $30,000; Upside score 41/100 below 60"
-      ],
-      "links": {
-        "fomo": "https://fomo.family/tokens/solana/FwSy225GBhQ9M29r8tHQELYEFpmT79tXzDEUb78fpump",
-        "pumpfun": "https://pump.fun/coin/FwSy225GBhQ9M29r8tHQELYEFpmT79tXzDEUb78fpump",
-        "dexscreener": "https://dexscreener.com/solana/hjafjewhdwmuwxafnmy6nrcwx6p7uyjxuiqz95rebvai"
-      }
-    },
-    {
-      "mint": "484i491A6DTt6JgMsuTQyWY4iU7ZpgdTLzGRgftiaABT",
-      "symbol": "\u202eAHSUNA",
-      "name": "\u202e\u30e3\u30b7\u30cc\u30a2",
-      "status": "near",
-      "mcap": 700011.78,
-      "liquidity": 634183.1342,
-      "change_24h_pct": 17.09,
-      "upside_score": 59,
-      "age_hours": 0.07845883555555556,
+      "age_hours": 0.10582273111111111,
       "near_graduation": false,
       "fresh_graduation": true,
       "graduation_progress_pct": null,
       "fail_note": [
-        "A single non-LP wallet holds 99.8% and can dump",
-        "Top-10 non-LP wallets control 99.8% of supply",
+        "Only 0.0% of LP is locked/burned on a liquidity-weighted basis",
+        "Liquidity is only $33,841; a modest sell can move the price sharply",
         "Primary trading history is only 0.1 hours old",
         "High meme-coin beta: even a clean setup can go to zero on a sector fade or a dev dump"
       ],
       "failed_criteria": [
-        "RugCheck bundle/safety flags: Low Liquidity",
-        "Top-10 non-LP wallets hold 99.83% (max 25%); Largest non-LP wallet holds 99.79% (max 8%)",
-        "Upside score 59/100 below 60"
+        "RugCheck bundle/safety flags: Large Amount of LP Unlocked",
+        "Weighted LP locked/burned 0.00% (min 40%); Primary pool LP locked/burned 0.00% (min 90%)",
+        "Upside score 34/100 below 60"
       ],
       "links": {
-        "fomo": "https://fomo.family/tokens/solana/484i491A6DTt6JgMsuTQyWY4iU7ZpgdTLzGRgftiaABT",
+        "fomo": "https://fomo.family/tokens/solana/13ckDUoCe9wmtwvgu644CS6pDJfvBJEdjFENgXSedG31",
         "pumpfun": null,
-        "dexscreener": "https://dexscreener.com/solana/cvtyxojewarpudu9ggqsmdrypwavblrrfvdma8xftnnz"
+        "dexscreener": "https://dexscreener.com/solana/6mlytj8uhmbynlxcbc3prqw9d4k5g96sa1auujmdpygd"
       }
     }
   ]
