@@ -1,14 +1,14 @@
 {
-  "ts_utc": "2026-11-23T14:11:09.832255+00:00",
+  "ts_utc": "2026-11-24T01:39:18.127188+00:00",
   "hst_date": "2026-11-23",
   "halted": false,
   "halt": null,
   "new_flags": false,
   "flags": [],
   "checks": {
-    "daily_pnl_pct": 0.0,
-    "equity": 142.8452,
-    "losing_streak": 2,
+    "daily_pnl_pct": 0.287,
+    "equity": 143.2556,
+    "losing_streak": 0,
     "price_feed_age_min": 0.4
   },
   "leader_vs_runner_ups": [
