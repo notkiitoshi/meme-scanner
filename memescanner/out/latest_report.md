@@ -9,40 +9,40 @@ Read-only research / instant alerts. Fake signals are never invented. **Default 
 - Passed all 3 (including already-alerted): **10**
 - Discovered: 228835 unique mints
 - Deeply inspected: 53
-- Runtime: 91.45s
+- Runtime: 97.34s
 - Data sources: dexscreener, geckoterminal, rugcheck, solana_rpc, solana_rpc_pumpswap, solana_rpc_raydium_v4, pumpfun_api, geckoterminal_dex_pools, solana_rpc_meteora_dbc, fomopad_registry
 
 ## Fresh pairs & graduating
 
-- Fresh scan at 2026-11-23 02:27:52 HST (2026-11-23T12:27:52Z) in 91.45s
+- Fresh scan at 2026-11-23 17:14:19 HST (2026-11-24T03:14:19Z) in 97.34s
 - Window: last 3600s
-- Discovered: 217 | in scope: 114 | gated: 15 | inspected: 15
+- Discovered: 200 | in scope: 94 | gated: 13 | inspected: 13
 - Passed all 3: **0** | near passes: 8 | newly flagged: 0
 
-- NEAR suscat `DAsTfxWswYnYj2e4qDxoXATZ6yhK1AnwdR9RVKwJpump` score=44 [Fomo](https://fomo.family/tokens/solana/DAsTfxWswYnYj2e4qDxoXATZ6yhK1AnwdR9RVKwJpump)
-  - WHY THIS COULD FAIL: Top-10 non-LP wallets control 23.1% of supply
-  - WHY THIS COULD FAIL: Already up 389% in 24h - late entry risk even if under the blowoff cap
-- NEAR 近藤あい `8kuTa99BUYuapBTEoTJY2gdhxc6MtXjUX1kEJeZepump` score=42 [Fomo](https://fomo.family/tokens/solana/8kuTa99BUYuapBTEoTJY2gdhxc6MtXjUX1kEJeZepump)
-  - WHY THIS COULD FAIL: Already up 377% in 24h - late entry risk even if under the blowoff cap
-  - WHY THIS COULD FAIL: Liquidity is only $5,051; a modest sell can move the price sharply
-- NEAR Rajiv `4GNwzW64KMfGNoLAqno8ozqz2kXo29166B2pdPUcpump` score=35 [Fomo](https://fomo.family/tokens/solana/4GNwzW64KMfGNoLAqno8ozqz2kXo29166B2pdPUcpump)
+- NEAR DMIND `7wknwoAiitNduRmLWoRrr4k4ftirjBXbuVE5ei7Bpump` score=39 [Fomo](https://fomo.family/tokens/solana/7wknwoAiitNduRmLWoRrr4k4ftirjBXbuVE5ei7Bpump)
   - WHY THIS COULD FAIL: RPC rate-limit or error prevented early-slot bundle verification
-  - WHY THIS COULD FAIL: A single non-LP wallet holds 4.6% and can dump
-- NEAR HELIAD `DL1LDi4CHxoYnJkrRznzCfjmCRBWAsycQ7dRcsmmpump` score=46 [Fomo](https://fomo.family/tokens/solana/DL1LDi4CHxoYnJkrRznzCfjmCRBWAsycQ7dRcsmmpump)
-  - WHY THIS COULD FAIL: Top-10 non-LP wallets control 26.0% of supply
-  - WHY THIS COULD FAIL: Already up 438% in 24h - late entry risk even if under the blowoff cap
-- NEAR WSF `AVacE69nAHfAo7gae8i1XBA7SAg7e2p9P7EiBoH7pQpj` score=59 [Fomo](https://fomo.family/tokens/solana/AVacE69nAHfAo7gae8i1XBA7SAg7e2p9P7EiBoH7pQpj)
-  - WHY THIS COULD FAIL: A single non-LP wallet holds 99.9% and can dump
-  - WHY THIS COULD FAIL: Top-10 non-LP wallets control 99.9% of supply
-- NEAR PRV `GHmAnQy8fWND4MtGEpiK6nuH4TyPTfqo7HZ28K6uPEY7` score=52 [Fomo](https://fomo.family/tokens/solana/GHmAnQy8fWND4MtGEpiK6nuH4TyPTfqo7HZ28K6uPEY7)
-  - WHY THIS COULD FAIL: RPC rate-limit or error prevented early-slot bundle verification
-  - WHY THIS COULD FAIL: Primary pool LP lock % unavailable
-- NEAR REDACTED `FhggJa6dCqehdFtEkvjJXkeVhFUBLpnghaZEddF6pump` score=51 [Fomo](https://fomo.family/tokens/solana/FhggJa6dCqehdFtEkvjJXkeVhFUBLpnghaZEddF6pump)
-  - WHY THIS COULD FAIL: Only 0.0% of LP is locked/burned on a liquidity-weighted basis
-  - WHY THIS COULD FAIL: A single non-LP wallet holds 4.0% and can dump
-- NEAR Rug `DXjjrY1AgCccU7mNw8zqAZkNMBEFTKHUtitLY1edpump` score=50 [Fomo](https://fomo.family/tokens/solana/DXjjrY1AgCccU7mNw8zqAZkNMBEFTKHUtitLY1edpump)
-  - WHY THIS COULD FAIL: RPC rate-limit or error prevented early-slot bundle verification
-  - WHY THIS COULD FAIL: Only 0.0% of LP is locked/burned on a liquidity-weighted basis
+  - WHY THIS COULD FAIL: Top-10 non-LP wallets control 20.4% of supply
+- NEAR GROKIA `3cL47ohWa2HApLYKtqPsqkjaxJ6HLvT5Ri1KvWdXpump` score=76 [Fomo](https://fomo.family/tokens/solana/3cL47ohWa2HApLYKtqPsqkjaxJ6HLvT5Ri1KvWdXpump)
+  - WHY THIS COULD FAIL: Top-10 non-LP wallets control 25.9% of supply
+  - WHY THIS COULD FAIL: Already up 1181% in 24h - late entry risk even if under the blowoff cap
+- NEAR WhalesMas `4fvx4so9U7fT7bS6sdmkC2GzVaq4gdTAjdEW27SJpump` score=53 [Fomo](https://fomo.family/tokens/solana/4fvx4so9U7fT7bS6sdmkC2GzVaq4gdTAjdEW27SJpump)
+  - WHY THIS COULD FAIL: A single non-LP wallet holds 4.8% and can dump
+  - WHY THIS COULD FAIL: Top-10 non-LP wallets control 29.5% of supply
+- NEAR TENEX `GpCiqGaWm9Lk98r8iFr5W32dkFMVq8suBRDdkfqbpump` score=49 [Fomo](https://fomo.family/tokens/solana/GpCiqGaWm9Lk98r8iFr5W32dkFMVq8suBRDdkfqbpump)
+  - WHY THIS COULD FAIL: Insider networks still cluster ~21.2% of supply (upper bound; wallets may overlap)
+  - WHY THIS COULD FAIL: A single non-LP wallet holds 9.3% and can dump
+- NEAR フクベエ `BTNQjBbQPcHVa5tFQsSt7PdgKJjBBMnsm7H6jwzZpump` score=44 [Fomo](https://fomo.family/tokens/solana/BTNQjBbQPcHVa5tFQsSt7PdgKJjBBMnsm7H6jwzZpump)
+  - WHY THIS COULD FAIL: Top-10 non-LP wallets control 26.2% of supply
+  - WHY THIS COULD FAIL: Already up 249% in 24h - late entry risk even if under the blowoff cap
+- NEAR FATU `3reEjCbDFht7LnNdKncQ3vohYDbAMJWXkbzWLSNhpump` score=43 [Fomo](https://fomo.family/tokens/solana/3reEjCbDFht7LnNdKncQ3vohYDbAMJWXkbzWLSNhpump)
+  - WHY THIS COULD FAIL: Top-10 non-LP wallets control 19.6% of supply
+  - WHY THIS COULD FAIL: Already up 960% in 24h - late entry risk even if under the blowoff cap
+- NEAR 3sat `FvktmXnnZnoVuLYgdo1FSXeydthfhFC7P8orYCEmpump` score=38 [Fomo](https://fomo.family/tokens/solana/FvktmXnnZnoVuLYgdo1FSXeydthfhFC7P8orYCEmpump)
+  - WHY THIS COULD FAIL: Top-10 non-LP wallets control 27.3% of supply
+  - WHY THIS COULD FAIL: Already up 362% in 24h - late entry risk even if under the blowoff cap
+- NEAR STKFST `DhLqheMQTimWUHdiQ2NR4jdLuhnrxHmFJ2ofMpdipump` score=44 [Fomo](https://fomo.family/tokens/solana/DhLqheMQTimWUHdiQ2NR4jdLuhnrxHmFJ2ofMpdipump)
+  - WHY THIS COULD FAIL: Top-10 non-LP wallets control 27.1% of supply
+  - WHY THIS COULD FAIL: Already up 412% in 24h - late entry risk even if under the blowoff cap
 
 ## Coverage
 
