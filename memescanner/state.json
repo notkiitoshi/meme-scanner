@@ -1,5 +1,5 @@
 {
-  "run_count": 14,
+  "run_count": 15,
   "last_run_utc": "2026-11-20T07:38:02Z",
   "last_run_hst": "2026-11-19 21:38:02 HST",
   "notification_mode": "instant",
@@ -195,6 +195,6 @@
       "launchpad": "pumpfun"
     }
   },
-  "last_fresh_run_utc": "2026-11-25T01:19:48Z",
-  "last_fresh_run_hst": "2026-11-24 15:19:48 HST"
+  "last_fresh_run_utc": "2026-11-25T10:02:03Z",
+  "last_fresh_run_hst": "2026-11-25 00:02:03 HST"
 }
