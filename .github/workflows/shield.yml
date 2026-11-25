@@ -1,9 +1,8 @@
 name: Shield + paper bot
 
 "on":
-  schedule:
-    # Every 15 minutes, UTC. The script itself stays silent outside 7 AM–10 PM HST.
-    - cron: "*/15 * * * *"
+  # Paper trading is halted. No schedule; a manual run still cannot open positions
+  # while quantteam/HALTED exists.
   workflow_dispatch:
 
 # Share the push lock with the fresh scan. Do not cancel a paper cycle that

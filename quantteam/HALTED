@@ -1,0 +1,3 @@
+Paper trading is halted permanently.
+bot.py exits 0 while this file exists and does not open, fill, or close paper positions.
+Delete this file only to allow paper trading again.

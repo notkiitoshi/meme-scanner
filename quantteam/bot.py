@@ -10,6 +10,9 @@ trade ids prevent duplicate rows after a crash.
 
 Usage: python bot.py            # one paper cycle
        python bot.py --selftest # offline self-test (no network)
+
+Paper trading is halted permanently while quantteam/HALTED exists. A normal
+run exits 0 before it reads the market or changes the book.
 """
 from __future__ import annotations
 
@@ -452,6 +455,15 @@ def main():
         r = selftest()
         print(json.dumps(r, indent=2, default=str))
         sys.exit(0 if r["ok"] else 1)
+    # Permanent halt. Checked before the lock, the network, and run_cycle so a
+    # manual `workflow_dispatch` cannot open or manage paper positions.
+    if (ROOT / "HALTED").exists():
+        print(json.dumps({
+            "ok": True,
+            "halted": True,
+            "skipped": "paper trading halted permanently (quantteam/HALTED)",
+        }))
+        return
     lockf = open(P["lock"], "w")
     try:
         fcntl.flock(lockf, fcntl.LOCK_EX | fcntl.LOCK_NB)
