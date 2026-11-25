@@ -1,6 +1,6 @@
 {
-  "ts_utc": "2026-11-25T04:35:21.974550+00:00",
-  "hst_date": "2026-11-24",
+  "ts_utc": "2026-11-25T14:56:36.284727+00:00",
+  "hst_date": "2026-11-25",
   "halted": false,
   "halt": null,
   "new_flags": false,
@@ -14,15 +14,15 @@
   "leader_vs_runner_ups": [
     {
       "runner_up": "TP_S@4h",
-      "days_compared": 6,
-      "days_runner_up_stronger": 1,
+      "days_compared": 7,
+      "days_runner_up_stronger": 2,
       "leader_ret_pct": -1.88,
-      "runner_up_ret_pct": -1.313,
+      "runner_up_ret_pct": -0.913,
       "swap_recommended": false
     },
     {
       "runner_up": "DC_L@4h",
-      "days_compared": 6,
+      "days_compared": 7,
       "days_runner_up_stronger": 2,
       "leader_ret_pct": -1.88,
       "runner_up_ret_pct": 0.0,
