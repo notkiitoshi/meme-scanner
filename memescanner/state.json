@@ -1,5 +1,5 @@
 {
-  "run_count": 15,
+  "run_count": 16,
   "last_run_utc": "2026-11-20T07:38:02Z",
   "last_run_hst": "2026-11-19 21:38:02 HST",
   "notification_mode": "instant",
@@ -193,8 +193,20 @@
       "last_lp_locked_pct": 64.158,
       "last_notify_reason": "new",
       "launchpad": "pumpfun"
+    },
+    "73R7L2jLfnweJTXxTiccHMZV6mECaVELPUy3PkHopump": {
+      "symbol": "PUMPDOG",
+      "name": "Pump Dog",
+      "first_alerted_at_utc": "2026-11-26T00:54:34Z",
+      "last_alerted_at_utc": "2026-11-26T00:54:34Z",
+      "last_upside_score": 66,
+      "last_insider_pct": 0.0,
+      "last_top10_non_lp_pct": 2.74,
+      "last_lp_locked_pct": 100.0,
+      "last_notify_reason": "new",
+      "launchpad": "pumpfun"
     }
   },
-  "last_fresh_run_utc": "2026-11-25T10:02:03Z",
-  "last_fresh_run_hst": "2026-11-25 00:02:03 HST"
+  "last_fresh_run_utc": "2026-11-26T00:54:34Z",
+  "last_fresh_run_hst": "2026-11-25 14:54:34 HST"
 }

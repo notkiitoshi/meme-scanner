@@ -6785,66 +6785,65 @@
     "geckoterminal 429 https://api.geckoterminal.com/api/v2/networks/solana/dexes/raydium/pools?page=1&sort=h24_tx_count_desc"
   ],
   "fresh": {
-    "run_at_utc": "2026-11-25T10:02:03Z",
-    "run_at_hst": "2026-11-25 00:02:03 HST",
-    "runtime_sec": 95.56,
+    "run_at_utc": "2026-11-26T00:54:34Z",
+    "run_at_hst": "2026-11-25 14:54:34 HST",
+    "runtime_sec": 112.4,
     "window_sec": 3600,
-    "discovered": 163,
-    "in_scope": 96,
-    "market_gate_passed": 10,
-    "inspected": 10,
-    "passed_count": 0,
-    "near_pass_count": 8,
-    "newly_flagged_count": 0,
+    "discovered": 237,
+    "in_scope": 101,
+    "market_gate_passed": 8,
+    "inspected": 8,
+    "passed_count": 1,
+    "near_pass_count": 7,
+    "newly_flagged_count": 1,
     "already_alerted_count": 0,
-    "passed": [],
-    "near_passes": [
+    "passed": [
       {
-        "mint": "94ygGubtS2jZewsuPd13Gqfj4Wi3mh8iGGDpDSYzero",
-        "symbol": "Z3RO",
-        "name": "Z3RO Terminal",
-        "market_cap_usd": 13910.06,
-        "liquidity_usd": 5101.5466,
-        "volume_24h_usd": 157169.02,
-        "price_change_24h_pct": 577.0,
-        "age_hours": 15.799720017499999,
-        "passed_all_three": false,
-        "notify_reason": null,
-        "upside_score": 44,
+        "mint": "73R7L2jLfnweJTXxTiccHMZV6mECaVELPUy3PkHopump",
+        "symbol": "PUMPDOG",
+        "name": "Pump Dog",
+        "market_cap_usd": 279181.0,
+        "liquidity_usd": 36929.91,
+        "volume_24h_usd": 378031.49,
+        "price_change_24h_pct": 646.0,
+        "age_hours": 0.5718111888888889,
+        "passed_all_three": true,
+        "notify_reason": "new",
+        "upside_score": 66,
         "upside": {
-          "passed": false,
-          "score": 44,
+          "passed": true,
+          "score": 66,
           "min_score": 60,
           "breakdown": [
             {
               "name": "mcap_headroom",
               "max": 25,
-              "points": 0,
-              "why": "$13,910 is outside the 5x-10x band"
+              "points": 20,
+              "why": "$279,181 has more headroom but also more early-rug risk"
             },
             {
               "name": "liquidity_depth",
               "max": 15,
-              "points": 7.0,
-              "why": "liq $5,102 is below the floor; liq/mcap 36.7% is healthy"
+              "points": 9.0,
+              "why": "liq $36,930 is thin; liq/mcap 13.2% is healthy"
             },
             {
               "name": "volume_velocity",
               "max": 20,
-              "points": 12.0,
-              "why": "24h vol $157,169; vol/mcap 11.3x is very active; 3709 txns"
+              "points": 13.0,
+              "why": "24h vol $378,031; vol/mcap 1.4x is very active; 9518 txns"
             },
             {
               "name": "buy_sell_balance",
               "max": 15,
               "points": 15,
-              "why": "buy ratio 59.4% (buyers in control)"
+              "why": "buy ratio 65.1% (buyers in control)"
             },
             {
               "name": "non_parabolic_entry",
               "max": 15,
-              "points": 4.0,
-              "why": "+577% in 24h is already extended; 15.8h old (young)"
+              "points": 3.0,
+              "why": "+646% in 24h is already extended; only 0.6h old"
             },
             {
               "name": "socials_profile",
@@ -6859,17 +6858,17 @@
               "why": "Single pool only"
             }
           ],
-          "reason": "Liquidity $5,102 below $30,000; Upside score 44/100 below 60",
+          "reason": "Upside score 66/100 with structural cap headroom",
           "inputs": {
-            "market_cap_usd": 13910.06,
-            "liquidity_usd": 5101.5466,
-            "volume_24h_usd": 157169.02,
-            "liq_mcap": 0.3668,
-            "vol_mcap": 11.2989,
-            "buy_ratio": 0.594,
-            "txns_24h": 3709.0,
-            "price_change_24h_pct": 577.0,
-            "age_hours": 15.8,
+            "market_cap_usd": 279181.0,
+            "liquidity_usd": 36929.91,
+            "volume_24h_usd": 378031.49,
+            "liq_mcap": 0.1323,
+            "vol_mcap": 1.3541,
+            "buy_ratio": 0.6507,
+            "txns_24h": 9518.0,
+            "price_change_24h_pct": 646.0,
+            "age_hours": 0.57,
             "has_socials": true,
             "pair_count": 1
           }
@@ -6903,11 +6902,11 @@
               "result": "info",
               "detail": {
                 "performed": true,
-                "target": "2EF6qx5a2mRytRV2kpcMPv2bfbSjp5fTkXSRnNX8MHxt",
+                "target": "7g7YEe3bLsRGie3yyB6RpcfZJ5cj5hiNxCfkVb1TgZQJ",
                 "signatures_fetched": 40,
-                "unique_slots_in_batch": 40,
-                "oldest_block_time": 1795599769,
-                "newest_block_time": 1795600963,
+                "unique_slots_in_batch": 20,
+                "oldest_block_time": 1795654572,
+                "newest_block_time": 1795654583,
                 "note": "Signature list has no signers; full early-buyer clustering would need getTransaction and was not run"
               }
             }
@@ -6915,155 +6914,159 @@
           "warnings": [],
           "rpc_launch_check": {
             "performed": true,
-            "target": "2EF6qx5a2mRytRV2kpcMPv2bfbSjp5fTkXSRnNX8MHxt",
+            "target": "7g7YEe3bLsRGie3yyB6RpcfZJ5cj5hiNxCfkVb1TgZQJ",
             "signatures_fetched": 40,
-            "unique_slots_in_batch": 40,
-            "oldest_block_time": 1795599769,
-            "newest_block_time": 1795600963,
+            "unique_slots_in_batch": 20,
+            "oldest_block_time": 1795654572,
+            "newest_block_time": 1795654583,
             "note": "Signature list has no signers; full early-buyer clustering would need getTransaction and was not run"
           }
         },
         "concentration": {
           "passed": true,
-          "reason": "Top-10 non-LP 24.636% / max wallet 3.953% / insider nets 0.0% / creator 0.0% / LP locked 100.0%",
+          "reason": "Top-10 non-LP 2.74% / max wallet 0.279% / insider nets 0.0% / creator 0.0% / LP locked 100.0%",
           "metrics": {
             "holder_source": "rpc_getMultipleAccounts_on_rugcheck_top_accounts",
             "holder_notes": [
-              "Live RPC returned empty account for 8scNhzf8HDANbuCYhqweWaQXPjoNpCFoZp5jQiXMEDow",
-              "Live RPC returned empty account for 2EF6qx5a2mRytRV2kpcMPv2bfbSjp5fTkXSRnNX8MHxt",
+              "RPC getTokenLargestAccounts returned 429 (method rate-limited on this public endpoint)",
               "Live balances refreshed via RPC; the top-N set itself comes from RugCheck (a larger wallet not in that snapshot could be missed)"
             ],
-            "top10_non_lp_pct": 24.636,
-            "max_single_non_lp_pct": 3.953,
+            "top10_non_lp_pct": 2.74,
+            "max_single_non_lp_pct": 0.279,
             "insider_network_pct": 0.0,
             "insider_network_pct_may_overlap": true,
             "creator_pct": 0.0,
-            "creator": "4YnWs3NaxKeYScMTjmas8egYjBofcgzbnEvynSXW3NT5",
+            "creator": "9M7Le1RkLEDu57EK6jTqpH7VR5GrKKKhWrBZNtwAae8E",
             "mint_authority": null,
             "freeze_authority": null,
             "lp_locked_pct": 100.0,
             "primary_lp_locked_pct": 100.0,
             "primary_pool": {
-              "pubkey": "2EF6qx5a2mRytRV2kpcMPv2bfbSjp5fTkXSRnNX8MHxt",
-              "market_type": "pump_fun",
-              "usd": 5029.98
+              "pubkey": "7g7YEe3bLsRGie3yyB6RpcfZJ5cj5hiNxCfkVb1TgZQJ",
+              "market_type": "pump_fun_amm",
+              "usd": 36773.14
             },
             "unlocked_secondary_pools": [],
             "excluded_holders": [
               {
-                "owner": "2EF6qx5a2mRytRV2kpcMPv2bfbSjp5fTkXSRnNX8MHxt",
-                "pct": 32.2316,
+                "owner": "7g7YEe3bLsRGie3yyB6RpcfZJ5cj5hiNxCfkVb1TgZQJ",
+                "pct": 6.7277,
+                "tag": "lp_market"
+              },
+              {
+                "owner": "7g7YEe3bLsRGie3yyB6RpcfZJ5cj5hiNxCfkVb1TgZQJ",
+                "pct": 0.0,
                 "tag": "lp_market"
               }
             ],
             "wallet_holders": [
               {
-                "address": "5XvPickkv29aTbqNGRZj65VKCHafiMgCprWrpZknG7DK",
-                "owner": "5SaD4SzY9KJfbb9mYpdvaMGkUa4KZXgkfCoN4g4PbJcQ",
-                "ui_amount": 39532589.805671,
-                "pct": 3.9533,
+                "address": "E3CjTjRynXXyr4TUw9XbSZQpQMkQ7Ww6CbzDYX5puE6k",
+                "owner": "9535Brwu5RZucMceV9BM1r4bn94LJhsn68aA4YuTXGTw",
+                "ui_amount": 2752796.73812,
+                "pct": 0.2793,
                 "tag": null
               },
               {
-                "address": "9X9xp1dYv5KbsW4uziCVgobiTuLWGfvgryrhNXupKMcf",
-                "owner": "3jYYfwZWxNTuTksLzNANZBmSEVQjPDUVZviyXwnRQGgV",
-                "ui_amount": 34522542.548217,
-                "pct": 3.4523,
+                "address": "69g8phyKsBwcpiGtNiE4p44XpvmykrWLADtxsmYbmiPH",
+                "owner": "8wdcoExbnjrZtcb461h3tYHF113rnycDAqmhD1LCDqtV",
+                "ui_amount": 2746333.002486,
+                "pct": 0.2787,
                 "tag": null
               },
               {
-                "address": "6DihngJzZLBHEKb91CY3QT6o4snBm8Ee4hHndwne6Kmj",
-                "owner": "EGg2VXuYCHeFds7vbX5qkgQwo4nsVCea2sLZYKGYDivX",
-                "ui_amount": 31436515.171749,
-                "pct": 3.1437,
+                "address": "7hZ8pWSu37714Ve1n4Szz8aV9B4Xth796BDztdkGBqfG",
+                "owner": "ASge6PWqzskGKvRfk5Jjs2GNGVvoKe7efSrx6aRm6Ez9",
+                "ui_amount": 2730144.106698,
+                "pct": 0.277,
                 "tag": null
               },
               {
-                "address": "FrrMZ8nLmJhhFsxccycL2iYHyYSb1q7sPSbMdbRhhbze",
-                "owner": "8eP69jziCxvEW6pgGd1huamRR2HS5EjZTYpvteFXYNpG",
-                "ui_amount": 27450583.963808,
-                "pct": 2.7451,
+                "address": "D1w1swcQJabvDQENmkeF5Aai5Z6GZG2XqL1MwZfvP3HM",
+                "owner": "6i81swtFPyKJYfLg5WxkKximMjekLy44c9W3nrumpwQM",
+                "ui_amount": 2721357.433481,
+                "pct": 0.2761,
                 "tag": null
               },
               {
-                "address": "BEsghDtqzPY4kTMFFQ8zR5HmCn7Fq6W5U4DYnaKvMYSC",
-                "owner": "9op6SEN4wrVGo1oPiMp3jdPPRrbjotH6JeNGUQuhZ6Cy",
-                "ui_amount": 23793708.090737,
-                "pct": 2.3794,
+                "address": "4GBdLNRHiWEVgBzAwVYKa1c6K6rzHgBgSVUxhd1mFh5K",
+                "owner": "7Z9riZgXEZRVGYcwb7yJ4Lo4792JMAAPc6G4e8ZDxKii",
+                "ui_amount": 2719207.935246,
+                "pct": 0.2759,
                 "tag": null
               },
               {
-                "address": "Hss8RLGJZvY6NPkKMQiJGtb7WDXnKshbbZV6Tug9qkzX",
-                "owner": "3HTgcPjZwc152nNqQ4djLZjR2BWAwrTEdbGaRTDWDXt9",
-                "ui_amount": 21135827.200017,
-                "pct": 2.1136,
+                "address": "4PXQLMsPFEgHSNptd7eDG7XoWUUrsUm79ytR11oXEBLm",
+                "owner": "5VzGjv2Cmb2DCvWxtoQ8KetXQkS3vm4pKfu7LhaZ1Knp",
+                "ui_amount": 2716815.439706,
+                "pct": 0.2757,
                 "tag": null
               },
               {
-                "address": "4GSMUrZzHKLtDNXW8Tyjt33Kx3GVpsRbmyvjmDC6nqkM",
-                "owner": "33D3iMdCJf3ZM9PE2fnAC5JEyeA16Caebf9JrfDC9UiH",
-                "ui_amount": 19424274.335588,
-                "pct": 1.9424,
+                "address": "GYsfsazbGEfw4Yx4ms3nMgsRZPvKoZTwcDf3tUtDtUR",
+                "owner": "F1A5NsunbLJSFutBkYf7a5zJGkszugSxxAGfWj693tMv",
+                "ui_amount": 2682071.860751,
+                "pct": 0.2722,
                 "tag": null
               },
               {
-                "address": "Fuaqpd9LSTULQiVzxh54vx3sYK1yqt68aLAPNbEHbwrL",
-                "owner": "7HPgYvPwQei9k69nVcprF39YY24r9hu5CTYug2nnBcdF",
-                "ui_amount": 18013064.006857,
-                "pct": 1.8013,
+                "address": "DFor3QT82xwQnQff3RJe485adAVBjFHQZWqAjoDduZct",
+                "owner": "6mEsubW8RbPC81L46nZgeNG3gN4jz7NFwtm6wehcU25u",
+                "ui_amount": 2651625.749323,
+                "pct": 0.2691,
                 "tag": null
               },
               {
-                "address": "93zphhL39E9zecYbGuegcxwwp3jZ14THztAcGCA79Jp6",
-                "owner": "753dMLvTjrKYiaRaCP5i27JH2wPCbNYSxCAKANwxvmPx",
-                "ui_amount": 17879794.621804,
-                "pct": 1.788,
+                "address": "8P5oN1zE5VBciVHpTHQ2Ebk7mueeJa11Sc4FpFiz9mCc",
+                "owner": "G9FuankzcghcobegPYyaC6is3S1UjRLvnRP9B8tGLdit",
+                "ui_amount": 2646136.769885,
+                "pct": 0.2685,
                 "tag": null
               },
               {
-                "address": "DVXPS76jgRdiqR3f2gKzM2vwQ8YUjwGf5b3g965Z7RwS",
-                "owner": "C4aFgeJyiKsyMCRg3PFTT4MELmf6tLAAm4n4JZ4aibF2",
-                "ui_amount": 13165050.255595,
-                "pct": 1.3165,
+                "address": "2qv6KchfvMgDCmgqRgTBGXfmyTRFHPsgaBzs1apiuxdY",
+                "owner": "As5LKq6LVRCqzgAyFpcdirWe8HHgDBjw1doBFcLyw2AR",
+                "ui_amount": 2641025.242299,
+                "pct": 0.268,
                 "tag": null
               },
               {
-                "address": "GyVXcAKE59y7qkqLaMPrFXRjum6f93mAe2tj7hw2AJGj",
-                "owner": "ASES3q81DUZyJRswgbwfWRUcnUrhA3KCbFJmefsbxtsq",
-                "ui_amount": 12750631.840981,
-                "pct": 1.2751,
+                "address": "4pkSzrbx4V6kobMUZwLNt3HLwnFz2qFRXDacMKKMxxdp",
+                "owner": "F8B4m2PyCeQpqEfkcVgGNU1jhL34chn4pFs5hdkCwRUy",
+                "ui_amount": 2634669.918026,
+                "pct": 0.2674,
                 "tag": null
               },
               {
-                "address": "4oZxq8HEGuVJzrHD6KuXHLV1ELYdGqbcE8UUT96UJp13",
-                "owner": "64Sstx2LLQNofvSvMb4ph7URJit3hqnCTzLyv2wFN2GL",
-                "ui_amount": 11503545.274445,
-                "pct": 1.1504,
+                "address": "DbFKfvMvsMGUjapEjgFhB1U4FGPQUgf2t4n4Ug64e1Gh",
+                "owner": "6xXFSE9wCez2zJnfzHRQ3P2VmdBG4kqJex4jCzm91q3o",
+                "ui_amount": 2632098.110012,
+                "pct": 0.2671,
                 "tag": null
               },
               {
-                "address": "69y1VCyw4FiWGfyeYN1qx8xtgKmQt4pw1wRhNGr1sWsB",
-                "owner": "AQCvynPXxT1s2SWCgCxEYDGFin8bhDEXeciaWtv7W1FV",
-                "ui_amount": 11404535.913877,
-                "pct": 1.1405,
+                "address": "FySjikaqEBvmJHKAQBBGwoAco9nE53hyhbfgb5zxviiq",
+                "owner": "HK8nxyCiQztB7LwhzoyN96GfkF477vYYXFrbzYQHpnLZ",
+                "ui_amount": 2609886.972275,
+                "pct": 0.2648,
                 "tag": null
               },
               {
-                "address": "GAzoFx5in5FpE47Q8Hj4fVpdANrGHxDd9cbwFk6VEfMt",
-                "owner": "Ff3e9nyv7q5M1TzMWvp8qZnM5D4SZ3JyQdWQGtB7cj5e",
-                "ui_amount": 10947170.466262,
-                "pct": 1.0947,
+                "address": "7LJA25mhF8hFtAqrmoiecQVf2AWynq6VeYs4j1vkUx9Y",
+                "owner": "AUdmqvKPFtCBWaDc5jpvntrtQNtbWcSFieXbCVAdnBsW",
+                "ui_amount": 2603100.277384,
+                "pct": 0.2641,
                 "tag": null
               },
               {
-                "address": "GE1EfXKfPyfoe8DjUii5PkEgAK8vaZvFnGAPSf6brax8",
-                "owner": "oAK2z6XSwg5PrCri3FbtetBuJw3Ne7Q5i5FTGgw4Kpm",
-                "ui_amount": 10462451.591577,
-                "pct": 1.0462,
+                "address": "9Vo5ftEEG8kkGcNP5C9eWt392bXVwgVRb96qVahyD5Lk",
+                "owner": "JCaV6nCKAXgPVG8GPma5x7ju4APSkFeeKtoetXgbv1TQ",
+                "ui_amount": 2601080.847731,
+                "pct": 0.2639,
                 "tag": null
               }
             ],
-            "total_holders": 416,
+            "total_holders": 1718,
             "insider_network_pct_raw": 0.0,
             "insider_network_count": 0,
             "graph_insiders_detected": 0,
@@ -7072,94 +7075,90 @@
           },
           "warnings": []
         },
-        "failed_criteria": [
-          {
-            "criterion": 3,
-            "name": "upside_5x_10x",
-            "reason": "Liquidity $5,102 below $30,000; Upside score 44/100 below 60"
-          }
-        ],
+        "failed_criteria": [],
         "why_this_could_fail": [
-          "Top-10 non-LP wallets control 24.6% of supply",
-          "Already up 577% in 24h - late entry risk even if under the blowoff cap",
-          "Liquidity is only $5,102; a modest sell can move the price sharply",
-          "Primary trading history is only 15.8 hours old",
+          "Already up 646% in 24h - late entry risk even if under the blowoff cap",
+          "Liquidity is only $36,930; a modest sell can move the price sharply",
+          "Primary trading history is only 0.6 hours old",
           "High meme-coin beta: even a clean setup can go to zero on a sector fade or a dev dump"
         ],
         "links": {
-          "dexscreener": "https://dexscreener.com/solana/2ef6qx5a2mrytrv2kpcmpv2bfbsjp5ftkxsrnnx8mhxt",
-          "solscan": "https://solscan.io/token/94ygGubtS2jZewsuPd13Gqfj4Wi3mh8iGGDpDSYzero",
-          "rugcheck": "https://rugcheck.xyz/tokens/94ygGubtS2jZewsuPd13Gqfj4Wi3mh8iGGDpDSYzero",
-          "fomo": "https://fomo.family/tokens/solana/94ygGubtS2jZewsuPd13Gqfj4Wi3mh8iGGDpDSYzero"
+          "dexscreener": "https://dexscreener.com/solana/7g7yee3blsrgie3yyb6rpcfzj5cj5hinxcfkvb1tgzqj",
+          "solscan": "https://solscan.io/token/73R7L2jLfnweJTXxTiccHMZV6mECaVELPUy3PkHopump",
+          "rugcheck": "https://rugcheck.xyz/tokens/73R7L2jLfnweJTXxTiccHMZV6mECaVELPUy3PkHopump",
+          "pumpfun": "https://pump.fun/coin/73R7L2jLfnweJTXxTiccHMZV6mECaVELPUy3PkHopump",
+          "fomo": "https://fomo.family/tokens/solana/73R7L2jLfnweJTXxTiccHMZV6mECaVELPUy3PkHopump"
         },
         "sources": [
-          "gt_pumpfun_pools",
+          "dex_profiles_latest",
           "rpc_bonding_curve"
         ],
         "holder_source": "rpc_getMultipleAccounts_on_rugcheck_top_accounts",
-        "top10_non_lp_pct": 24.636,
-        "max_single_non_lp_pct": 3.953,
+        "top10_non_lp_pct": 2.74,
+        "max_single_non_lp_pct": 0.279,
         "insider_network_pct": 0.0,
         "creator_pct": 0.0,
         "lp_locked_pct": 100.0,
         "primary_lp_locked_pct": 100.0,
-        "graduated": false,
+        "graduated": true,
         "venue": null,
         "liveness": null,
-        "launchpad": "other",
+        "launchpad": "pumpfun",
         "fomopad_registered": null,
-        "fresh_pair": false,
-        "fresh_graduation": false,
-        "near_graduation": true,
-        "graduation_progress_pct": 93.51,
-        "price_usd": 1.391e-05
-      },
+        "fresh_pair": true,
+        "fresh_graduation": true,
+        "near_graduation": false,
+        "graduation_progress_pct": 100.0,
+        "price_usd": 0.0002792
+      }
+    ],
+    "near_passes": [
       {
-        "mint": "EaWVqkZ1T7h3PnaQBvsEga7WbBLR79gyoV3huTe5pump",
-        "symbol": "GTZ",
-        "name": "Grand Theft Zorto",
-        "market_cap_usd": 11890.85,
-        "liquidity_usd": 3097.1001236812203,
-        "volume_24h_usd": 71905.13,
-        "price_change_24h_pct": 434.0,
-        "age_hours": 16.004719972222222,
+        "mint": "DTSkmo3sCCKLCh91dJLiWCpwcKtK3yDBZMqZGSV1pump",
+        "symbol": "Zero",
+        "name": "ZeroSumEnjoyer",
+        "market_cap_usd": 207086.0,
+        "liquidity_usd": 33211.5,
+        "volume_24h_usd": 1004783.68,
+        "price_change_24h_pct": 613.0,
+        "age_hours": 0.7162556266666666,
         "passed_all_three": false,
         "notify_reason": null,
-        "upside_score": 41,
+        "upside_score": 70,
         "upside": {
-          "passed": false,
-          "score": 41,
+          "passed": true,
+          "score": 70,
           "min_score": 60,
           "breakdown": [
             {
               "name": "mcap_headroom",
               "max": 25,
-              "points": 0,
-              "why": "$11,891 is outside the 5x-10x band"
+              "points": 20,
+              "why": "$207,086 has more headroom but also more early-rug risk"
             },
             {
               "name": "liquidity_depth",
               "max": 15,
-              "points": 7.0,
-              "why": "liq $3,097 is below the floor; liq/mcap 26.0% is healthy"
+              "points": 9.0,
+              "why": "liq $33,212 is thin; liq/mcap 16.0% is healthy"
             },
             {
               "name": "volume_velocity",
               "max": 20,
-              "points": 9.0,
-              "why": "24h vol $71,905 is light; vol/mcap 6.0x is very active; 1959 txns"
+              "points": 18.0,
+              "why": "24h vol $1,004,784; vol/mcap 4.9x is very active; 19926 txns"
             },
             {
               "name": "buy_sell_balance",
               "max": 15,
-              "points": 15,
-              "why": "buy ratio 58.4% (buyers in control)"
+              "points": 12,
+              "why": "buy ratio 53.0% (balanced to slightly bullish)"
             },
             {
               "name": "non_parabolic_entry",
               "max": 15,
-              "points": 4.0,
-              "why": "+434% in 24h is already extended; 16.0h old (young)"
+              "points": 3.0,
+              "why": "+613% in 24h is already extended; only 0.7h old"
             },
             {
               "name": "socials_profile",
@@ -7170,23 +7169,23 @@
             {
               "name": "multi_pool_traction",
               "max": 5,
-              "points": 1,
-              "why": "Single pool only"
+              "points": 3,
+              "why": "2 pools"
             }
           ],
-          "reason": "Liquidity $3,097 below $30,000; Upside score 41/100 below 60",
+          "reason": "Upside score 70/100 with structural cap headroom",
           "inputs": {
-            "market_cap_usd": 11890.85,
-            "liquidity_usd": 3097.1001236812203,
-            "volume_24h_usd": 71905.13,
-            "liq_mcap": 0.2605,
-            "vol_mcap": 6.0471,
-            "buy_ratio": 0.5845,
-            "txns_24h": 1959.0,
-            "price_change_24h_pct": 434.0,
-            "age_hours": 16.0,
+            "market_cap_usd": 207086.0,
+            "liquidity_usd": 33211.5,
+            "volume_24h_usd": 1004783.68,
+            "liq_mcap": 0.1604,
+            "vol_mcap": 4.852,
+            "buy_ratio": 0.53,
+            "txns_24h": 19926.0,
+            "price_change_24h_pct": 613.0,
+            "age_hours": 0.72,
             "has_socials": true,
-            "pair_count": 1
+            "pair_count": 2
           }
         },
         "bundle": {
@@ -7209,7 +7208,7 @@
               "name": "insider_network_clusters",
               "result": "pass",
               "network_count": 1,
-              "graph_insiders_detected": 4,
+              "graph_insiders_detected": 11,
               "large_clusters": [],
               "huge_clusters": []
             },
@@ -7218,11 +7217,11 @@
               "result": "info",
               "detail": {
                 "performed": true,
-                "target": "8432aHRhTCZpEP52FJvyc6HreEqhUEP5j9jp9nx1bBn6",
+                "target": "9sBikgSUu5U3q1JbFwdkWJ4Kb3q7kjEujoo4gd5vYumg",
                 "signatures_fetched": 40,
-                "unique_slots_in_batch": 35,
-                "oldest_block_time": 1795600599,
-                "newest_block_time": 1795601007,
+                "unique_slots_in_batch": 1,
+                "oldest_block_time": 1795654583,
+                "newest_block_time": 1795654583,
                 "note": "Signature list has no signers; full early-buyer clustering would need getTransaction and was not run"
               }
             }
@@ -7230,252 +7229,277 @@
           "warnings": [],
           "rpc_launch_check": {
             "performed": true,
-            "target": "8432aHRhTCZpEP52FJvyc6HreEqhUEP5j9jp9nx1bBn6",
+            "target": "9sBikgSUu5U3q1JbFwdkWJ4Kb3q7kjEujoo4gd5vYumg",
             "signatures_fetched": 40,
-            "unique_slots_in_batch": 35,
-            "oldest_block_time": 1795600599,
-            "newest_block_time": 1795601007,
+            "unique_slots_in_batch": 1,
+            "oldest_block_time": 1795654583,
+            "newest_block_time": 1795654583,
             "note": "Signature list has no signers; full early-buyer clustering would need getTransaction and was not run"
           }
         },
         "concentration": {
-          "passed": true,
-          "reason": "Top-10 non-LP 21.69% / max wallet 3.553% / insider nets 2.039% / creator 0.0% / LP locked 100.0%",
+          "passed": false,
+          "reason": "Largest non-LP wallet holds 10.30% (max 8%)",
           "metrics": {
             "holder_source": "rpc_getMultipleAccounts_on_rugcheck_top_accounts",
             "holder_notes": [
-              "Live RPC returned empty account for 49FE9jQVhnsSg4cxV89QZt34zkt6dvH1kZT7b62tzWqh",
-              "Live RPC returned empty account for 8432aHRhTCZpEP52FJvyc6HreEqhUEP5j9jp9nx1bBn6",
               "Live balances refreshed via RPC; the top-N set itself comes from RugCheck (a larger wallet not in that snapshot could be missed)"
             ],
-            "top10_non_lp_pct": 21.69,
-            "max_single_non_lp_pct": 3.553,
-            "insider_network_pct": 2.039,
+            "top10_non_lp_pct": 24.544,
+            "max_single_non_lp_pct": 10.3,
+            "insider_network_pct": 12.341,
             "insider_network_pct_may_overlap": true,
             "creator_pct": 0.0,
-            "creator": "6UxdQidvxuKs5mUW8pc3Uvm5j5hNY4sdU7ZQD7jp9YeV",
+            "creator": "5HdZ6x1nT3g4mNPoJpj2BkyCccXBcvchYupqYHBZWC2J",
             "mint_authority": null,
             "freeze_authority": null,
-            "lp_locked_pct": 100.0,
+            "lp_locked_pct": 75.43,
             "primary_lp_locked_pct": 100.0,
             "primary_pool": {
-              "pubkey": "8432aHRhTCZpEP52FJvyc6HreEqhUEP5j9jp9nx1bBn6",
-              "market_type": "pump_fun",
-              "usd": 5029.6
+              "pubkey": "9sBikgSUu5U3q1JbFwdkWJ4Kb3q7kjEujoo4gd5vYumg",
+              "market_type": "pump_fun_amm",
+              "usd": 36559.19
             },
-            "unlocked_secondary_pools": [],
+            "unlocked_secondary_pools": [
+              {
+                "pubkey": "GiPqiNEZszvheMjVHNA3ukpDnd1CaNyP4rR9WYodpapx",
+                "market_type": "meteoraDlmm",
+                "usd": 11908.62,
+                "lp_locked_pct": 0.0
+              }
+            ],
             "excluded_holders": [
               {
-                "owner": "8432aHRhTCZpEP52FJvyc6HreEqhUEP5j9jp9nx1bBn6",
-                "pct": 35.151,
+                "owner": "9sBikgSUu5U3q1JbFwdkWJ4Kb3q7kjEujoo4gd5vYumg",
+                "pct": 8.3353,
+                "tag": "lp_market"
+              },
+              {
+                "owner": "GiPqiNEZszvheMjVHNA3ukpDnd1CaNyP4rR9WYodpapx",
+                "pct": 2.3304,
+                "tag": "lp_market"
+              },
+              {
+                "owner": "9sBikgSUu5U3q1JbFwdkWJ4Kb3q7kjEujoo4gd5vYumg",
+                "pct": 0.0,
+                "tag": "lp_market"
+              },
+              {
+                "owner": "GiPqiNEZszvheMjVHNA3ukpDnd1CaNyP4rR9WYodpapx",
+                "pct": 0.0,
                 "tag": "lp_market"
               }
             ],
             "wallet_holders": [
               {
-                "address": "C9zrFrr6cJn5wyk63KrwswbC7nBriicnvyZFuvKqoqoS",
-                "owner": "HANcjmXUgZ5as9nUFcKC7ang9hwJcMYE7fCF5LrXZf4j",
-                "ui_amount": 35533013.611254,
-                "pct": 3.5533,
+                "address": "6A1fDCChhu745n98WrJV6ZGzgHv5i5qBZsVZnhh8JzXs",
+                "owner": "Czrp1c6CMNfhHw7LecnMS7wCqCAJq7NtRsT943wKeATL",
+                "ui_amount": 100000000.0,
+                "pct": 10.3005,
                 "tag": null
               },
               {
-                "address": "2qUB6ttECEzj8H4bobGHV4ftcPuJ1VJryisbqxcYWrSs",
-                "owner": "AusMtCwzrPnPoJUSHYUH9iogVwpWh2ESHC6xWU75tBDo",
-                "ui_amount": 30683802.992548,
-                "pct": 3.0684,
+                "address": "6DTHsivdz9eoRBxkFCUoRCSMySRc4CjF2LUpLodRikHW",
+                "owner": "C6LEy6kPXYBaTAecb2xhm8VPVGJFAdQc2T9tX7zqFAut",
+                "ui_amount": 32560131.369977,
+                "pct": 3.3538,
                 "tag": null
               },
               {
-                "address": "e9LmPfK8WCpfKLxUYAYEcbGJySbmPF5Vmh9R4XUM1uM",
-                "owner": "J4K89bZiCMtz8MBfcSzDrpHhE5LTnNVX2oik8HHnS7mX",
-                "ui_amount": 21331550.096803,
-                "pct": 2.1332,
+                "address": "4JcVA8wKbyuXmLYNX4EpyKhD2v4FUZeK3MExQRvgCxAt",
+                "owner": "5sAQHDFzem7erKy5u3H6zTU8dbrYjfkEzhgn3dnek5qe",
+                "ui_amount": 17233115.559367,
+                "pct": 1.7751,
                 "tag": null
               },
               {
-                "address": "9S7yXSsufmpZ4JJDGoGDLbXsDcVo1K4SwbQkNMCrQRiE",
-                "owner": "t8DDJRMcR61CEPYjysyfWnSkaPCN8iuAr4zU1icuZYA",
-                "ui_amount": 21240403.768957,
-                "pct": 2.124,
+                "address": "7r5oAr1CXKvWiJ6zb4BovrqUySzNSLw8eBR3eqhvRyHY",
+                "owner": "9SbpRzApy9ruStXLPXNsAqEHKrF3jPKLxSEyQ9monnsB",
+                "ui_amount": 15218043.290276,
+                "pct": 1.5675,
                 "tag": null
               },
               {
-                "address": "5hBDk8Mv7ZLb71zAV7XZHzWVsTDsZ3qHkF9iARctA1Cu",
-                "owner": "EioyuQqA6zg93ZfKy55eQc4R3MFpaG4s5uG7Lvy543c5",
-                "ui_amount": 20217544.690904,
-                "pct": 2.0218,
+                "address": "BgJ2RWzjSV3dmAN87qs3Wh3J2gvifLr77qPVh9vam8j2",
+                "owner": "8QiimsweRfkdUmkprW1MYQHnLyuvLhpbmaXnzCy47nZH",
+                "ui_amount": 13396877.279563,
+                "pct": 1.3799,
                 "tag": null
               },
               {
-                "address": "HxQsbPYwqA2tCtb1isZqiyxPMUpULRTC6pkry3ar2AU3",
-                "owner": "9jG7Y2zaoJHPirEJKS2y7kdeHTzQvuim7zos9n8o31Ja",
-                "ui_amount": 18906944.97273,
-                "pct": 1.8907,
+                "address": "9Y44mLRiE7zVdC6eZbqqH6N3cfCFY9DHpHGuXbN8e4Rk",
+                "owner": "47VmvPdve8uFxnwvGZNMWFARihH1bNQv8HsTxPQSdEcq",
+                "ui_amount": 12961221.877075,
+                "pct": 1.3351,
                 "tag": null
               },
               {
-                "address": "33VnWu95R2pgvu6RAiXt7uM4QyfyBqGJSp1isKxnvjsc",
-                "owner": "E8KHTsNfMyY6cL9wgn2PC9rJbgPEgrxWptcZGkyU1nFK",
-                "ui_amount": 18223175.59659,
-                "pct": 1.8223,
+                "address": "4Vzh3HGnLXAj5GxmaB3iwJBcZXDAbcNPuLWcyWZvYtek",
+                "owner": "6vZpjA1Cqqj21awRbo8be1eA5feK53oGjDJ6JeV91V7F",
+                "ui_amount": 12900333.268544,
+                "pct": 1.3288,
                 "tag": null
               },
               {
-                "address": "8h3WE6vr4babRx78TbRX6s8teA2rd4y1bGaU3dHG5DE1",
-                "owner": "GBLQA9LkcWabM9JwpgxinZd5VHXpvWz94EZtgvgxhpAh",
-                "ui_amount": 18033319.494973,
-                "pct": 1.8033,
+                "address": "EFSz2FnKJPMR5pkSjFqwfuy8bSrDSBJt9bQcbha2c83X",
+                "owner": "59WwRHJyoFDL4D9fBBkG71dzZEZgyPmSFPNAsbTZRay6",
+                "ui_amount": 12190836.07598,
+                "pct": 1.2557,
                 "tag": null
               },
               {
-                "address": "Eb6VfFvPk1vZ4QMfmAQ9qSo3B1guaiQbD69EoMt3XTP5",
-                "owner": "6MoafZQTXjuyTrfQJ8Y2JmzjekuqPSUeTJCn6nFLiqNc",
-                "ui_amount": 16926750.845558,
-                "pct": 1.6927,
+                "address": "3hAmQa5mDSrCXYwW76DxPZXUjvRVk1RiPuWcTmcbQi8A",
+                "owner": "ARJHPXR9bUfdkvoiwYVHehAuszygkGY8T55U7NcPimMm",
+                "ui_amount": 11831068.208196,
+                "pct": 1.2187,
                 "tag": null
               },
               {
-                "address": "9B6yhYLyWp2j5khJKGnPQs8Atw63h4qu2cNfW1MaA5MF",
-                "owner": "ECxUx57pkiAxFDZ2y91xbBGgWJxvnCB45SVU62eJ1jzL",
-                "ui_amount": 15801826.258234,
-                "pct": 1.5802,
+                "address": "DzTWyuB8yxmg57Sfomu1EHBj51rrAEdtwBJQsNgid8CN",
+                "owner": "Hvba3E1xadtfjoa1sAvjWDdHzwQHQR27H4vYRhWKANBt",
+                "ui_amount": 9991244.375122,
+                "pct": 1.0291,
                 "tag": null
               },
               {
-                "address": "sSADGi7jqD6gGCFr4HE5EyS38Q449Ku4BhR8XVGVKgR",
-                "owner": "63sEGJGCGAJddJk9buRzaapUqRRaAV2KPtsx4HWnNNUo",
-                "ui_amount": 13780537.219824,
-                "pct": 1.3781,
+                "address": "Dwh2ypMtqqsnCCNjFCsxiumVLMTA25d9yikFynsRvzAT",
+                "owner": "BH8K9x9qjhsqE9BdjY3jZx8Hsh6yhFJ8V6RStRoM2b9f",
+                "ui_amount": 9951735.205769,
+                "pct": 1.0251,
                 "tag": null
               },
               {
-                "address": "4Q2865heSjgAMrwTuVTMuiYLn4EJHKHCJ6fLYLKLL4xD",
-                "owner": "EoJb62VKuC3uVYx7Kc1a4JojVh3Xd8kSYP9woFVacVJz",
-                "ui_amount": 13763483.243394,
-                "pct": 1.3763,
+                "address": "2RpfQAowajiy6bGQ41EnTvjMaDccLzbZV1dA68KPoTfe",
+                "owner": "3ampiiA7W6f32iDZENhazXiy2bRX6xLXSxthiZcWn71Y",
+                "ui_amount": 9128968.203069,
+                "pct": 0.9403,
                 "tag": null
               },
               {
-                "address": "9DThergsvV6ATD5sBsXLZunrpzxh7BkoXwSsybEr7oZz",
-                "owner": "9S7Xaw9RWxKpcdHoDAu3xMbFKso8mHs7DZUhUGQdBJnj",
-                "ui_amount": 11072799.39335,
-                "pct": 1.1073,
+                "address": "DbAnqwoWumgJDYBYmp25B3U8n9yW5tUWmctm3YNwHUh3",
+                "owner": "GHBJVMg2bsWxG4HsWgiiy1xbsR218wvk2CB4c1PHxvqa",
+                "ui_amount": 8799927.043015,
+                "pct": 0.9064,
                 "tag": null
               },
               {
-                "address": "CAvLgzWJog5BFpdXDHjBCT8EKifwxTjMr48pu47VRGZM",
-                "owner": "2BceynDKAYRoZxKL1LYUALJ2pVsDJB65MD3EJcWG916d",
-                "ui_amount": 10919584.712566,
-                "pct": 1.092,
+                "address": "Dh9dMjoBkMyL1gZU84ErjtoGFAWv7zLBsy5hR9e1kLns",
+                "owner": "kXBmkam1Zvw8GcvHfpQiEep2R9WdobAi8aUMR2KPW3E",
+                "ui_amount": 7473465.754898,
+                "pct": 0.7698,
                 "tag": null
               },
               {
-                "address": "7ogAmnQD6rXKRpMiCdkkK7PtpkuhyUXQBhuCxYPHRNNu",
-                "owner": "8QRwHSyWLV79mZHhdELRKJ9fw7j3aGUv6CmAxsuSNfdd",
-                "ui_amount": 10735543.113318,
-                "pct": 1.0736,
+                "address": "DSU96tjmJpRcdroXakL3awjsyVbLFRGwimADV4kWfDck",
+                "owner": "GccvEcZqMrcNdp3CarCasGdN5dUfdQ4wZ6iQsk5myRzX",
+                "ui_amount": 7428303.262207,
+                "pct": 0.7652,
                 "tag": null
               }
             ],
-            "total_holders": 233,
-            "insider_network_pct_raw": 2.039,
+            "total_holders": 2890,
+            "insider_network_pct_raw": 12.341,
             "insider_network_count": 1,
-            "graph_insiders_detected": 4,
-            "lp_locked_pct_rugcheck_summary": 100.0,
-            "market_count": 1
+            "graph_insiders_detected": 11,
+            "lp_locked_pct_rugcheck_summary": 75.42984054862906,
+            "market_count": 2
           },
-          "warnings": []
+          "warnings": [
+            "1 secondary pool(s) appear unlocked"
+          ]
         },
         "failed_criteria": [
           {
-            "criterion": 3,
-            "name": "upside_5x_10x",
-            "reason": "Liquidity $3,097 below $30,000; Upside score 41/100 below 60"
+            "criterion": 2,
+            "name": "insider_concentration",
+            "reason": "Largest non-LP wallet holds 10.30% (max 8%)"
           }
         ],
         "why_this_could_fail": [
-          "Top-10 non-LP wallets control 21.7% of supply",
-          "Already up 434% in 24h - late entry risk even if under the blowoff cap",
-          "Liquidity is only $3,097; a modest sell can move the price sharply",
-          "Primary trading history is only 16.0 hours old",
+          "1 secondary pool(s) appear unlocked",
+          "Unlocked secondary meteoraDlmm GiPqiNEZ... holds ~$11,909 and can be yanked",
+          "Insider networks still cluster ~12.3% of supply (upper bound; wallets may overlap)",
+          "A single non-LP wallet holds 10.3% and can dump",
+          "Top-10 non-LP wallets control 24.5% of supply",
+          "Already up 613% in 24h - late entry risk even if under the blowoff cap",
+          "Liquidity is only $33,212; a modest sell can move the price sharply",
           "High meme-coin beta: even a clean setup can go to zero on a sector fade or a dev dump"
         ],
         "links": {
-          "dexscreener": "https://dexscreener.com/solana/8432ahrhtczpep52fjvyc6hreeqhuep5j9jp9nx1bbn6",
-          "solscan": "https://solscan.io/token/EaWVqkZ1T7h3PnaQBvsEga7WbBLR79gyoV3huTe5pump",
-          "rugcheck": "https://rugcheck.xyz/tokens/EaWVqkZ1T7h3PnaQBvsEga7WbBLR79gyoV3huTe5pump",
-          "pumpfun": "https://pump.fun/coin/EaWVqkZ1T7h3PnaQBvsEga7WbBLR79gyoV3huTe5pump",
-          "fomo": "https://fomo.family/tokens/solana/EaWVqkZ1T7h3PnaQBvsEga7WbBLR79gyoV3huTe5pump"
+          "dexscreener": "https://dexscreener.com/solana/9sbikgsuu5u3q1jbfwdkwj4kb3q7kjeujoo4gd5vyumg",
+          "solscan": "https://solscan.io/token/DTSkmo3sCCKLCh91dJLiWCpwcKtK3yDBZMqZGSV1pump",
+          "rugcheck": "https://rugcheck.xyz/tokens/DTSkmo3sCCKLCh91dJLiWCpwcKtK3yDBZMqZGSV1pump",
+          "pumpfun": "https://pump.fun/coin/DTSkmo3sCCKLCh91dJLiWCpwcKtK3yDBZMqZGSV1pump",
+          "fomo": "https://fomo.family/tokens/solana/DTSkmo3sCCKLCh91dJLiWCpwcKtK3yDBZMqZGSV1pump"
         },
         "sources": [
           "dex_profiles_latest",
           "rpc_bonding_curve"
         ],
         "holder_source": "rpc_getMultipleAccounts_on_rugcheck_top_accounts",
-        "top10_non_lp_pct": 21.69,
-        "max_single_non_lp_pct": 3.553,
-        "insider_network_pct": 2.039,
+        "top10_non_lp_pct": 24.544,
+        "max_single_non_lp_pct": 10.3,
+        "insider_network_pct": 12.341,
         "creator_pct": 0.0,
-        "lp_locked_pct": 100.0,
+        "lp_locked_pct": 75.43,
         "primary_lp_locked_pct": 100.0,
-        "graduated": false,
+        "graduated": true,
         "venue": null,
         "liveness": null,
         "launchpad": "pumpfun",
         "fomopad_registered": null,
-        "fresh_pair": false,
-        "fresh_graduation": false,
-        "near_graduation": true,
-        "graduation_progress_pct": 83.32,
-        "price_usd": 1.189e-05
+        "fresh_pair": true,
+        "fresh_graduation": true,
+        "near_graduation": false,
+        "graduation_progress_pct": 100.0,
+        "price_usd": 0.0002074
       },
       {
-        "mint": "8LPJzr3SfD8Ehv13jjNj6LAUsxbaPeRsLemFdV8Wpump",
-        "symbol": "Bernard",
-        "name": "Bernard ",
-        "market_cap_usd": 14263.51,
-        "liquidity_usd": 3452.4000164968397,
-        "volume_24h_usd": 39365.37,
-        "price_change_24h_pct": 656.0,
-        "age_hours": 0.3283310747222222,
+        "mint": "5CPiu3nmhYWWnj6BfebvMzqqwPUBm8UzBtNGW4cEpump",
+        "symbol": "Pumpcat",
+        "name": "Pumpcat",
+        "market_cap_usd": 352698.0,
+        "liquidity_usd": 41418.3,
+        "volume_24h_usd": 314375.69,
+        "price_change_24h_pct": 993.0,
+        "age_hours": 0.8915334136111112,
         "passed_all_three": false,
         "notify_reason": null,
-        "upside_score": 40,
+        "upside_score": 62,
         "upside": {
-          "passed": false,
-          "score": 40,
+          "passed": true,
+          "score": 62,
           "min_score": 60,
           "breakdown": [
             {
               "name": "mcap_headroom",
               "max": 25,
-              "points": 0,
-              "why": "$14,264 is outside the 5x-10x band"
+              "points": 20,
+              "why": "$352,698 has more headroom but also more early-rug risk"
             },
             {
               "name": "liquidity_depth",
               "max": 15,
               "points": 7.0,
-              "why": "liq $3,452 is below the floor; liq/mcap 24.2% is healthy"
+              "why": "liq $41,418 is thin; liq/mcap 11.7% is ok"
             },
             {
               "name": "volume_velocity",
               "max": 20,
-              "points": 9.0,
-              "why": "24h vol $39,365 is light; vol/mcap 2.8x is very active; 1166 txns"
+              "points": 11.0,
+              "why": "24h vol $314,376; vol/mcap 89.1% is active; 10046 txns"
             },
             {
               "name": "buy_sell_balance",
               "max": 15,
               "points": 15,
-              "why": "buy ratio 57.8% (buyers in control)"
+              "why": "buy ratio 75.3% (buyers in control)"
             },
             {
               "name": "non_parabolic_entry",
               "max": 15,
               "points": 3.0,
-              "why": "+656% in 24h is already extended; only 0.3h old"
+              "why": "+993% in 24h is already extended; only 0.9h old"
             },
             {
               "name": "socials_profile",
@@ -7490,24 +7514,24 @@
               "why": "Single pool only"
             }
           ],
-          "reason": "Liquidity $3,452 below $30,000; Upside score 40/100 below 60",
+          "reason": "Upside score 62/100 with structural cap headroom",
           "inputs": {
-            "market_cap_usd": 14263.51,
-            "liquidity_usd": 3452.4000164968397,
-            "volume_24h_usd": 39365.37,
-            "liq_mcap": 0.242,
-            "vol_mcap": 2.7599,
-            "buy_ratio": 0.578,
-            "txns_24h": 1166.0,
-            "price_change_24h_pct": 656.0,
-            "age_hours": 0.33,
+            "market_cap_usd": 352698.0,
+            "liquidity_usd": 41418.3,
+            "volume_24h_usd": 314375.69,
+            "liq_mcap": 0.1174,
+            "vol_mcap": 0.8913,
+            "buy_ratio": 0.7532,
+            "txns_24h": 10046.0,
+            "price_change_24h_pct": 993.0,
+            "age_hours": 0.89,
             "has_socials": true,
             "pair_count": 1
           }
         },
         "bundle": {
-          "passed": true,
-          "reason": "No bundled-supply, sniper, copycat, or large coordinated-cluster flags",
+          "passed": false,
+          "reason": "Uniform split-wallet cluster: 14 non-LP wallets each hold ~1.39% (range 1.32-1.45%, together 19.51%) - looks like a bundled launch split",
           "checks": [
             {
               "name": "rugcheck_risks",
@@ -7534,161 +7558,181 @@
               "result": "info",
               "detail": {
                 "performed": true,
-                "target": "EgD83Uv6kMkJt4zkLAJWUrqbXXtJcv2RkcJKkhARDdXN",
+                "target": "4j4q8fC5Y3iazhQRZJMti95jEuQk38yX397q2DePxwnf",
                 "signatures_fetched": 40,
-                "unique_slots_in_batch": 11,
-                "oldest_block_time": 1795600999,
-                "newest_block_time": 1795601017,
+                "unique_slots_in_batch": 24,
+                "oldest_block_time": 1795654571,
+                "newest_block_time": 1795654583,
                 "note": "Signature list has no signers; full early-buyer clustering would need getTransaction and was not run"
+              }
+            },
+            {
+              "name": "uniform_wallet_cluster",
+              "result": "fail",
+              "cluster": {
+                "size": 14,
+                "avg_pct": 1.393,
+                "min_pct": 1.32,
+                "max_pct": 1.451,
+                "total_pct": 19.506
               }
             }
           ],
           "warnings": [],
           "rpc_launch_check": {
             "performed": true,
-            "target": "EgD83Uv6kMkJt4zkLAJWUrqbXXtJcv2RkcJKkhARDdXN",
+            "target": "4j4q8fC5Y3iazhQRZJMti95jEuQk38yX397q2DePxwnf",
             "signatures_fetched": 40,
-            "unique_slots_in_batch": 11,
-            "oldest_block_time": 1795600999,
-            "newest_block_time": 1795601017,
+            "unique_slots_in_batch": 24,
+            "oldest_block_time": 1795654571,
+            "newest_block_time": 1795654583,
             "note": "Signature list has no signers; full early-buyer clustering would need getTransaction and was not run"
           }
         },
         "concentration": {
           "passed": true,
-          "reason": "Top-10 non-LP 23.614% / max wallet 3.79% / insider nets 0.0% / creator 0.0% / LP locked 100.0%",
+          "reason": "Top-10 non-LP 14.113% / max wallet 1.451% / insider nets 0.0% / creator 0.0% / LP locked 100.0%",
           "metrics": {
             "holder_source": "rpc_getMultipleAccounts_on_rugcheck_top_accounts",
             "holder_notes": [
-              "Live RPC returned empty account for 7YXHKoU2omCY1HUfKEf93vm5K9gsuGLFwYdTUWWr3HMj",
-              "Live RPC returned empty account for EgD83Uv6kMkJt4zkLAJWUrqbXXtJcv2RkcJKkhARDdXN",
               "Live balances refreshed via RPC; the top-N set itself comes from RugCheck (a larger wallet not in that snapshot could be missed)"
             ],
-            "top10_non_lp_pct": 23.614,
-            "max_single_non_lp_pct": 3.79,
+            "top10_non_lp_pct": 14.113,
+            "max_single_non_lp_pct": 1.451,
             "insider_network_pct": 0.0,
             "insider_network_pct_may_overlap": true,
             "creator_pct": 0.0,
-            "creator": "ycDDo6DHrE4dXB53xbdAtjvRxeKj8yjxBpndkBzt59Z",
+            "creator": "2Pm9iyxcuGdiCzJAVAUdQJx9iUESrTD8yCj18yqcYjTS",
             "mint_authority": null,
             "freeze_authority": null,
             "lp_locked_pct": 100.0,
             "primary_lp_locked_pct": 100.0,
             "primary_pool": {
-              "pubkey": "EgD83Uv6kMkJt4zkLAJWUrqbXXtJcv2RkcJKkhARDdXN",
-              "market_type": "pump_fun",
-              "usd": 5091.83
+              "pubkey": "4j4q8fC5Y3iazhQRZJMti95jEuQk38yX397q2DePxwnf",
+              "market_type": "pump_fun_amm",
+              "usd": 40778.94
             },
             "unlocked_secondary_pools": [],
-            "excluded_holders": [],
+            "excluded_holders": [
+              {
+                "owner": "4j4q8fC5Y3iazhQRZJMti95jEuQk38yX397q2DePxwnf",
+                "pct": 5.9973,
+                "tag": "lp_market"
+              },
+              {
+                "owner": "4j4q8fC5Y3iazhQRZJMti95jEuQk38yX397q2DePxwnf",
+                "pct": 0.0,
+                "tag": "lp_market"
+              }
+            ],
             "wallet_holders": [
               {
-                "address": "4Y9MhwNamMhXYyx3hf5b37wwAMbh6525Yjs5qT7wuYdw",
-                "owner": "8DcZArGykFUmpSLZZMVDqAN3TwjmxFVAbPSVtzknbJ7y",
-                "ui_amount": 37902427.334107,
-                "pct": 3.7902,
+                "address": "6gbuiCvNiMNrqsYkk3kfno6iQp5G3CTi21jMRARu3oHr",
+                "owner": "DT1dbY1UdjSmXkznvywDxvZP5uApNsqWJy3t7tsTrNMN",
+                "ui_amount": 14387146.994745,
+                "pct": 1.451,
                 "tag": null
               },
               {
-                "address": "E4M734yd9i1B17vLkodnNXKXX4aBmZXpsL2WYgAQyn4D",
-                "owner": "6ctVGEAsDSZXGAbedvB9PjQRKzwZ7KGRntdQS1kxuXs6",
-                "ui_amount": 31180970.677278,
-                "pct": 3.1181,
+                "address": "9ZtUt3VJuQLxefkoRZgdXE7E4v7p1dK7n8khdgTdH5QA",
+                "owner": "ApQphSZNGNXugDf8UFMRPAYXjRC4UxvufL1VreaW8M2a",
+                "ui_amount": 14225575.037999,
+                "pct": 1.4347,
                 "tag": null
               },
               {
-                "address": "2ndnazUVN8BKJEFDpUeLtK2aYm5zDLLcXzrwbqMP4coy",
-                "owner": "FqojC24nUn3x6oMQC2ypBHmtH7rFAnKS6DvwsJoCMaiv",
-                "ui_amount": 24472338.170897,
-                "pct": 2.4472,
+                "address": "A1XdK4DPfH2x4Cfy1NVA1TwXdyKJxmAfbdiYEbyqWgFr",
+                "owner": "Bi9Hfw5vHfHhQNjM2JdT58kcysY2YWxxJp4dokhVp64T",
+                "ui_amount": 14097664.087708,
+                "pct": 1.4218,
                 "tag": null
               },
               {
-                "address": "Eq2uXkoZfRnpZ4oYyS14ag2AyWPB2WcNkuVndVvrEQjV",
-                "owner": "AELJqv49aUkr9d4NTRLH7oTCZPgtYLUz2bmkmkYyQHnK",
-                "ui_amount": 24241404.962193,
-                "pct": 2.4241,
+                "address": "27VEQXkvpBDKoemMnPtW73Qnfo1BfQ2SWeqoSnbSejaM",
+                "owner": "AGkzoBfmCGYHfJXHbFnZVfaG22gpqKogJhwKNr93UVUb",
+                "ui_amount": 14095939.588511,
+                "pct": 1.4216,
                 "tag": null
               },
               {
-                "address": "6TPpnhfNp3WgjMx4HZ9mxMgBxLYKmXPeFziZz76ZWCfM",
-                "owner": "CSLSKvrDMHxN2khMiza6FhKJw83P3teMJSnod261Z8Ba",
-                "ui_amount": 21833395.852096,
-                "pct": 2.1833,
+                "address": "87BF59mNXFaxUkwabJd1mYnYhpboGtgyFCfH6CuwwLH9",
+                "owner": "JA15BDb3oSN2kx9uunkZPLJ6xYyQiXq5hyM3udexX1ex",
+                "ui_amount": 14088494.206392,
+                "pct": 1.4208,
                 "tag": null
               },
               {
-                "address": "CTgeNMyVeunzq5MmQHD9bq9tet5FkuChVU8LFFN4jpwD",
-                "owner": "F9tsPz2xPMwBo2KqeWpbtPksgmyA24xYc4GCzr1A9B9A",
-                "ui_amount": 21327065.904041,
-                "pct": 2.1327,
+                "address": "Df4ysVGedxyBghBybmsSPKumRuBCNYCU4dVXQwYxZtqH",
+                "owner": "C1GATr9gJvD1hG6aGgYnUFqKrUMTnNAhToKBvsEtUYxs",
+                "ui_amount": 14081655.264609,
+                "pct": 1.4201,
                 "tag": null
               },
               {
-                "address": "7iSJ827qXNCRvaQQZ84Ln54KJYoR2paj6TNqpntBDtUF",
-                "owner": "H37N3UjZut3fBwymcuvNpN8CMezcYKY1roKE5GR7iF2F",
-                "ui_amount": 20160132.816052,
-                "pct": 2.016,
+                "address": "7YbqgcyRw5LvWUZy3HwoQjbPE2unEPxBdXDkJ2MKa5sV",
+                "owner": "92v6iFWpmf2WmpDbTqZVyy5MsioVFyGXn4NJE4PjvHVt",
+                "ui_amount": 13934395.339638,
+                "pct": 1.4053,
                 "tag": null
               },
               {
-                "address": "B3adJu24wb7F2H7MskrdQodxdibJSJct6WQ1z594w2gv",
-                "owner": "HvfbhQSWSWUSJ8ecBGaUUQ1bNjz5KY4uLSoKQXkv6qAF",
-                "ui_amount": 19348676.89274,
-                "pct": 1.9349,
+                "address": "Ak6U41wv4kpryJmhXSH1XUvheSMTFgHUjwgqukEUcCBs",
+                "owner": "EJMbmEAxD9ycn7nbcALjFoDcp2Kfd13Lyo1YpVi7AdZn",
+                "ui_amount": 13782949.703511,
+                "pct": 1.39,
                 "tag": null
               },
               {
-                "address": "7MbQLRMnXwuHcQ1T2PC2mvXX5vyDPLNZ5t8ZYrYtRpiq",
-                "owner": "3YVxXbbUxQbmnR5nL255cuZwm3WTPNnyNMbFZ6c4iCdA",
-                "ui_amount": 19263112.807756,
-                "pct": 1.9263,
+                "address": "HfNSeFR1K8yLbnfYpH7Y2Z2hz7mVmAVTpz3SYp8KaQ2X",
+                "owner": "7nRn1fbqjcgDNC69YNUwiYfh7uV444QTqbeKiezusDEV",
+                "ui_amount": 13647741.307577,
+                "pct": 1.3764,
                 "tag": null
               },
               {
-                "address": "GLrq36TXhqhzapFMRwr1vtESZV8Vt9e8xJMji8r9J9MN",
-                "owner": "7XURCfraWRfNoNBk9wNqFmoWUdCGrDZXrGoWSc7WE5Nv",
-                "ui_amount": 16415622.645636,
-                "pct": 1.6416,
+                "address": "GJBL5ejAcGsH9921Bjo4VCJqAR7kyEZ2PeDuzG7naTNi",
+                "owner": "J4muaDtRqb9ea6vUqMUZqiuypUM2gtT62jyAGdpDRDc2",
+                "ui_amount": 13594193.406081,
+                "pct": 1.371,
                 "tag": null
               },
               {
-                "address": "Ck37sGpefsQkFUt1ErQX9RY2Tzx4vDKRFvcwaga48P3J",
-                "owner": "4xWwgcjfnK4CspxSTdiXszd5JcorWFj95v2y6QtkPurB",
-                "ui_amount": 15485468.434251,
-                "pct": 1.5485,
+                "address": "6KboFjHuwpa5M8MEJeNxREYovcViexgMGWzv2DSsqCu7",
+                "owner": "36Hytv1Ufy66jrT2VvK5maNJ6J4DkZojy4ygZejEQxdr",
+                "ui_amount": 13581039.262803,
+                "pct": 1.3697,
                 "tag": null
               },
               {
-                "address": "F46GKFu63bpTcCcPZmxJ7HEKBkJC2w4NJ5uueHHi29YY",
-                "owner": "78roRy8jRtZ11brjUxFve9XD5Aku27vfJBBGTm4cRXxF",
-                "ui_amount": 11718532.749248,
-                "pct": 1.1719,
+                "address": "9jiWmsXBnjJeyRqFDbgo2oxuSU56qbmRL2PRzxPRLxoT",
+                "owner": "9pX3rs6UwM88WpAyVtx62YqiGTh2Dk2HsvtMCnYq31sP",
+                "ui_amount": 13489021.334349,
+                "pct": 1.3604,
                 "tag": null
               },
               {
-                "address": "GZuo56BnfAiKpHKxmhUv4PLyfZvkGNQnfT1RUHUrQj2g",
-                "owner": "AZdMC2JAncEpA12HiXPH95iHjhmebc8rKe2mvpKjeNMi",
-                "ui_amount": 11015213.668339,
-                "pct": 1.1015,
+                "address": "CPaByfJT5rhewUpU1zXLFAifJB4nqR3jVtKgKSDQu2mr",
+                "owner": "9c9DW6uHthkDtLypkY25DiMWJn9XtVGRGQXMNy8Nd1pe",
+                "ui_amount": 13324879.751076,
+                "pct": 1.3438,
                 "tag": null
               },
               {
-                "address": "H2Q4GEYczLMmxujoDj5yL2NHVGb92hTtRWdRVj6kr4u5",
-                "owner": "9G95uxbSBv13AG8d7dS79Hh3KvkiaNRn9aV8cZrWjNYT",
-                "ui_amount": 10057295.179852,
-                "pct": 1.0057,
+                "address": "6JRpukyB9PzQF1z5ciTaVe2RF2c1HnJd9cfuTH66aepP",
+                "owner": "23fSUQ8sxLt1EW3Hyz3XBG4WBWsK4N6egjkErwkpVPej",
+                "ui_amount": 13088018.399702,
+                "pct": 1.3199,
                 "tag": null
               },
               {
-                "address": "HMtWGhREENJwaqES3PRnwiWd81BqmBMYA1wxUaGuiUNX",
-                "owner": "8jfSZ7c3Y8QXQTwUbzZVHUbi6vDrz6UMTV8wKKsN1BoM",
-                "ui_amount": 10020176.676062,
-                "pct": 1.002,
+                "address": "DHYhc388NC6VbxsmiqgrqwgAuvoJUDXZ43GbQzE4xn8L",
+                "owner": "EuydGP2Hi9UaMqHkq7iqJ2D7SMNYzcqj3wduNDoYZ9dN",
+                "ui_amount": 11465761.030627,
+                "pct": 1.1563,
                 "tag": null
               }
             ],
-            "total_holders": 242,
+            "total_holders": 3152,
             "insider_network_pct_raw": 0.0,
             "insider_network_count": 0,
             "graph_insiders_detected": 0,
@@ -7699,93 +7743,92 @@
         },
         "failed_criteria": [
           {
-            "criterion": 3,
-            "name": "upside_5x_10x",
-            "reason": "Liquidity $3,452 below $30,000; Upside score 40/100 below 60"
+            "criterion": 1,
+            "name": "bundle",
+            "reason": "Uniform split-wallet cluster: 14 non-LP wallets each hold ~1.39% (range 1.32-1.45%, together 19.51%) - looks like a bundled launch split"
           }
         ],
         "why_this_could_fail": [
-          "Top-10 non-LP wallets control 23.6% of supply",
-          "Already up 656% in 24h - late entry risk even if under the blowoff cap",
-          "Liquidity is only $3,452; a modest sell can move the price sharply",
-          "Primary trading history is only 0.3 hours old",
+          "Already up 993% in 24h - late entry risk even if under the blowoff cap",
+          "Liquidity is only $41,418; a modest sell can move the price sharply",
+          "Primary trading history is only 0.9 hours old",
           "High meme-coin beta: even a clean setup can go to zero on a sector fade or a dev dump"
         ],
         "links": {
-          "dexscreener": "https://dexscreener.com/solana/egd83uv6kmkjt4zklajwurqbxxtjcv2rkcjkkharddxn",
-          "solscan": "https://solscan.io/token/8LPJzr3SfD8Ehv13jjNj6LAUsxbaPeRsLemFdV8Wpump",
-          "rugcheck": "https://rugcheck.xyz/tokens/8LPJzr3SfD8Ehv13jjNj6LAUsxbaPeRsLemFdV8Wpump",
-          "pumpfun": "https://pump.fun/coin/8LPJzr3SfD8Ehv13jjNj6LAUsxbaPeRsLemFdV8Wpump",
-          "fomo": "https://fomo.family/tokens/solana/8LPJzr3SfD8Ehv13jjNj6LAUsxbaPeRsLemFdV8Wpump"
+          "dexscreener": "https://dexscreener.com/solana/4j4q8fc5y3iazhqrzjmti95jeuqk38yx397q2depxwnf",
+          "solscan": "https://solscan.io/token/5CPiu3nmhYWWnj6BfebvMzqqwPUBm8UzBtNGW4cEpump",
+          "rugcheck": "https://rugcheck.xyz/tokens/5CPiu3nmhYWWnj6BfebvMzqqwPUBm8UzBtNGW4cEpump",
+          "pumpfun": "https://pump.fun/coin/5CPiu3nmhYWWnj6BfebvMzqqwPUBm8UzBtNGW4cEpump",
+          "fomo": "https://fomo.family/tokens/solana/5CPiu3nmhYWWnj6BfebvMzqqwPUBm8UzBtNGW4cEpump"
         },
         "sources": [
           "dex_profiles_latest",
           "rpc_bonding_curve"
         ],
         "holder_source": "rpc_getMultipleAccounts_on_rugcheck_top_accounts",
-        "top10_non_lp_pct": 23.614,
-        "max_single_non_lp_pct": 3.79,
+        "top10_non_lp_pct": 14.113,
+        "max_single_non_lp_pct": 1.451,
         "insider_network_pct": 0.0,
         "creator_pct": 0.0,
         "lp_locked_pct": 100.0,
         "primary_lp_locked_pct": 100.0,
-        "graduated": false,
+        "graduated": true,
         "venue": null,
         "liveness": null,
         "launchpad": "pumpfun",
         "fomopad_registered": null,
         "fresh_pair": true,
-        "fresh_graduation": false,
-        "near_graduation": true,
-        "graduation_progress_pct": 92.88,
-        "price_usd": 1.426e-05
+        "fresh_graduation": true,
+        "near_graduation": false,
+        "graduation_progress_pct": 100.0,
+        "price_usd": 0.0003528
       },
       {
         "mint": "8VWH6ntFczuCzTgGeNVarnRDfi6utetSBn3JfTLxpump",
         "symbol": "pode",
         "name": "pode",
-        "market_cap_usd": 15228.36,
-        "liquidity_usd": 115701.97988240735,
-        "volume_24h_usd": 55064.3,
-        "price_change_24h_pct": 277.0,
-        "age_hours": 106.03833108916668,
+        "market_cap_usd": 13502.6,
+        "liquidity_usd": 98563.5112015552,
+        "volume_24h_usd": 81674.92,
+        "price_change_24h_pct": 102.0,
+        "age_hours": 120.91903341972223,
         "passed_all_three": false,
         "notify_reason": null,
-        "upside_score": 54,
+        "upside_score": 56,
         "upside": {
           "passed": false,
-          "score": 54,
+          "score": 56,
           "min_score": 60,
           "breakdown": [
             {
               "name": "mcap_headroom",
               "max": 25,
               "points": 0,
-              "why": "$15,228 is outside the 5x-10x band"
+              "why": "$13,503 is outside the 5x-10x band"
             },
             {
               "name": "liquidity_depth",
               "max": 15,
-              "points": 13.0,
-              "why": "liq $115,702 is adequate; liq/mcap 759.8% is healthy"
+              "points": 11.0,
+              "why": "liq $98,564 is modest; liq/mcap 730.0% is healthy"
             },
             {
               "name": "volume_velocity",
               "max": 20,
               "points": 9.0,
-              "why": "24h vol $55,064 is light; vol/mcap 3.6x is very active; 1199 txns"
+              "why": "24h vol $81,675 is light; vol/mcap 6.0x is very active; 1598 txns"
             },
             {
               "name": "buy_sell_balance",
               "max": 15,
               "points": 15,
-              "why": "buy ratio 66.3% (buyers in control)"
+              "why": "buy ratio 64.8% (buyers in control)"
             },
             {
               "name": "non_parabolic_entry",
               "max": 15,
-              "points": 11.0,
-              "why": "+277% in 24h is warm; 106.0h old (established enough to not be a brand-new launch)"
+              "points": 15,
+              "why": "24h change +102% is a non-parabolic entry; 120.9h old (established enough to not be a brand-new launch)"
             },
             {
               "name": "socials_profile",
@@ -7800,17 +7843,17 @@
               "why": "Single pool only"
             }
           ],
-          "reason": "Upside score 54/100 below 60",
+          "reason": "Upside score 56/100 below 60",
           "inputs": {
-            "market_cap_usd": 15228.36,
-            "liquidity_usd": 115701.97988240735,
-            "volume_24h_usd": 55064.3,
-            "liq_mcap": 7.5978,
-            "vol_mcap": 3.6159,
-            "buy_ratio": 0.6631,
-            "txns_24h": 1199.0,
-            "price_change_24h_pct": 277.0,
-            "age_hours": 106.04,
+            "market_cap_usd": 13502.6,
+            "liquidity_usd": 98563.5112015552,
+            "volume_24h_usd": 81674.92,
+            "liq_mcap": 7.2996,
+            "vol_mcap": 6.0488,
+            "buy_ratio": 0.6483,
+            "txns_24h": 1598.0,
+            "price_change_24h_pct": 102.0,
+            "age_hours": 120.92,
             "has_socials": true,
             "pair_count": 1
           }
@@ -7842,7 +7885,7 @@
               "name": "insider_network_clusters",
               "result": "pass",
               "network_count": 2,
-              "graph_insiders_detected": 12,
+              "graph_insiders_detected": 14,
               "large_clusters": [],
               "huge_clusters": []
             }
@@ -7855,7 +7898,7 @@
         },
         "concentration": {
           "passed": true,
-          "reason": "Top-10 non-LP 21.012% / max wallet 3.121% / insider nets 12.34% / creator 0.0% / LP locked 100.0%",
+          "reason": "Top-10 non-LP 24.097% / max wallet 3.504% / insider nets 13.59% / creator 0.0% / LP locked 100.0%",
           "metrics": {
             "holder_source": "rpc_getMultipleAccounts_on_rugcheck_top_accounts",
             "holder_notes": [
@@ -7863,9 +7906,9 @@
               "Live RPC returned empty account for CU1hxyj68o8SRHabkQxU6D6nyKfqvtNpF541j2goXwbE",
               "Live balances refreshed via RPC; the top-N set itself comes from RugCheck (a larger wallet not in that snapshot could be missed)"
             ],
-            "top10_non_lp_pct": 21.012,
-            "max_single_non_lp_pct": 3.121,
-            "insider_network_pct": 12.34,
+            "top10_non_lp_pct": 24.097,
+            "max_single_non_lp_pct": 3.504,
+            "insider_network_pct": 13.59,
             "insider_network_pct_may_overlap": true,
             "creator_pct": 0.0,
             "creator": "DovTWRa6K1PHG37beBSYQGBVPFBVhhDdqjCUSu3GqXuy",
@@ -7876,17 +7919,24 @@
             "primary_pool": {
               "pubkey": "CU1hxyj68o8SRHabkQxU6D6nyKfqvtNpF541j2goXwbE",
               "market_type": "pump_fun",
-              "usd": 4041.06
+              "usd": 3638.6
             },
             "unlocked_secondary_pools": [],
             "excluded_holders": [
               {
                 "owner": "CU1hxyj68o8SRHabkQxU6D6nyKfqvtNpF541j2goXwbE",
-                "pct": 40.1312,
+                "pct": 45.5916,
                 "tag": "lp_market"
               }
             ],
             "wallet_holders": [
+              {
+                "address": "Fyn49coMbB3dBBAm1hVbhUStXryiAQk32C91G57Er75H",
+                "owner": "GDRS2UQfxxzDtjSNFChFiUG4E3Eie8RNeb5dRHWTvBDN",
+                "ui_amount": 35038752.183055,
+                "pct": 3.5039,
+                "tag": null
+              },
               {
                 "address": "CpqbvwAGLLCWJHuByLzwLKRVgebNJWdN4qzkvN4GbbcM",
                 "owner": "GgbCFRHHAPv5i1fqt1D1buf8FPNA31oKrkZvXDyZymsT",
@@ -7902,38 +7952,45 @@
                 "tag": null
               },
               {
-                "address": "Fyn49coMbB3dBBAm1hVbhUStXryiAQk32C91G57Er75H",
-                "owner": "GDRS2UQfxxzDtjSNFChFiUG4E3Eie8RNeb5dRHWTvBDN",
-                "ui_amount": 29552494.214673,
-                "pct": 2.9553,
+                "address": "C9J2u8aDw5NMw9PpVXhRQqnD2adFyRM3LdwytBaqvjEd",
+                "owner": "HfbipUfiJxadXn5GcoKzJeH6vrCXLsTHPVQgiJxmYQaM",
+                "ui_amount": 26057998.879581,
+                "pct": 2.6058,
                 "tag": null
               },
               {
                 "address": "iHm3gG2LFke4JGaLTewcutp8r8sWa3RcCq8ycMHBrBR",
                 "owner": "GvpYV4CbxzqpWw8qP1tFRkmAnsygWpd8HRvnspMr2EiM",
-                "ui_amount": 22109463.724546,
-                "pct": 2.2109,
+                "ui_amount": 22993181.491727,
+                "pct": 2.2993,
+                "tag": null
+              },
+              {
+                "address": "3XM69RfJjyNjCLou5oEsstNkdh3LAMsouUMYnV17b48n",
+                "owner": "2HPkyrkQyQNXfsGxHK7aoKoEqf1qEmqJovdjZgqxvtjy",
+                "ui_amount": 22633401.2805,
+                "pct": 2.2633,
+                "tag": null
+              },
+              {
+                "address": "E6jQfv9ZgKPcJVNrg2JhB3QKuNLeaynSnN9aYuvBZyHD",
+                "owner": "AdSJNaoGq6FpbKasuwhZJRhrwQJuPHax52MTt9ZEbCz8",
+                "ui_amount": 21732576.120414,
+                "pct": 2.1733,
                 "tag": null
               },
               {
                 "address": "CqnAXVLJ6JC4PCcs8GvqUiTMj4rGgWESbhtzQWpFxRyG",
                 "owner": "33EKBAWUHwwTaKdUtg8hkkwZuoCvLJELJYJop83EFo6v",
-                "ui_amount": 19520828.645275,
-                "pct": 1.9521,
+                "ui_amount": 19649506.805455,
+                "pct": 1.965,
                 "tag": null
               },
               {
-                "address": "H8ptEpApx6UFA8c34PFGixk5mt11C3UVwPcZ4Fo7TciT",
-                "owner": "DovTWRa6K1PHG37beBSYQGBVPFBVhhDdqjCUSu3GqXuy",
-                "ui_amount": 18853088.142649,
-                "pct": 1.8853,
-                "tag": null
-              },
-              {
-                "address": "E4AqPcg9aRPPvAteDcfodbToqjrkfBMYGEGkwJaNGyHS",
-                "owner": "BGVobQzqq7B8jFMXSBq25Cn9m4CpZPuD5pHmarm48GXS",
-                "ui_amount": 17062926.067258,
-                "pct": 1.7063,
+                "address": "9Cmg7KhCmJ9j5jbpCZeHvxcosPAAdxJkvV99pKNV27QB",
+                "owner": "2vVRQTV8pbC8a8bVVEmU3fE7Q3jwFrEFxJdmkmPfsVqH",
+                "ui_amount": 15562605.555483,
+                "pct": 1.5563,
                 "tag": null
               },
               {
@@ -7944,59 +8001,45 @@
                 "tag": null
               },
               {
-                "address": "5FQhHKXkqWw2dV8aRtU641abeTiNNHMRTXNyJWMRxmsn",
-                "owner": "HXbwX1oGic2A5skRxVrsrQDrbAiq21u4JEzvKaFTdJBm",
-                "ui_amount": 14065786.058399,
-                "pct": 1.4066,
-                "tag": null
-              },
-              {
-                "address": "GzfnZfRCbfjgf8mVzdY69JEP1E8RX11sAzuxpuJ774tD",
-                "owner": "6rmzLZQedYgyA95ccRxXe8o6Pa8fMQVbhrwEZtNQiKYB",
-                "ui_amount": 11661378.608835,
-                "pct": 1.1661,
+                "address": "H8ptEpApx6UFA8c34PFGixk5mt11C3UVwPcZ4Fo7TciT",
+                "owner": "DovTWRa6K1PHG37beBSYQGBVPFBVhhDdqjCUSu3GqXuy",
+                "ui_amount": 14175907.952588,
+                "pct": 1.4176,
                 "tag": null
               },
               {
                 "address": "7akBMp7m4gLw8c25PLkkfhkmGjtdAxt9XqtnRb1TKqkU",
                 "owner": "FdyCWHEYH5MUdg1QYL52j6rC73CcFixqed75CZu94rdc",
-                "ui_amount": 11046895.721572,
-                "pct": 1.1047,
+                "ui_amount": 10709182.899085,
+                "pct": 1.0709,
                 "tag": null
               },
               {
-                "address": "FzLzXygCmGCb5Lrv9gj2FBCtkqUuJpGbNbpS7N7j6nKR",
-                "owner": "BFmgjdgepMxNnEyndQZC68Db3ajPdD3V8is1bQbdj4h4",
-                "ui_amount": 10485847.066402,
-                "pct": 1.0486,
+                "address": "8Y79yf2QfEUNcuFYvx1LMGR9hVin3wQEe2gskiXRxobE",
+                "owner": "9QAnZYkbRTdSAM97qxryTF9nnoPgtUG97oDCHkL63L11",
+                "ui_amount": 10326186.041651,
+                "pct": 1.0326,
                 "tag": null
               },
               {
-                "address": "8xtCnFBCVzzUGeaj7EcxLUvxnRN6MeNv5T5WhjYFTB45",
-                "owner": "5VcRaB6ymZRG7JyvRHsJ3ph9PT9gSbcYmBidPXMzsQLH",
-                "ui_amount": 10000000.0,
-                "pct": 1.0,
+                "address": "HoDZvF2SAJwEVuySrGZT7vgXdKdd1X3dR5TdoagtVjMd",
+                "owner": "6i2aHtxfqkC2biTo98FSkP59FVHPKFRLZWDbdghN6WKK",
+                "ui_amount": 10141465.282276,
+                "pct": 1.0141,
                 "tag": null
               },
               {
-                "address": "JA7hZuTtTmnq99ZdCuBeLP4sbiP7BAbfjEzv7XPJuz7u",
-                "owner": "9KPMHW2FuTrHBkPa8YQb2PR58V2KQcBXvyM21AFXvhQV",
-                "ui_amount": 10000000.0,
-                "pct": 1.0,
-                "tag": null
-              },
-              {
-                "address": "7jvGGTWeNhYzRKSAuL6v25sgD88cLx2NFFu45yTZS3zc",
-                "owner": "29NEPBvKPkwXVJPQTRsLNRRNCiKWu5LUUaJs1U7wceed",
-                "ui_amount": 9957420.738308,
-                "pct": 0.9957,
+                "address": "Gt1SH1xhvRkGG3LBDpbVocHMK9ggp9JS19EaTEvj6eu1",
+                "owner": "C5A5dKz9H8vkqAXu5EkrB8VJDQ18k1WaSUkncqEcfjsR",
+                "ui_amount": 10020044.327461,
+                "pct": 1.002,
                 "tag": null
               }
             ],
-            "total_holders": 329,
-            "insider_network_pct_raw": 12.34,
+            "total_holders": 368,
+            "insider_network_pct_raw": 13.59,
             "insider_network_count": 2,
-            "graph_insiders_detected": 12,
+            "graph_insiders_detected": 14,
             "lp_locked_pct_rugcheck_summary": 100.0,
             "market_count": 1
           },
@@ -8011,13 +8054,12 @@
           {
             "criterion": 3,
             "name": "upside_5x_10x",
-            "reason": "Upside score 54/100 below 60"
+            "reason": "Upside score 56/100 below 60"
           }
         ],
         "why_this_could_fail": [
-          "Insider networks still cluster ~12.3% of supply (upper bound; wallets may overlap)",
-          "Top-10 non-LP wallets control 21.0% of supply",
-          "Already up 277% in 24h - late entry risk even if under the blowoff cap",
+          "Insider networks still cluster ~13.6% of supply (upper bound; wallets may overlap)",
+          "Top-10 non-LP wallets control 24.1% of supply",
           "Early-slot bundle verification was incomplete (pair older than 72h; skipped expensive launch-signature walk)",
           "High meme-coin beta: even a clean setup can go to zero on a sector fade or a dev dump"
         ],
@@ -8034,9 +8076,9 @@
           "rpc_bonding_curve"
         ],
         "holder_source": "rpc_getMultipleAccounts_on_rugcheck_top_accounts",
-        "top10_non_lp_pct": 21.012,
-        "max_single_non_lp_pct": 3.121,
-        "insider_network_pct": 12.34,
+        "top10_non_lp_pct": 24.097,
+        "max_single_non_lp_pct": 3.504,
+        "insider_network_pct": 13.59,
         "creator_pct": 0.0,
         "lp_locked_pct": 100.0,
         "primary_lp_locked_pct": 100.0,
@@ -8048,377 +8090,55 @@
         "fresh_pair": false,
         "fresh_graduation": false,
         "near_graduation": true,
-        "graduation_progress_pct": 3112.86,
-        "price_usd": 1.522e-05
-      },
-      {
-        "mint": "3vL8VTAgT3KrCs7b2j85UARxXMkEiBh9z5JZRCWTpump",
-        "symbol": "MOOT",
-        "name": "Christopher Poole",
-        "market_cap_usd": 10708.38,
-        "liquidity_usd": 4637.6568,
-        "volume_24h_usd": 167897.93,
-        "price_change_24h_pct": 321.0,
-        "age_hours": 36.1661088875,
-        "passed_all_three": false,
-        "notify_reason": null,
-        "upside_score": 46,
-        "upside": {
-          "passed": false,
-          "score": 46,
-          "min_score": 60,
-          "breakdown": [
-            {
-              "name": "mcap_headroom",
-              "max": 25,
-              "points": 0,
-              "why": "$10,708 is outside the 5x-10x band"
-            },
-            {
-              "name": "liquidity_depth",
-              "max": 15,
-              "points": 7.0,
-              "why": "liq $4,638 is below the floor; liq/mcap 43.3% is healthy"
-            },
-            {
-              "name": "volume_velocity",
-              "max": 20,
-              "points": 12.0,
-              "why": "24h vol $167,898; vol/mcap 15.7x is very active; 4369 txns"
-            },
-            {
-              "name": "buy_sell_balance",
-              "max": 15,
-              "points": 15,
-              "why": "buy ratio 56.5% (buyers in control)"
-            },
-            {
-              "name": "non_parabolic_entry",
-              "max": 15,
-              "points": 11.0,
-              "why": "+321% in 24h is warm; 36.2h old (established enough to not be a brand-new launch)"
-            },
-            {
-              "name": "socials_profile",
-              "max": 5,
-              "points": 0,
-              "why": "No socials/profile attached"
-            },
-            {
-              "name": "multi_pool_traction",
-              "max": 5,
-              "points": 1,
-              "why": "Single pool only"
-            }
-          ],
-          "reason": "Liquidity $4,638 below $30,000; Upside score 46/100 below 60",
-          "inputs": {
-            "market_cap_usd": 10708.38,
-            "liquidity_usd": 4637.6568,
-            "volume_24h_usd": 167897.93,
-            "liq_mcap": 0.4331,
-            "vol_mcap": 15.6791,
-            "buy_ratio": 0.5647,
-            "txns_24h": 4369.0,
-            "price_change_24h_pct": 321.0,
-            "age_hours": 36.17,
-            "has_socials": false,
-            "pair_count": 1
-          }
-        },
-        "bundle": {
-          "passed": true,
-          "reason": "No bundled-supply, sniper, copycat, or large coordinated-cluster flags",
-          "checks": [
-            {
-              "name": "rugcheck_risks",
-              "result": "pass",
-              "risk_count": 0,
-              "bundle_hits": [],
-              "mutable_metadata": false
-            },
-            {
-              "name": "rugged_flag",
-              "result": "pass",
-              "rugged": false
-            },
-            {
-              "name": "insider_network_clusters",
-              "result": "pass",
-              "network_count": 1,
-              "graph_insiders_detected": 4,
-              "large_clusters": [],
-              "huge_clusters": []
-            },
-            {
-              "name": "rpc_launch_signatures",
-              "result": "info",
-              "detail": {
-                "performed": true,
-                "target": "5pcffDwJMkpxhoVcufRHa472B4G4xXsq4LCUvR773hRz",
-                "signatures_fetched": 40,
-                "unique_slots_in_batch": 31,
-                "oldest_block_time": 1795599999,
-                "newest_block_time": 1795600884,
-                "note": "Signature list has no signers; full early-buyer clustering would need getTransaction and was not run"
-              }
-            }
-          ],
-          "warnings": [],
-          "rpc_launch_check": {
-            "performed": true,
-            "target": "5pcffDwJMkpxhoVcufRHa472B4G4xXsq4LCUvR773hRz",
-            "signatures_fetched": 40,
-            "unique_slots_in_batch": 31,
-            "oldest_block_time": 1795599999,
-            "newest_block_time": 1795600884,
-            "note": "Signature list has no signers; full early-buyer clustering would need getTransaction and was not run"
-          }
-        },
-        "concentration": {
-          "passed": false,
-          "reason": "Top-10 non-LP wallets hold 25.42% (max 25%)",
-          "metrics": {
-            "holder_source": "rpc_getMultipleAccounts_on_rugcheck_top_accounts",
-            "holder_notes": [
-              "RPC getTokenLargestAccounts returned 429 (method rate-limited on this public endpoint)",
-              "Live RPC returned empty account for 4cmhzB2JusetfpvaPC4BwNMnqMVo42XoYXMZ9wme2eqY",
-              "Live RPC returned empty account for 5pcffDwJMkpxhoVcufRHa472B4G4xXsq4LCUvR773hRz",
-              "Live balances refreshed via RPC; the top-N set itself comes from RugCheck (a larger wallet not in that snapshot could be missed)"
-            ],
-            "top10_non_lp_pct": 25.421,
-            "max_single_non_lp_pct": 3.591,
-            "insider_network_pct": 1.498,
-            "insider_network_pct_may_overlap": true,
-            "creator_pct": 0.0,
-            "creator": "E8Wdt95TrP9652gGJY1pyjECBJGpM55u44ipG7ZUgrmT",
-            "mint_authority": null,
-            "freeze_authority": null,
-            "lp_locked_pct": 100.0,
-            "primary_lp_locked_pct": 100.0,
-            "primary_pool": {
-              "pubkey": "5pcffDwJMkpxhoVcufRHa472B4G4xXsq4LCUvR773hRz",
-              "market_type": "pump_fun",
-              "usd": 4660.88
-            },
-            "unlocked_secondary_pools": [],
-            "excluded_holders": [
-              {
-                "owner": "5pcffDwJMkpxhoVcufRHa472B4G4xXsq4LCUvR773hRz",
-                "pct": 37.7377,
-                "tag": "lp_market"
-              }
-            ],
-            "wallet_holders": [
-              {
-                "address": "FHw1JCYqeLBPPt7VdGF1Kyvfht8WWiEZUvue5B17bTAN",
-                "owner": "7DpwDmTLLqDN1Yj82LHFr6o53bWj2xr6SCtdsvSs8krN",
-                "ui_amount": 35908663.343983,
-                "pct": 3.5911,
-                "tag": null
-              },
-              {
-                "address": "AuRTwSuWNjatud4HoDPcro2gFjhpSMD3rNJrVpRqvyy5",
-                "owner": "HqBs3RVM5aRjcdjq9dVgi9Uuxgaqhqe4NyWF15vuYgAR",
-                "ui_amount": 33441298.999427,
-                "pct": 3.3443,
-                "tag": null
-              },
-              {
-                "address": "ApKfhHLeCi2FY3D86CkhaF91ozXaqCSgTg4csgDgPNcM",
-                "owner": "2vPHdjQSgnd2bWFJMr4NTja1EqmzQtUmPco8mCkxytWN",
-                "ui_amount": 27431039.894403,
-                "pct": 2.7433,
-                "tag": null
-              },
-              {
-                "address": "J3mD9qGPndNqcQKLyeAoLiSYrZwbGWspAs8KihrpHCqQ",
-                "owner": "FgDzvsxEoBED6o5SkUTMNvduDo9dUdYtMFJQAuzAX9bX",
-                "ui_amount": 26999843.478307,
-                "pct": 2.7002,
-                "tag": null
-              },
-              {
-                "address": "35JaNwKLu1VHFuDeX5HX8emPnxyambuSd3DoBHcYqTpM",
-                "owner": "pt2gMSxMeePDqeLBkVYgxkz4xQshJ2Q2cBk4VvsRxKn",
-                "ui_amount": 26547019.416965,
-                "pct": 2.6549,
-                "tag": null
-              },
-              {
-                "address": "DfHqyFFR3igcAUwZqgTjssfR8tY5PpKWuWhNAsjwVZ6Y",
-                "owner": "4Pp5tfkg3ZMJU5rrck5uNNdvQwnEeLk6ifUBieCxRmHz",
-                "ui_amount": 23727922.840489,
-                "pct": 2.3729,
-                "tag": null
-              },
-              {
-                "address": "2tjQjakZ9nQosTdUA6zkBzwgscfsQ7c6p5ce8GBbhDuv",
-                "owner": "7kiv7gN5eZCDMZy2pUMUrbTFXSv4nddx2KRgRnYMjuPy",
-                "ui_amount": 22188072.259976,
-                "pct": 2.2189,
-                "tag": null
-              },
-              {
-                "address": "38PRqMgeU2gdSs1BzqWLUtT6KWXUWKsfNV1k9jNmDnyL",
-                "owner": "4cqP4rDDStHhNCkaWw2ceJKuCBnaEj6KWC5uGn5SBEuX",
-                "ui_amount": 21662969.833312,
-                "pct": 2.1664,
-                "tag": null
-              },
-              {
-                "address": "7frU4nEt4HonvVgdj57cgDu3TzFR8Gs1LbDZw51acLa2",
-                "owner": "6bgxkZ8UggeuqxQ7SQf3FRJng7Y6muxWZQCSRutWKN5v",
-                "ui_amount": 18775596.327063,
-                "pct": 1.8777,
-                "tag": null
-              },
-              {
-                "address": "6cgW5yaz2wMsCUBCVxvibxTwfPnsqyqsxQCBLgiDiZj4",
-                "owner": "CF6xBtDQJXDjtyt82SmiDu8dXH5CESA2guvvoQxwwT9a",
-                "ui_amount": 17507287.242583,
-                "pct": 1.7508,
-                "tag": null
-              },
-              {
-                "address": "6sZRdNUEzPGtNGzdFY28CRcyY2fRyQpchHqNbnRRvtrB",
-                "owner": "GybE2mYjLVhrntFgpSmTn6Ny2YpGHySSAA7LbZcDS5D5",
-                "ui_amount": 15456351.367053,
-                "pct": 1.5457,
-                "tag": null
-              },
-              {
-                "address": "9Hod68GHqNj7ib7kJtQBJJQSaYNppdKeZuucys9vykBk",
-                "owner": "GKJ6dhhTmJqw2647QXs2z6qFdPb9Byf8a73Dgajpj7uz",
-                "ui_amount": 12808466.303316,
-                "pct": 1.2809,
-                "tag": null
-              },
-              {
-                "address": "AXpd6aJPu3wdNvzbtZJUgGjmsd7jhKZDBkxHY4xWf3sV",
-                "owner": "5tCA4Y3dM6HxuzBDjqX4yNYPnDZuSAE5ocvFBMFwQjn4",
-                "ui_amount": 11707076.44924,
-                "pct": 1.1708,
-                "tag": null
-              },
-              {
-                "address": "6RPwygNysDc51LotttiQwmocGsbzXkGRD7aMNM2oqDJ5",
-                "owner": "FZdmtYeD1EFrcuCUtNEmnwLzUj9MYrvab1H4t57s7JsD",
-                "ui_amount": 10193089.436289,
-                "pct": 1.0194,
-                "tag": null
-              },
-              {
-                "address": "DEjUZ7t34FzmivbdoPNq6TPzZuW8NFVs2uZdDiQsbKRs",
-                "owner": "63TYgejwUKEYKERZYUcU8DSpwPGtG1v6NJK7ty84Ezer",
-                "ui_amount": 8971100.515662,
-                "pct": 0.8972,
-                "tag": null
-              }
-            ],
-            "total_holders": 439,
-            "insider_network_pct_raw": 1.498,
-            "insider_network_count": 1,
-            "graph_insiders_detected": 4,
-            "lp_locked_pct_rugcheck_summary": 100.0,
-            "market_count": 1
-          },
-          "warnings": []
-        },
-        "failed_criteria": [
-          {
-            "criterion": 2,
-            "name": "insider_concentration",
-            "reason": "Top-10 non-LP wallets hold 25.42% (max 25%)"
-          },
-          {
-            "criterion": 3,
-            "name": "upside_5x_10x",
-            "reason": "Liquidity $4,638 below $30,000; Upside score 46/100 below 60"
-          }
-        ],
-        "why_this_could_fail": [
-          "Top-10 non-LP wallets control 25.4% of supply",
-          "Already up 321% in 24h - late entry risk even if under the blowoff cap",
-          "Liquidity is only $4,638; a modest sell can move the price sharply",
-          "Pair is only 1.5 days old - typical meme death-rate is still high",
-          "High meme-coin beta: even a clean setup can go to zero on a sector fade or a dev dump"
-        ],
-        "links": {
-          "dexscreener": "https://dexscreener.com/solana/5pcffdwjmkpxhovcufrha472b4g4xxsq4lcuvr773hrz",
-          "solscan": "https://solscan.io/token/3vL8VTAgT3KrCs7b2j85UARxXMkEiBh9z5JZRCWTpump",
-          "rugcheck": "https://rugcheck.xyz/tokens/3vL8VTAgT3KrCs7b2j85UARxXMkEiBh9z5JZRCWTpump",
-          "pumpfun": "https://pump.fun/coin/3vL8VTAgT3KrCs7b2j85UARxXMkEiBh9z5JZRCWTpump",
-          "fomo": "https://fomo.family/tokens/solana/3vL8VTAgT3KrCs7b2j85UARxXMkEiBh9z5JZRCWTpump"
-        },
-        "sources": [
-          "gt_pumpfun_pools",
-          "rpc_bonding_curve"
-        ],
-        "holder_source": "rpc_getMultipleAccounts_on_rugcheck_top_accounts",
-        "top10_non_lp_pct": 25.421,
-        "max_single_non_lp_pct": 3.591,
-        "insider_network_pct": 1.498,
-        "creator_pct": 0.0,
-        "lp_locked_pct": 100.0,
-        "primary_lp_locked_pct": 100.0,
-        "graduated": false,
-        "venue": null,
-        "liveness": null,
-        "launchpad": "pumpfun",
-        "fomopad_registered": null,
-        "fresh_pair": false,
-        "fresh_graduation": false,
-        "near_graduation": true,
-        "graduation_progress_pct": 75.41,
-        "price_usd": 1.07e-05
+        "graduation_progress_pct": 2536.9,
+        "price_usd": 1.35e-05
       },
       {
         "mint": "DTLJXMxGdD1tMhKXurxbS7aqX3j79YkCkGQsQu5Zpump",
         "symbol": "xmascoin",
         "name": "xmas coin",
-        "market_cap_usd": 16309.5,
-        "liquidity_usd": 5330.8372,
-        "volume_24h_usd": 95144.23,
-        "price_change_24h_pct": 508.0,
-        "age_hours": 21.89610890277778,
+        "market_cap_usd": 16935.17,
+        "liquidity_usd": 4086.35422721472,
+        "volume_24h_usd": 42302.77,
+        "price_change_24h_pct": 19.35,
+        "age_hours": 36.77681120222223,
         "passed_all_three": false,
         "notify_reason": null,
-        "upside_score": 41,
+        "upside_score": 52,
         "upside": {
           "passed": false,
-          "score": 41,
+          "score": 52,
           "min_score": 60,
           "breakdown": [
             {
               "name": "mcap_headroom",
               "max": 25,
               "points": 0,
-              "why": "$16,310 is outside the 5x-10x band"
+              "why": "$16,935 is outside the 5x-10x band"
             },
             {
               "name": "liquidity_depth",
               "max": 15,
               "points": 7.0,
-              "why": "liq $5,331 is below the floor; liq/mcap 32.7% is healthy"
+              "why": "liq $4,086 is below the floor; liq/mcap 24.1% is healthy"
             },
             {
               "name": "volume_velocity",
               "max": 20,
               "points": 9.0,
-              "why": "24h vol $95,144 is light; vol/mcap 5.8x is very active; 3932 txns"
+              "why": "24h vol $42,303 is light; vol/mcap 2.5x is very active; 2643 txns"
             },
             {
               "name": "buy_sell_balance",
               "max": 15,
               "points": 15,
-              "why": "buy ratio 67.1% (buyers in control)"
+              "why": "buy ratio 67.0% (buyers in control)"
             },
             {
               "name": "non_parabolic_entry",
               "max": 15,
-              "points": 4.0,
-              "why": "+508% in 24h is already extended; 21.9h old (young)"
+              "points": 15,
+              "why": "24h change +19% is a non-parabolic entry; 36.8h old (established enough to not be a brand-new launch)"
             },
             {
               "name": "socials_profile",
@@ -8433,24 +8153,24 @@
               "why": "Single pool only"
             }
           ],
-          "reason": "Liquidity $5,331 below $30,000; Upside score 41/100 below 60",
+          "reason": "Liquidity $4,086 below $30,000; Upside score 52/100 below 60",
           "inputs": {
-            "market_cap_usd": 16309.5,
-            "liquidity_usd": 5330.8372,
-            "volume_24h_usd": 95144.23,
-            "liq_mcap": 0.3269,
-            "vol_mcap": 5.8337,
-            "buy_ratio": 0.6712,
-            "txns_24h": 3932.0,
-            "price_change_24h_pct": 508.0,
-            "age_hours": 21.9,
+            "market_cap_usd": 16935.17,
+            "liquidity_usd": 4086.35422721472,
+            "volume_24h_usd": 42302.77,
+            "liq_mcap": 0.2413,
+            "vol_mcap": 2.4979,
+            "buy_ratio": 0.6697,
+            "txns_24h": 2643.0,
+            "price_change_24h_pct": 19.35,
+            "age_hours": 36.78,
             "has_socials": true,
             "pair_count": 1
           }
         },
         "bundle": {
           "passed": false,
-          "reason": "Uniform split-wallet cluster: 9 non-LP wallets each hold ~1.24% (range 1.14-1.41%, together 11.14%) - looks like a bundled launch split",
+          "reason": "Uniform split-wallet cluster: 8 non-LP wallets each hold ~1.11% (range 1.01-1.28%, together 8.86%) - looks like a bundled launch split",
           "checks": [
             {
               "name": "rugcheck_risks",
@@ -8479,9 +8199,9 @@
                 "performed": true,
                 "target": "3M5RxcJxGgN7P8u3AfZh1z2HLe2QqptqFcEDyGYLAana",
                 "signatures_fetched": 40,
-                "unique_slots_in_batch": 31,
-                "oldest_block_time": 1795600056,
-                "newest_block_time": 1795600986,
+                "unique_slots_in_batch": 25,
+                "oldest_block_time": 1795653220,
+                "newest_block_time": 1795654539,
                 "note": "Signature list has no signers; full early-buyer clustering would need getTransaction and was not run"
               }
             },
@@ -8489,11 +8209,11 @@
               "name": "uniform_wallet_cluster",
               "result": "fail",
               "cluster": {
-                "size": 9,
-                "avg_pct": 1.238,
-                "min_pct": 1.143,
-                "max_pct": 1.411,
-                "total_pct": 11.141
+                "size": 8,
+                "avg_pct": 1.107,
+                "min_pct": 1.011,
+                "max_pct": 1.278,
+                "total_pct": 8.856
               }
             }
           ],
@@ -8502,15 +8222,15 @@
             "performed": true,
             "target": "3M5RxcJxGgN7P8u3AfZh1z2HLe2QqptqFcEDyGYLAana",
             "signatures_fetched": 40,
-            "unique_slots_in_batch": 31,
-            "oldest_block_time": 1795600056,
-            "newest_block_time": 1795600986,
+            "unique_slots_in_batch": 25,
+            "oldest_block_time": 1795653220,
+            "newest_block_time": 1795654539,
             "note": "Signature list has no signers; full early-buyer clustering would need getTransaction and was not run"
           }
         },
         "concentration": {
           "passed": true,
-          "reason": "Top-10 non-LP 16.18% / max wallet 2.155% / insider nets 0.0% / creator 0.0% / LP locked 100.0%",
+          "reason": "Top-10 non-LP 17.063% / max wallet 3.048% / insider nets 0.0% / creator 0.0% / LP locked 100.0%",
           "metrics": {
             "holder_source": "rpc_getMultipleAccounts_on_rugcheck_top_accounts",
             "holder_notes": [
@@ -8518,8 +8238,8 @@
               "Live RPC returned empty account for 3M5RxcJxGgN7P8u3AfZh1z2HLe2QqptqFcEDyGYLAana",
               "Live balances refreshed via RPC; the top-N set itself comes from RugCheck (a larger wallet not in that snapshot could be missed)"
             ],
-            "top10_non_lp_pct": 16.18,
-            "max_single_non_lp_pct": 2.155,
+            "top10_non_lp_pct": 17.063,
+            "max_single_non_lp_pct": 3.048,
             "insider_network_pct": 0.0,
             "insider_network_pct_may_overlap": true,
             "creator_pct": 0.0,
@@ -8531,17 +8251,24 @@
             "primary_pool": {
               "pubkey": "3M5RxcJxGgN7P8u3AfZh1z2HLe2QqptqFcEDyGYLAana",
               "market_type": "pump_fun",
-              "usd": 5331.1
+              "usd": 5553.3
             },
             "unlocked_secondary_pools": [],
             "excluded_holders": [
               {
                 "owner": "3M5RxcJxGgN7P8u3AfZh1z2HLe2QqptqFcEDyGYLAana",
-                "pct": 29.2093,
+                "pct": 29.3443,
                 "tag": "lp_market"
               }
             ],
             "wallet_holders": [
+              {
+                "address": "D3oeNYNTWp8mo5V9rNhy65J8qkdULXZw5Z3THVkjBWdX",
+                "owner": "7BMS6cwE8nGcqNRvM9Hx5TjGr5GNdyUKnKw3GDapDdwp",
+                "ui_amount": 30481019.212529,
+                "pct": 3.0482,
+                "tag": null
+              },
               {
                 "address": "432aRgepqm1Aq7PY16kAskjGmBtvq1tHuhcYCrEk2ZXi",
                 "owner": "39twQnt51D7LFwjnKKLunH74MXmShNW1hvXMGE6KEzQ9",
@@ -8550,17 +8277,10 @@
                 "tag": null
               },
               {
-                "address": "D3oeNYNTWp8mo5V9rNhy65J8qkdULXZw5Z3THVkjBWdX",
-                "owner": "7BMS6cwE8nGcqNRvM9Hx5TjGr5GNdyUKnKw3GDapDdwp",
-                "ui_amount": 20460927.21698,
-                "pct": 2.0462,
-                "tag": null
-              },
-              {
-                "address": "9mygBLKBioJgZYR83sthXZZ2GXMhW6wMFQ5oYFnM1JGg",
-                "owner": "6GbfsbFw772xgkY5LFeE5acpHqPU9pns7hn5BQ4cjAqh",
-                "ui_amount": 18547623.881104,
-                "pct": 1.8548,
+                "address": "DSEsZNo3hmo4Y7cih7GU3MZxxa3bonTyPVvsWQF94puY",
+                "owner": "85AWbMLzhgZ7s7BA518fwgABVdtTBPCCs9HKt8cy8ZSg",
+                "ui_amount": 20140944.952685,
+                "pct": 2.0142,
                 "tag": null
               },
               {
@@ -8578,10 +8298,10 @@
                 "tag": null
               },
               {
-                "address": "DWaHxkmj3FRdYKt864p9qWPJDgiKmiFehPvAEi6wB32m",
-                "owner": "Ccs9vcbj3psYu3j2QteZ4MsxaijUvqBr4JAx3TWyVGQc",
-                "ui_amount": 15151444.959436,
-                "pct": 1.5152,
+                "address": "J8JHqerTffkDsvxjqUuf7xPU93rD6244g8kVS3BrYU34",
+                "owner": "GavZammMGcwMHE7MxaB86UTGLXCMcC6uEcJ7RRZFwqgq",
+                "ui_amount": 15000000.0,
+                "pct": 1.5001,
                 "tag": null
               },
               {
@@ -8592,38 +8312,10 @@
                 "tag": null
               },
               {
-                "address": "6GvnvhVk3TfdK2XNJpi6kZzVM5jHQTeSzCnfKhu3QNmB",
-                "owner": "D9XXDnD1wwPDRhRDhGJUVpEPLWV44xqpXpqor1qUg2PJ",
-                "ui_amount": 13229108.378358,
-                "pct": 1.323,
-                "tag": null
-              },
-              {
                 "address": "6YDiHyAJUBq6BNRJJn9V9PCnNKyD9PuNBDkKVnmDrWRp",
                 "owner": "6526RyH8zUNTSFd3oyE45YKBuW87inr6hwmaHazDMkb8",
                 "ui_amount": 12783815.179362,
                 "pct": 1.2784,
-                "tag": null
-              },
-              {
-                "address": "5RMxPY6H5b84Wdhd3kN3SVENEqX2RhMuDL3oGcAo6MeT",
-                "owner": "DTnqogzt9c7PdoG22HdGfEgs7fxve82HwA9Y6dhejwsm",
-                "ui_amount": 12555036.435332,
-                "pct": 1.2556,
-                "tag": null
-              },
-              {
-                "address": "DkEuSHyEFU7XB4X62fcmYZTTY68HNy8RBgrmLyMJtoDr",
-                "owner": "Fj3CzYHHVZYsAiQzheX33k6reukhhopZwPuTZ7aqah7G",
-                "ui_amount": 12356801.487647,
-                "pct": 1.2357,
-                "tag": null
-              },
-              {
-                "address": "E2YQcBquqJZ8vTYEGiAebzTDmF8X1pa2ssF5g5VVfjQa",
-                "owner": "FmPzohHZwxoaepMBPkrGbWC9nq5AK7WwxVHULFKmPu7D",
-                "ui_amount": 11788707.424013,
-                "pct": 1.1789,
                 "tag": null
               },
               {
@@ -8634,21 +8326,49 @@
                 "tag": null
               },
               {
-                "address": "A1Nr7Aa7DV5VVGaiiNTUdF5KAkL9NDW4qJeHRCWEWdsD",
-                "owner": "5Va9Ts9Fz6zyLBGp8SGUTmDgJCLX8LNEdud3DeG5mBq6",
-                "ui_amount": 11433675.448954,
-                "pct": 1.1434,
-                "tag": null
-              },
-              {
                 "address": "22xGn1xfaHmMH1E7yzCFyi4Bce6BXEMbgYAFTzZ44KFZ",
                 "owner": "GeS6VebyT49J2GoQT5W8T6bJgNrbZRVqZAmnFKw1kyoi",
                 "ui_amount": 11431079.07189,
                 "pct": 1.1432,
                 "tag": null
+              },
+              {
+                "address": "3Jq7SSZnBHa3wLkhD4t4Eq2xbZ83aBa742JLQD31iPeZ",
+                "owner": "BTH1NkKzAVPJKsPQSEJMr5Kxr9Z7M6cZbNFCF7x7qHry",
+                "ui_amount": 10769107.329764,
+                "pct": 1.077,
+                "tag": null
+              },
+              {
+                "address": "CSnUBrDUB2zXk2gRFs2oZWaazjYiodT7nPNZNQJGynnz",
+                "owner": "GLRW4ncEPQpT83vfBbCnLYQv5EMrmmq8qEVEv1NYvnCm",
+                "ui_amount": 10661386.907488,
+                "pct": 1.0662,
+                "tag": null
+              },
+              {
+                "address": "3kM1vxYCP38y9BeTmGVhny9ybHxuamBT5CjtAXYMHTt9",
+                "owner": "CHQhX68iNzwUpsUc9mnsRE7Mvod9asmevQn59FBxorPa",
+                "ui_amount": 10627035.232662,
+                "pct": 1.0628,
+                "tag": null
+              },
+              {
+                "address": "ENhD1SwveSbsmz3UXzHzWtUPRkiXc9SPvu2nCFhm7LYV",
+                "owner": "46VRArbnyCq4u664bj9CHeaRoBc6222mLwck4rpRTQeL",
+                "ui_amount": 10460243.068978,
+                "pct": 1.0461,
+                "tag": null
+              },
+              {
+                "address": "JAmLTxdSrLRhpYBT4d9d9NXLo99zAWfZJbVwNB7nfoft",
+                "owner": "Gk6AmBSoWF5oiCTyqoJXqx8qb3w2HixXDxQNcSJQH4LZ",
+                "ui_amount": 10108045.821749,
+                "pct": 1.0108,
+                "tag": null
               }
             ],
-            "total_holders": 375,
+            "total_holders": 463,
             "insider_network_pct_raw": 0.0,
             "insider_network_count": 0,
             "graph_insiders_detected": 0,
@@ -8661,18 +8381,17 @@
           {
             "criterion": 1,
             "name": "bundle",
-            "reason": "Uniform split-wallet cluster: 9 non-LP wallets each hold ~1.24% (range 1.14-1.41%, together 11.14%) - looks like a bundled launch split"
+            "reason": "Uniform split-wallet cluster: 8 non-LP wallets each hold ~1.11% (range 1.01-1.28%, together 8.86%) - looks like a bundled launch split"
           },
           {
             "criterion": 3,
             "name": "upside_5x_10x",
-            "reason": "Liquidity $5,331 below $30,000; Upside score 41/100 below 60"
+            "reason": "Liquidity $4,086 below $30,000; Upside score 52/100 below 60"
           }
         ],
         "why_this_could_fail": [
-          "Already up 508% in 24h - late entry risk even if under the blowoff cap",
-          "Liquidity is only $5,331; a modest sell can move the price sharply",
-          "Primary trading history is only 21.9 hours old",
+          "Liquidity is only $4,086; a modest sell can move the price sharply",
+          "Pair is only 1.5 days old - typical meme death-rate is still high",
           "High meme-coin beta: even a clean setup can go to zero on a sector fade or a dev dump"
         ],
         "links": {
@@ -8683,12 +8402,13 @@
           "fomo": "https://fomo.family/tokens/solana/DTLJXMxGdD1tMhKXurxbS7aqX3j79YkCkGQsQu5Zpump"
         },
         "sources": [
-          "gt_pumpfun_pools",
+          "dex_boosts_latest",
+          "dex_boosts_top",
           "rpc_bonding_curve"
         ],
         "holder_source": "rpc_getMultipleAccounts_on_rugcheck_top_accounts",
-        "top10_non_lp_pct": 16.18,
-        "max_single_non_lp_pct": 2.155,
+        "top10_non_lp_pct": 17.063,
+        "max_single_non_lp_pct": 3.048,
         "insider_network_pct": 0.0,
         "creator_pct": 0.0,
         "lp_locked_pct": 100.0,
@@ -8701,61 +8421,61 @@
         "fresh_pair": false,
         "fresh_graduation": false,
         "near_graduation": true,
-        "graduation_progress_pct": 105.77,
-        "price_usd": 1.63e-05
+        "graduation_progress_pct": 105.18,
+        "price_usd": 1.693e-05
       },
       {
-        "mint": "82569cfGrECpDw8qSWtdJHnzi9gWAgeWFDZBQGT8BzRC",
-        "symbol": "GTA",
-        "name": "GTA6.",
-        "market_cap_usd": 212236.0,
-        "liquidity_usd": 212405.35,
-        "volume_24h_usd": 1027.24,
-        "price_change_24h_pct": 152.0,
-        "age_hours": 0.10916439277777777,
+        "mint": "DC1vy25nn2U6CDYD9LuaMWmxrmH6PQQVd6BrgAMFpump",
+        "symbol": "KURO",
+        "name": "KURO INU",
+        "market_cap_usd": 20343.07,
+        "liquidity_usd": 4687.69695908592,
+        "volume_24h_usd": 26916.0,
+        "price_change_24h_pct": 177.0,
+        "age_hours": 8.703755649166666,
         "passed_all_three": false,
         "notify_reason": null,
-        "upside_score": 52,
+        "upside_score": 45,
         "upside": {
           "passed": false,
-          "score": 52,
+          "score": 45,
           "min_score": 60,
           "breakdown": [
             {
               "name": "mcap_headroom",
               "max": 25,
-              "points": 20,
-              "why": "$212,236 has more headroom but also more early-rug risk"
+              "points": 0,
+              "why": "$20,343 is outside the 5x-10x band"
             },
             {
               "name": "liquidity_depth",
               "max": 15,
-              "points": 13.0,
-              "why": "liq $212,405 is adequate; liq/mcap 100.1% is healthy"
+              "points": 7.0,
+              "why": "liq $4,688 is below the floor; liq/mcap 23.0% is healthy"
             },
             {
               "name": "volume_velocity",
               "max": 20,
-              "points": 0,
-              "why": "24h vol $1,027 is light; vol/mcap 0.5% is sleepy"
+              "points": 8.0,
+              "why": "24h vol $26,916 is light; vol/mcap 1.3x is very active; 986 txns"
             },
             {
               "name": "buy_sell_balance",
               "max": 15,
               "points": 15,
-              "why": "buy ratio 100.0% (buyers in control)"
+              "why": "buy ratio 65.6% (buyers in control)"
             },
             {
               "name": "non_parabolic_entry",
               "max": 15,
-              "points": 3,
-              "why": "+152% in 24h is warm; only 0.1h old"
+              "points": 9.0,
+              "why": "+177% in 24h is warm; 8.7h old (young)"
             },
             {
               "name": "socials_profile",
               "max": 5,
-              "points": 0,
-              "why": "No socials/profile attached"
+              "points": 5,
+              "why": "DexScreener socials/profile present"
             },
             {
               "name": "multi_pool_traction",
@@ -8764,38 +8484,38 @@
               "why": "Single pool only"
             }
           ],
-          "reason": "Upside score 52/100 below 60",
+          "reason": "Liquidity $4,688 below $30,000; Upside score 45/100 below 60",
           "inputs": {
-            "market_cap_usd": 212236.0,
-            "liquidity_usd": 212405.35,
-            "volume_24h_usd": 1027.24,
-            "liq_mcap": 1.0008,
-            "vol_mcap": 0.0048,
-            "buy_ratio": 1.0,
-            "txns_24h": 51.0,
-            "price_change_24h_pct": 152.0,
-            "age_hours": 0.11,
-            "has_socials": false,
+            "market_cap_usd": 20343.07,
+            "liquidity_usd": 4687.69695908592,
+            "volume_24h_usd": 26916.0,
+            "liq_mcap": 0.2304,
+            "vol_mcap": 1.3231,
+            "buy_ratio": 0.6562,
+            "txns_24h": 986.0,
+            "price_change_24h_pct": 177.0,
+            "age_hours": 8.7,
+            "has_socials": true,
             "pair_count": 1
           }
         },
         "bundle": {
           "passed": false,
-          "reason": "RugCheck bundle/safety flags: Large Amount of LP Unlocked",
+          "reason": "Uniform split-wallet cluster: 12 non-LP wallets each hold ~1.37% (range 1.29-1.59%, together 16.49%) - looks like a bundled launch split",
           "checks": [
             {
               "name": "rugcheck_risks",
               "result": "fail",
-              "risk_count": 5,
+              "risk_count": 1,
               "bundle_hits": [
                 {
-                  "name": "Large Amount of LP Unlocked",
+                  "name": "Creator history of rugged tokens",
                   "level": "danger",
-                  "description": "A large amount of LP tokens are unlocked, allowing the owner to remove liquidity at any point.",
-                  "value": "100.00%"
+                  "description": "Creator has a history of rugging tokens.",
+                  "value": ""
                 }
               ],
-              "mutable_metadata": true
+              "mutable_metadata": false
             },
             {
               "name": "rugged_flag",
@@ -8815,78 +8535,182 @@
               "result": "info",
               "detail": {
                 "performed": true,
-                "target": "5GCx2FpxbgBaLEn24q98XQLFPEbkGpYUD8JgkTqD7Vok",
+                "target": "3KBVHiTHHDFWpwDstYpVnBn5hcxASnYhjANYundRKpT3",
                 "signatures_fetched": 40,
-                "unique_slots_in_batch": 40,
-                "oldest_block_time": 1795600728,
-                "newest_block_time": 1795601011,
+                "unique_slots_in_batch": 38,
+                "oldest_block_time": 1795653618,
+                "newest_block_time": 1795654580,
                 "note": "Signature list has no signers; full early-buyer clustering would need getTransaction and was not run"
+              }
+            },
+            {
+              "name": "uniform_wallet_cluster",
+              "result": "fail",
+              "cluster": {
+                "size": 12,
+                "avg_pct": 1.374,
+                "min_pct": 1.288,
+                "max_pct": 1.588,
+                "total_pct": 16.486
               }
             }
           ],
-          "warnings": [
-            "Mutable metadata: the team can still change name/image/links"
-          ],
+          "warnings": [],
           "rpc_launch_check": {
             "performed": true,
-            "target": "5GCx2FpxbgBaLEn24q98XQLFPEbkGpYUD8JgkTqD7Vok",
+            "target": "3KBVHiTHHDFWpwDstYpVnBn5hcxASnYhjANYundRKpT3",
             "signatures_fetched": 40,
-            "unique_slots_in_batch": 40,
-            "oldest_block_time": 1795600728,
-            "newest_block_time": 1795601011,
+            "unique_slots_in_batch": 38,
+            "oldest_block_time": 1795653618,
+            "newest_block_time": 1795654580,
             "note": "Signature list has no signers; full early-buyer clustering would need getTransaction and was not run"
           }
         },
         "concentration": {
-          "passed": false,
-          "reason": "Weighted LP locked/burned 0.00% (min 40%); Primary pool LP locked/burned 0.00% (min 90%)",
+          "passed": true,
+          "reason": "Top-10 non-LP 15.498% / max wallet 1.932% / insider nets 0.0% / creator 0.0% / LP locked 100.0%",
           "metrics": {
             "holder_source": "rpc_getMultipleAccounts_on_rugcheck_top_accounts",
             "holder_notes": [
+              "Live RPC returned empty account for 62yttQAafLbAo95BzETeYqhZgYn5eUGrPppswm7jr3Tm",
+              "Live RPC returned empty account for 3KBVHiTHHDFWpwDstYpVnBn5hcxASnYhjANYundRKpT3",
               "Live balances refreshed via RPC; the top-N set itself comes from RugCheck (a larger wallet not in that snapshot could be missed)"
             ],
-            "top10_non_lp_pct": 0.0,
-            "max_single_non_lp_pct": 0.0,
+            "top10_non_lp_pct": 15.498,
+            "max_single_non_lp_pct": 1.932,
             "insider_network_pct": 0.0,
             "insider_network_pct_may_overlap": true,
             "creator_pct": 0.0,
-            "creator": "9xktsfVwZqWfCFYusFpWvYZYU9MZJXfPaYqYco3ckZyg",
+            "creator": "Do3xhTADnwMBFVekj6pDHAKu5qjP9qcMpRQJ9ChkaQsP",
             "mint_authority": null,
             "freeze_authority": null,
-            "lp_locked_pct": 0.0,
-            "primary_lp_locked_pct": 0.0,
+            "lp_locked_pct": 100.0,
+            "primary_lp_locked_pct": 100.0,
             "primary_pool": {
-              "pubkey": "5GCx2FpxbgBaLEn24q98XQLFPEbkGpYUD8JgkTqD7Vok",
-              "market_type": "fluxbeam",
-              "usd": 222440.29
+              "pubkey": "3KBVHiTHHDFWpwDstYpVnBn5hcxASnYhjANYundRKpT3",
+              "market_type": "pump_fun",
+              "usd": 5741.36
             },
             "unlocked_secondary_pools": [],
             "excluded_holders": [
               {
-                "owner": "86rz9jJq3JHcs3qqAVno889rJCbEuBgmTSZxHw4NvAV6",
-                "pct": 0.0,
-                "tag": "lp_vault"
-              },
-              {
-                "owner": "86rz9jJq3JHcs3qqAVno889rJCbEuBgmTSZxHw4NvAV6",
-                "pct": 100.0,
-                "tag": "lp_vault"
+                "owner": "3KBVHiTHHDFWpwDstYpVnBn5hcxASnYhjANYundRKpT3",
+                "pct": 26.0876,
+                "tag": "lp_market"
               }
             ],
             "wallet_holders": [
               {
-                "address": "Cy8XANgG7KwMAb9P6RFrMTEZyJf6x7dS1MvmXxGsasZF",
-                "owner": "9xktsfVwZqWfCFYusFpWvYZYU9MZJXfPaYqYco3ckZyg",
-                "ui_amount": 0.0,
-                "pct": 0.0,
+                "address": "GRf3qCRmByems5dUWRMuoUkMRCkaRNPDoCVx31izj4Mk",
+                "owner": "GfWKd8F5HrcEn6gwuPRRgeK4bNHSfC1NsUQ9p3x3Q8Th",
+                "ui_amount": 19321753.540471,
+                "pct": 1.9322,
+                "tag": null
+              },
+              {
+                "address": "J4oHsqryYAn4pvWBtkFbBdFtA4GuVxguGhmGcYFyycdT",
+                "owner": "Do3xhTADnwMBFVekj6pDHAKu5qjP9qcMpRQJ9ChkaQsP",
+                "ui_amount": 18402605.407534,
+                "pct": 1.8403,
+                "tag": null
+              },
+              {
+                "address": "CSgce7yHbzuHwt9rGYcReKjkioivzr7sX1zLFX98J16",
+                "owner": "Cwy9fbuShN2aKQZrwzzwnSyPG4jZUxttcYBfqY761aBU",
+                "ui_amount": 18143352.423404,
+                "pct": 1.8143,
+                "tag": null
+              },
+              {
+                "address": "2fQmj3b7Y1UAcZd29uFLLGthj5fJRdtoYzebW3aughgb",
+                "owner": "HqaLN4R1Ad1ZCs3wqpEhNreZ2ze7LME75aptS3NsAGCg",
+                "ui_amount": 15881765.296134,
+                "pct": 1.5882,
+                "tag": null
+              },
+              {
+                "address": "78M4jYZ82Ui6aADfYXQka3qi1U2BpzEPz4UWppWtMY3u",
+                "owner": "9FNRXZ5tJ2WmAhd2njb4F1GwLevgttbYAdpSFX6f9DFT",
+                "ui_amount": 14707052.680896,
+                "pct": 1.4707,
+                "tag": null
+              },
+              {
+                "address": "8vSudHAT8DfejPjh2akocm6rfhRhf6WzbSm19BpZhEV3",
+                "owner": "CgL9FzW2CA28VeZoXvHRubapWcz8dqTYZGPrZPdgr6vT",
+                "ui_amount": 14288842.630133,
+                "pct": 1.4289,
+                "tag": null
+              },
+              {
+                "address": "FgYgWS1z7sRFcqFs36WqCUbNVUg9DUfsn7XAX4fgmCvX",
+                "owner": "5UJ7G99PksfuJb71uhM3jbzJhe5c3twawpmmFVCGJfVx",
+                "ui_amount": 13754486.364128,
+                "pct": 1.3754,
+                "tag": null
+              },
+              {
+                "address": "CFQXNBs9fvjmu9yXnmCtu7HsJQraG857x8NnNWRRXYBS",
+                "owner": "7WEdiAYiLL9UuWxnkRBeUEBtsZqKB47m47Cv2P4GWFr7",
+                "ui_amount": 13563340.737789,
+                "pct": 1.3563,
+                "tag": null
+              },
+              {
+                "address": "D3usaKcHRYnccZHAnacaLnHekHSDEhJF4pHtJs1uZRty",
+                "owner": "CwKBPa6ybRuc8p7KGEe9RC8NLnznUvybF5NKSGqdXTGe",
+                "ui_amount": 13487101.791963,
+                "pct": 1.3487,
+                "tag": null
+              },
+              {
+                "address": "5nswPuDojBUP6Maf7HAJqoc9DGdnp2HHheY46kK3Ymsv",
+                "owner": "CsktvjLqwLMRr3aFhmyHgTCS1pkz4yywQj6Zaq3WABW6",
+                "ui_amount": 13433782.434944,
+                "pct": 1.3434,
+                "tag": null
+              },
+              {
+                "address": "8KPQmSKvGZVvRUQM1vLrZK65NzNRhubCPnwZSn3VxLRy",
+                "owner": "87dUsGRh35pq2kEibT7WDpMje7rSsPeypvG66JQPWMQ4",
+                "ui_amount": 13331575.039797,
+                "pct": 1.3332,
+                "tag": null
+              },
+              {
+                "address": "GzRL7XnusgWzjSFUz8BrGEdakgp3WQPKWpBaLSGUZcN3",
+                "owner": "G6mNDm2Yi1UXN8avtj9Y8Pt9eEnyQjUpuLjpTccpoKJv",
+                "ui_amount": 13219901.176163,
+                "pct": 1.322,
+                "tag": null
+              },
+              {
+                "address": "5B4r5Ggg3itYMcwzEjSnDizMFfzHE3rfrYEeGM7BwBRH",
+                "owner": "BUR4f8GKVEonrw91vMrA2vFd13hwNJf6SuUiMRHKXCW9",
+                "ui_amount": 13204833.240569,
+                "pct": 1.3205,
+                "tag": null
+              },
+              {
+                "address": "2SC1geQ3KmDEwJyJdtU9xe6Q611nSpdFSaZvA9M3BcRj",
+                "owner": "558jVtRHESC2im8N14sU3RwvpidGKG9Bv4b8qBjBiRzS",
+                "ui_amount": 13114948.093146,
+                "pct": 1.3115,
+                "tag": null
+              },
+              {
+                "address": "BCWNKErvTFDLqoNgqLJkxjnGG9FX4DxPbc7PFKyrtwbm",
+                "owner": "A17G2PZgGS9Zd2GmD361gnWKs9jvWv7M5B8RrLQp948n",
+                "ui_amount": 12876003.981391,
+                "pct": 1.2876,
                 "tag": null
               }
             ],
-            "total_holders": 1,
+            "total_holders": 360,
             "insider_network_pct_raw": 0.0,
             "insider_network_count": 0,
             "graph_insiders_detected": 0,
-            "lp_locked_pct_rugcheck_summary": 0.0,
+            "lp_locked_pct_rugcheck_summary": 100.0,
             "market_count": 1
           },
           "warnings": []
@@ -8895,98 +8719,95 @@
           {
             "criterion": 1,
             "name": "bundle",
-            "reason": "RugCheck bundle/safety flags: Large Amount of LP Unlocked"
-          },
-          {
-            "criterion": 2,
-            "name": "insider_concentration",
-            "reason": "Weighted LP locked/burned 0.00% (min 40%); Primary pool LP locked/burned 0.00% (min 90%)"
+            "reason": "Uniform split-wallet cluster: 12 non-LP wallets each hold ~1.37% (range 1.29-1.59%, together 16.49%) - looks like a bundled launch split"
           },
           {
             "criterion": 3,
             "name": "upside_5x_10x",
-            "reason": "Upside score 52/100 below 60"
+            "reason": "Liquidity $4,688 below $30,000; Upside score 45/100 below 60"
           }
         ],
         "why_this_could_fail": [
-          "Mutable metadata: the team can still change name/image/links",
-          "Only 0.0% of LP is locked/burned on a liquidity-weighted basis",
-          "Primary trading history is only 0.1 hours old",
+          "Liquidity is only $4,688; a modest sell can move the price sharply",
+          "Primary trading history is only 8.7 hours old",
           "High meme-coin beta: even a clean setup can go to zero on a sector fade or a dev dump"
         ],
         "links": {
-          "dexscreener": "https://dexscreener.com/solana/5gcx2fpxbgbalen24q98xqlfpebkgpyud8jgktqd7vok",
-          "solscan": "https://solscan.io/token/82569cfGrECpDw8qSWtdJHnzi9gWAgeWFDZBQGT8BzRC",
-          "rugcheck": "https://rugcheck.xyz/tokens/82569cfGrECpDw8qSWtdJHnzi9gWAgeWFDZBQGT8BzRC",
-          "fomo": "https://fomo.family/tokens/solana/82569cfGrECpDw8qSWtdJHnzi9gWAgeWFDZBQGT8BzRC"
+          "dexscreener": "https://dexscreener.com/solana/3kbvhithhdfwpwdstypvnbn5hcxasnyhjanyundrkpt3",
+          "solscan": "https://solscan.io/token/DC1vy25nn2U6CDYD9LuaMWmxrmH6PQQVd6BrgAMFpump",
+          "rugcheck": "https://rugcheck.xyz/tokens/DC1vy25nn2U6CDYD9LuaMWmxrmH6PQQVd6BrgAMFpump",
+          "pumpfun": "https://pump.fun/coin/DC1vy25nn2U6CDYD9LuaMWmxrmH6PQQVd6BrgAMFpump",
+          "fomo": "https://fomo.family/tokens/solana/DC1vy25nn2U6CDYD9LuaMWmxrmH6PQQVd6BrgAMFpump"
         },
         "sources": [
-          "gt_new_pools"
+          "dex_boosts_latest",
+          "dex_boosts_top",
+          "rpc_bonding_curve"
         ],
         "holder_source": "rpc_getMultipleAccounts_on_rugcheck_top_accounts",
-        "top10_non_lp_pct": 0.0,
-        "max_single_non_lp_pct": 0.0,
+        "top10_non_lp_pct": 15.498,
+        "max_single_non_lp_pct": 1.932,
         "insider_network_pct": 0.0,
         "creator_pct": 0.0,
-        "lp_locked_pct": 0.0,
-        "primary_lp_locked_pct": 0.0,
+        "lp_locked_pct": 100.0,
+        "primary_lp_locked_pct": 100.0,
         "graduated": false,
         "venue": null,
         "liveness": null,
-        "launchpad": "other",
+        "launchpad": "pumpfun",
         "fomopad_registered": null,
-        "fresh_pair": true,
+        "fresh_pair": false,
         "fresh_graduation": false,
-        "near_graduation": false,
-        "graduation_progress_pct": null,
-        "price_usd": 0.0002122
+        "near_graduation": true,
+        "graduation_progress_pct": 120.66,
+        "price_usd": 2.034e-05
       },
       {
         "mint": "FTdJWuMFayGGd5ZTm9EiEy6q547gmFNawdYf2vUXpump",
         "symbol": "PEPE",
         "name": "pepe",
-        "market_cap_usd": 16026.32501,
-        "liquidity_usd": 12263.0292,
-        "volume_24h_usd": 732357.04995427,
-        "price_change_24h_pct": 1363.642,
-        "age_hours": 12.02333110638889,
+        "market_cap_usd": 11094.84513,
+        "liquidity_usd": 8092.239,
+        "volume_24h_usd": 685090.978485534,
+        "price_change_24h_pct": -91.245,
+        "age_hours": 26.904033436666666,
         "passed_all_three": false,
         "notify_reason": null,
-        "upside_score": 44,
+        "upside_score": 50,
         "upside": {
           "passed": false,
-          "score": 44,
+          "score": 50,
           "min_score": 60,
           "breakdown": [
             {
               "name": "mcap_headroom",
               "max": 25,
               "points": 0,
-              "why": "$16,026 is outside the 5x-10x band"
+              "why": "$11,095 is outside the 5x-10x band"
             },
             {
               "name": "liquidity_depth",
               "max": 15,
               "points": 7.0,
-              "why": "liq $12,263 is below the floor; liq/mcap 76.5% is healthy"
+              "why": "liq $8,092 is below the floor; liq/mcap 72.9% is healthy"
             },
             {
               "name": "volume_velocity",
               "max": 20,
               "points": 16.0,
-              "why": "24h vol $732,357; vol/mcap 45.7x is very active; 22475 txns"
+              "why": "24h vol $685,091; vol/mcap 61.7x is very active; 21870 txns"
             },
             {
               "name": "buy_sell_balance",
               "max": 15,
               "points": 12,
-              "why": "buy ratio 50.7% (balanced to slightly bullish)"
+              "why": "buy ratio 51.0% (balanced to slightly bullish)"
             },
             {
               "name": "non_parabolic_entry",
               "max": 15,
-              "points": 4.0,
-              "why": "+1364% in 24h is already extended; 12.0h old (young)"
+              "points": 10.0,
+              "why": "24h change -91% is a sharp drawdown (discount, but damaged momentum); 26.9h old (established enough to not be a brand-new launch)"
             },
             {
               "name": "socials_profile",
@@ -9001,17 +8822,17 @@
               "why": "5 pools (multi-venue traction)"
             }
           ],
-          "reason": "Liquidity $12,263 below $30,000; Upside score 44/100 below 60",
+          "reason": "Liquidity $8,092 below $30,000; Upside score 50/100 below 60",
           "inputs": {
-            "market_cap_usd": 16026.32501,
-            "liquidity_usd": 12263.0292,
-            "volume_24h_usd": 732357.04995427,
-            "liq_mcap": 0.7652,
-            "vol_mcap": 45.6971,
-            "buy_ratio": 0.5068,
-            "txns_24h": 22475.0,
-            "price_change_24h_pct": 1363.642,
-            "age_hours": 12.02,
+            "market_cap_usd": 11094.84513,
+            "liquidity_usd": 8092.239,
+            "volume_24h_usd": 685090.978485534,
+            "liq_mcap": 0.7294,
+            "vol_mcap": 61.7486,
+            "buy_ratio": 0.5102,
+            "txns_24h": 21870.0,
+            "price_change_24h_pct": -91.245,
+            "age_hours": 26.9,
             "has_socials": false,
             "pair_count": 5
           }
@@ -9035,7 +8856,7 @@
                   "name": "Low Liquidity",
                   "level": "danger",
                   "description": "Low amount of liquidity in the token pool",
-                  "value": "$487.59"
+                  "value": "$5.05"
                 }
               ],
               "mutable_metadata": false
@@ -9060,9 +8881,9 @@
                 "performed": true,
                 "target": "EJbZNW6UpmkAYckmvG3H6H9Wmc9iMBKhsXngT1Dxbcsi",
                 "signatures_fetched": 40,
-                "unique_slots_in_batch": 40,
-                "oldest_block_time": 1795598747,
-                "newest_block_time": 1795601002,
+                "unique_slots_in_batch": 39,
+                "oldest_block_time": 1795649366,
+                "newest_block_time": 1795654454,
                 "note": "Signature list has no signers; full early-buyer clustering would need getTransaction and was not run"
               }
             }
@@ -9072,9 +8893,9 @@
             "performed": true,
             "target": "EJbZNW6UpmkAYckmvG3H6H9Wmc9iMBKhsXngT1Dxbcsi",
             "signatures_fetched": 40,
-            "unique_slots_in_batch": 40,
-            "oldest_block_time": 1795598747,
-            "newest_block_time": 1795601002,
+            "unique_slots_in_batch": 39,
+            "oldest_block_time": 1795649366,
+            "newest_block_time": 1795654454,
             "note": "Signature list has no signers; full early-buyer clustering would need getTransaction and was not run"
           }
         },
@@ -9084,12 +8905,11 @@
           "metrics": {
             "holder_source": "rpc_getMultipleAccounts_on_rugcheck_top_accounts",
             "holder_notes": [
-              "RPC getTokenLargestAccounts returned 429 (method rate-limited on this public endpoint)",
               "Live RPC returned empty account for FnBLGAnvTDK54kNQLDD97QSNCfn3SHznnK7kfge2kENP",
               "Live RPC returned empty account for EJbZNW6UpmkAYckmvG3H6H9Wmc9iMBKhsXngT1Dxbcsi",
               "Live balances refreshed via RPC; the top-N set itself comes from RugCheck (a larger wallet not in that snapshot could be missed)"
             ],
-            "top10_non_lp_pct": 9.491,
+            "top10_non_lp_pct": 19.791,
             "max_single_non_lp_pct": 6.29,
             "insider_network_pct": 0.0,
             "insider_network_pct_may_overlap": true,
@@ -9102,13 +8922,13 @@
             "primary_pool": {
               "pubkey": "2EnfqXYYKpbA2VN1M3k8bGcGjDHpk4nZuG9USyAK3XPp",
               "market_type": "meteora_damm_v2",
-              "usd": 518.63
+              "usd": 24.98
             },
             "unlocked_secondary_pools": [],
             "excluded_holders": [
               {
                 "owner": "EJbZNW6UpmkAYckmvG3H6H9Wmc9iMBKhsXngT1Dxbcsi",
-                "pct": 82.4613,
+                "pct": 75.2777,
                 "tag": "lp_market"
               },
               {
@@ -9123,7 +8943,7 @@
               },
               {
                 "owner": "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC",
-                "pct": 0.0077,
+                "pct": 0.0101,
                 "tag": "lp_vault"
               },
               {
@@ -9133,7 +8953,7 @@
               },
               {
                 "owner": "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC",
-                "pct": 0.0029,
+                "pct": 0.0018,
                 "tag": "lp_vault"
               },
               {
@@ -9161,38 +8981,87 @@
                 "tag": null
               },
               {
-                "address": "AnZKs2FqCdJtJSeagN5am4r6JhpMzduu1fvp8ERaJJop",
-                "owner": "7RwsQx8jbD5kjqRit7SR9JuGMp9SbfhjTRtDSEKmYZt6",
-                "ui_amount": 7173165.717535,
-                "pct": 0.7173,
-                "tag": null
-              },
-              {
-                "address": "ApngJQzXMTGxihqX3VSUXBizZ6xUARTFsn6oHuzTE5Zu",
-                "owner": "3aZh7UjdC2bLuuMXBo2FpuMRgNBZHKbuJ3TeJtjqbsxs",
-                "ui_amount": 5996322.17797,
-                "pct": 0.5996,
+                "address": "92yYs2WLzhrnGUf5koexiYzHFq4LXhNgiH6VeEPkCGnQ",
+                "owner": "HQuq3Car7ci5xLejz8e18JmfXAN5QVkTxrpynSNBhzzV",
+                "ui_amount": 32328549.738805,
+                "pct": 3.2329,
                 "tag": null
               },
               {
                 "address": "3g6XbWAMKr3586SQPSyZipVCjuQLbcKThFHNtswgejiU",
                 "owner": "6HvkDzkwVkbi2fRUbYEqrGPjXMqkh8z2bYTiERtXxHsc",
-                "ui_amount": 4147484.631671,
-                "pct": 0.4148,
+                "ui_amount": 21238782.974311,
+                "pct": 2.1239,
+                "tag": null
+              },
+              {
+                "address": "ApngJQzXMTGxihqX3VSUXBizZ6xUARTFsn6oHuzTE5Zu",
+                "owner": "3aZh7UjdC2bLuuMXBo2FpuMRgNBZHKbuJ3TeJtjqbsxs",
+                "ui_amount": 19013473.020576,
+                "pct": 1.9014,
+                "tag": null
+              },
+              {
+                "address": "AnZKs2FqCdJtJSeagN5am4r6JhpMzduu1fvp8ERaJJop",
+                "owner": "7RwsQx8jbD5kjqRit7SR9JuGMp9SbfhjTRtDSEKmYZt6",
+                "ui_amount": 18748272.644517,
+                "pct": 1.8748,
+                "tag": null
+              },
+              {
+                "address": "2eKziN9KZbqoJ2JtMsuibLapanNRUVkCwNGU1LvABKP8",
+                "owner": "3Pg3oR8Z373S6QuzkoSin23XRgewNZo6euw7E7jhXdDS",
+                "ui_amount": 11378059.776142,
+                "pct": 1.1378,
                 "tag": null
               },
               {
                 "address": "4Ec41ojZWo2vGDtcr2MbvBNpTdqjtouf4b3KbDhrSih5",
                 "owner": "AUWWisrCTptZbPKqnVK8ePpS3r6mTU1MNdeKipH1Tu7x",
-                "ui_amount": 4045471.328571,
-                "pct": 0.4045,
+                "ui_amount": 10716236.670189,
+                "pct": 1.0716,
                 "tag": null
               },
               {
-                "address": "3d7nuenGhKJzAZTyc9WcAKxvBDRj6pke93SjGazAmAWD",
-                "owner": "D1aDZDVXJ1sakUevj1ckN96VK69WUWvhXPbpJwVN9F25",
-                "ui_amount": 2381581.568495,
-                "pct": 0.2382,
+                "address": "DLFrxaM2mvG7q9aTH7e291HfTf9c21gFraPc1vLUjKRf",
+                "owner": "5jWcLnjFwSdS3xAUtm4hMU9MZr69QKVnrGucQjcQTXTG",
+                "ui_amount": 8306226.360242,
+                "pct": 0.8306,
+                "tag": null
+              },
+              {
+                "address": "eoPjpXb4zVG4SzbAeQpcacZ5mShfAeVy1cU6zf8SA2a",
+                "owner": "AjP8ubEeHRev4ALgVehN5Qf9Rs7hrtprnwjWf77CeY4e",
+                "ui_amount": 8008433.519195,
+                "pct": 0.8008,
+                "tag": null
+              },
+              {
+                "address": "AcQp9HQ5PkWrgBQucNGHWaxNrTrv2EsGMEtwu5ZnCbPX",
+                "owner": "AvTJyAaJA3LMme3Bsc23P4KgZ4zRDPmbwbUBvMARQjvE",
+                "ui_amount": 5272580.100521,
+                "pct": 0.5273,
+                "tag": null
+              },
+              {
+                "address": "CBCYpFHjd8GQaFTuPtJYyM3BZf9hZ1NpfFQ9rB4EVxPz",
+                "owner": "A16DH7KRNuRAyPfnyoFHW2A6yZjDXGS38Gxzy4YESsxP",
+                "ui_amount": 4479450.474632,
+                "pct": 0.4479,
+                "tag": null
+              },
+              {
+                "address": "Et369rD1svEhFuR68i7Tf2Mhab4SZ6vbkQb8HzmZC8kT",
+                "owner": "3DiTn8PaGcruVaMiRopjYXXGmnf4gFas85KSSLmrvKdT",
+                "ui_amount": 2940733.10288,
+                "pct": 0.2941,
+                "tag": null
+              },
+              {
+                "address": "7sWWWLjcxaTHERSRRsQz8LXuw8z6gNLRaeWXAiNcRmkW",
+                "owner": "9gahBWt9dFUWvnC3SFNVZd8XEkoW3Pt6nfGf2RZn7obV",
+                "ui_amount": 2866208.672244,
+                "pct": 0.2866,
                 "tag": null
               },
               {
@@ -9208,58 +9077,9 @@
                 "ui_amount": 2077047.498894,
                 "pct": 0.2077,
                 "tag": null
-              },
-              {
-                "address": "79ofRAhb6vyc2VFGQaboCTtVP7GYe1fyeVAsPzvAaDHo",
-                "owner": "7F7AQBQ5hmqZs8FJsfx6bMYaphAtE9kdBBSAmYFscqLA",
-                "ui_amount": 2024119.562821,
-                "pct": 0.2024,
-                "tag": null
-              },
-              {
-                "address": "EWEPpSoLWikeDP6jrwHbC3G13dqh47sLHqpUPwBB5TTs",
-                "owner": "FsYCoK7vUGDsKJnpnZVpoTGkSAk1kkeYmH8jfkNNA5w2",
-                "ui_amount": 2018949.275507,
-                "pct": 0.2019,
-                "tag": null
-              },
-              {
-                "address": "AxDqYy1vyQgZoo6xcZrkyyAqDf7vhUbCF2EbQ3NfKL4L",
-                "owner": "EH4XjyD8C2qtc9xhVYzPdJXdNYWCQPMCjEuMGktPRnay",
-                "ui_amount": 1847830.731655,
-                "pct": 0.1848,
-                "tag": null
-              },
-              {
-                "address": "2T2uccG4n4JsyXXNTjfXyUS4tNtFYQHDJaVHA5EcciZP",
-                "owner": "6kBupayboxXdeLU4LHd5s2Esof4XoWUbDiLPmueWQyCT",
-                "ui_amount": 1731063.926925,
-                "pct": 0.1731,
-                "tag": null
-              },
-              {
-                "address": "Dt1cnMwmfvWYFfQ5qwzYSJQqQUovrYgMMNwNVrHPQcod",
-                "owner": "8CdUD7t6oS6mkaJ1A6oMDgrjKu5QMJrHfadk831hRZpC",
-                "ui_amount": 1555769.079497,
-                "pct": 0.1556,
-                "tag": null
-              },
-              {
-                "address": "ETioczUNfZZyNoYN98bY2v8mssURKeGXwjwE9xKjVwUp",
-                "owner": "4D4hYDemeWch39hV9jKRsZjS9rWjU2hJo349DPQhJV7c",
-                "ui_amount": 1342942.354674,
-                "pct": 0.1343,
-                "tag": null
-              },
-              {
-                "address": "2eKziN9KZbqoJ2JtMsuibLapanNRUVkCwNGU1LvABKP8",
-                "owner": "3Pg3oR8Z373S6QuzkoSin23XRgewNZo6euw7E7jhXdDS",
-                "ui_amount": 1337754.848437,
-                "pct": 0.1338,
-                "tag": null
               }
             ],
-            "total_holders": 759,
+            "total_holders": 626,
             "insider_network_pct_raw": 0.0,
             "insider_network_count": 0,
             "graph_insiders_detected": 0,
@@ -9282,15 +9102,16 @@
           {
             "criterion": 3,
             "name": "upside_5x_10x",
-            "reason": "Liquidity $12,263 below $30,000; Upside score 44/100 below 60"
+            "reason": "Liquidity $8,092 below $30,000; Upside score 50/100 below 60"
           }
         ],
         "why_this_could_fail": [
           "Only 0.0% of LP is locked/burned on a liquidity-weighted basis",
           "A single non-LP wallet holds 6.3% and can dump",
-          "Already up 1364% in 24h - late entry risk even if under the blowoff cap",
-          "Liquidity is only $12,263; a modest sell can move the price sharply",
-          "Primary trading history is only 12.0 hours old",
+          "Top-10 non-LP wallets control 19.8% of supply",
+          "Already down -91% in 24h - momentum is damaged and another leg down is common",
+          "Liquidity is only $8,092; a modest sell can move the price sharply",
+          "Pair is only 1.1 days old - typical meme death-rate is still high",
           "High meme-coin beta: even a clean setup can go to zero on a sector fade or a dev dump"
         ],
         "links": {
@@ -9305,7 +9126,7 @@
           "rpc_bonding_curve"
         ],
         "holder_source": "rpc_getMultipleAccounts_on_rugcheck_top_accounts",
-        "top10_non_lp_pct": 9.491,
+        "top10_non_lp_pct": 19.791,
         "max_single_non_lp_pct": 6.29,
         "insider_network_pct": 0.0,
         "creator_pct": 0.0,
@@ -9319,22 +9140,675 @@
         "fresh_pair": false,
         "fresh_graduation": false,
         "near_graduation": true,
-        "graduation_progress_pct": 14502.64,
+        "graduation_progress_pct": 22220.93,
         "price_usd": null
+      },
+      {
+        "mint": "28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump",
+        "symbol": "Bababoi",
+        "name": "\u5df4\u5df4\u535a\u4e00",
+        "market_cap_usd": 18251.19,
+        "liquidity_usd": 4334.9493348203205,
+        "volume_24h_usd": 93015.74,
+        "price_change_24h_pct": 658.0,
+        "age_hours": 5.493200088611111,
+        "passed_all_three": false,
+        "notify_reason": null,
+        "upside_score": 40,
+        "upside": {
+          "passed": false,
+          "score": 40,
+          "min_score": 60,
+          "breakdown": [
+            {
+              "name": "mcap_headroom",
+              "max": 25,
+              "points": 0,
+              "why": "$18,251 is outside the 5x-10x band"
+            },
+            {
+              "name": "liquidity_depth",
+              "max": 15,
+              "points": 7.0,
+              "why": "liq $4,335 is below the floor; liq/mcap 23.8% is healthy"
+            },
+            {
+              "name": "volume_velocity",
+              "max": 20,
+              "points": 9.0,
+              "why": "24h vol $93,016 is light; vol/mcap 5.1x is very active; 2332 txns"
+            },
+            {
+              "name": "buy_sell_balance",
+              "max": 15,
+              "points": 15,
+              "why": "buy ratio 58.4% (buyers in control)"
+            },
+            {
+              "name": "non_parabolic_entry",
+              "max": 15,
+              "points": 3.0,
+              "why": "+658% in 24h is already extended; only 5.5h old"
+            },
+            {
+              "name": "socials_profile",
+              "max": 5,
+              "points": 5,
+              "why": "DexScreener socials/profile present"
+            },
+            {
+              "name": "multi_pool_traction",
+              "max": 5,
+              "points": 1,
+              "why": "Single pool only"
+            }
+          ],
+          "reason": "Liquidity $4,335 below $30,000; Upside score 40/100 below 60",
+          "inputs": {
+            "market_cap_usd": 18251.19,
+            "liquidity_usd": 4334.9493348203205,
+            "volume_24h_usd": 93015.74,
+            "liq_mcap": 0.2375,
+            "vol_mcap": 5.0964,
+            "buy_ratio": 0.5845,
+            "txns_24h": 2332.0,
+            "price_change_24h_pct": 658.0,
+            "age_hours": 5.49,
+            "has_socials": true,
+            "pair_count": 1
+          }
+        },
+        "bundle": {
+          "passed": false,
+          "reason": "RugCheck bundle/safety flags: Creator history of rugged tokens",
+          "checks": [
+            {
+              "name": "rugcheck_risks",
+              "result": "fail",
+              "risk_count": 1,
+              "bundle_hits": [
+                {
+                  "name": "Creator history of rugged tokens",
+                  "level": "danger",
+                  "description": "Creator has a history of rugging tokens.",
+                  "value": ""
+                }
+              ],
+              "mutable_metadata": false
+            },
+            {
+              "name": "rugged_flag",
+              "result": "pass",
+              "rugged": false
+            },
+            {
+              "name": "insider_network_clusters",
+              "result": "pass",
+              "network_count": 0,
+              "graph_insiders_detected": 0,
+              "large_clusters": [],
+              "huge_clusters": []
+            },
+            {
+              "name": "rpc_launch_signatures",
+              "result": "info",
+              "detail": {
+                "performed": true,
+                "target": "8VakUqCvBkQrKvSLaGwa1Qkkz2q7RPGPwe5vEYAmDgNg",
+                "signatures_fetched": 40,
+                "unique_slots_in_batch": 25,
+                "oldest_block_time": 1795653293,
+                "newest_block_time": 1795654562,
+                "note": "Signature list has no signers; full early-buyer clustering would need getTransaction and was not run"
+              }
+            }
+          ],
+          "warnings": [],
+          "rpc_launch_check": {
+            "performed": true,
+            "target": "8VakUqCvBkQrKvSLaGwa1Qkkz2q7RPGPwe5vEYAmDgNg",
+            "signatures_fetched": 40,
+            "unique_slots_in_batch": 25,
+            "oldest_block_time": 1795653293,
+            "newest_block_time": 1795654562,
+            "note": "Signature list has no signers; full early-buyer clustering would need getTransaction and was not run"
+          }
+        },
+        "concentration": {
+          "passed": false,
+          "reason": "Top-10 non-LP wallets hold 27.86% (max 25%)",
+          "metrics": {
+            "holder_source": "rpc_getMultipleAccounts_on_rugcheck_top_accounts",
+            "holder_notes": [
+              "Live RPC returned empty account for 4bAU6aBUsgEFMwpFFXQ2uHuJgZrJAawtENb9aGDhRBnw",
+              "Live RPC returned empty account for 8VakUqCvBkQrKvSLaGwa1Qkkz2q7RPGPwe5vEYAmDgNg",
+              "Live balances refreshed via RPC; the top-N set itself comes from RugCheck (a larger wallet not in that snapshot could be missed)"
+            ],
+            "top10_non_lp_pct": 27.865,
+            "max_single_non_lp_pct": 3.691,
+            "insider_network_pct": 0.0,
+            "insider_network_pct_may_overlap": true,
+            "creator_pct": 0.0,
+            "creator": "8v6ztxZwhPBNmA6aGrBzzrt6UBf2fZZfsWqZ9Lt47Kpv",
+            "mint_authority": null,
+            "freeze_authority": null,
+            "lp_locked_pct": 100.0,
+            "primary_lp_locked_pct": 100.0,
+            "primary_pool": {
+              "pubkey": "8VakUqCvBkQrKvSLaGwa1Qkkz2q7RPGPwe5vEYAmDgNg",
+              "market_type": "pump_fun",
+              "usd": 5666.07
+            },
+            "unlocked_secondary_pools": [],
+            "excluded_holders": [
+              {
+                "owner": "8VakUqCvBkQrKvSLaGwa1Qkkz2q7RPGPwe5vEYAmDgNg",
+                "pct": 27.9316,
+                "tag": "lp_market"
+              },
+              {
+                "owner": "DdfFYj4T7Nb2hdkhw44q8X1eKkKSFoDsCnnzVBjJtToY",
+                "pct": 2.1777,
+                "tag": "known_locker:Streamflow Vault"
+              }
+            ],
+            "wallet_holders": [
+              {
+                "address": "ApjHLWLw4jnRbsaBprC1iAyg56zhEhFXswAfDiqWG5go",
+                "owner": "EFAmoHKE5YekcoJHtLBenfGjcRQeG18T1ngBUxGwBsie",
+                "ui_amount": 36906480.461278,
+                "pct": 3.6906,
+                "tag": null
+              },
+              {
+                "address": "5L7EcPVgiZoEgjPNDv4XuyVHbWnHLH3NGAoPBrWfP8dx",
+                "owner": "3aThMRzPzaQEQAre1JFxTon2n77gAV4MaXd4jaGvkDMK",
+                "ui_amount": 31525934.590829,
+                "pct": 3.1526,
+                "tag": null
+              },
+              {
+                "address": "5opN7U1zMXduUkE8q3LswgzFK2mHYup3vnWE2bKwsS98",
+                "owner": "JCLXH1ND8HFr3NtoVvooafr2SwkeadFWDviV4SqjLQVV",
+                "ui_amount": 30862627.094351,
+                "pct": 3.0863,
+                "tag": null
+              },
+              {
+                "address": "EgLLDcML3TxruGdsNG3bASaJVnA7kvvY7wPbDaKQSo6h",
+                "owner": "7Q2WPcepx73QnGn9j19QSt7jpPhDggvDqcz3bZ2azyKX",
+                "ui_amount": 30528076.672449,
+                "pct": 3.0528,
+                "tag": null
+              },
+              {
+                "address": "D6P5uJA4LpM6DXBMQ3cSCVacvthzHfScrUseD42w1SDY",
+                "owner": "9pzxJMzDHgUuJmgs5Qnwuju5nRTd3MjSBjyuZry7dkdi",
+                "ui_amount": 30460459.315537,
+                "pct": 3.046,
+                "tag": null
+              },
+              {
+                "address": "Fvphkpe92ChS9LkuEwsVTYNQnzLnZAGAyabUZp8SAbTv",
+                "owner": "8wfB7CDbfXKFWc2uv6MgkpDnDKoci1jyKSdZw5AA8Xzx",
+                "ui_amount": 25978638.421114,
+                "pct": 2.5979,
+                "tag": null
+              },
+              {
+                "address": "2SQH3JNc1YkxCi3Sqo9cKSeVG5P4uA2MM7FJcYqPxhoq",
+                "owner": "2sJBiTy8T2LKtFPVwbtZDubhfd2QjbveBmnmGnd4SwfV",
+                "ui_amount": 25926822.009124,
+                "pct": 2.5927,
+                "tag": null
+              },
+              {
+                "address": "GmeCEkxMcRJVU3JMEJ7gJNc9usTxpBBZJaxjDYyqMzKw",
+                "owner": "GunE1qjtnATwbLJ7bBBddB39ZdpiMtDULrEXavyHDYfL",
+                "ui_amount": 23742355.725109,
+                "pct": 2.3742,
+                "tag": null
+              },
+              {
+                "address": "CmRPxDHCvtXbaX2f6RGXbs4H8KTRY2E7BaTjKuQdojN8",
+                "owner": "8hqHHr3tV7UQK2H65erf5b4yAcuwwR8setyderRaHp5v",
+                "ui_amount": 22260613.150142,
+                "pct": 2.2261,
+                "tag": null
+              },
+              {
+                "address": "BdJzRNCFzChZT3ussqmbtcS9Fyv5d6ytYucXYx9rmtsT",
+                "owner": "BT2sdwJeDWqXNUNBJwtKWBD7RjquACfjo1rT9vpZLUSA",
+                "ui_amount": 20457500.090659,
+                "pct": 2.0458,
+                "tag": null
+              },
+              {
+                "address": "G7uwKaqbE4QE6zfcZLzeDKEbd7k1237RkvLBnayL9AzH",
+                "owner": "F9c7cXJBXWKxZoASKVCWVnbbN4rwrNVLowX1V581HDpr",
+                "ui_amount": 19204772.231844,
+                "pct": 1.9205,
+                "tag": null
+              },
+              {
+                "address": "BTwaxPoP9T5hkNb7TpwNP3mqyM2ntkyFLUun7eQh9ggi",
+                "owner": "Dish4gFLsbyWQ81yEn384t521Vr77sgyvR5xf8BRZd2T",
+                "ui_amount": 18562784.712231,
+                "pct": 1.8563,
+                "tag": null
+              },
+              {
+                "address": "HcdL9YKPVx6xELpcRdRZECUiD3t41vueKN3v3CopSbCD",
+                "owner": "2p1EMY3BkV8Lvfdq2qQhPgvpAjtMjntG77xXJ1wFfj4s",
+                "ui_amount": 18402437.521454,
+                "pct": 1.8402,
+                "tag": null
+              },
+              {
+                "address": "4DL6seDiXCerCeqAFT6bW8f2ujXmFRUTMSU7ckjqCLGF",
+                "owner": "GVg53PS9FA5Y7gvvuSPVJzfxxCQSHTpChKNb5Tp4m8JW",
+                "ui_amount": 18212174.042857,
+                "pct": 1.8212,
+                "tag": null
+              },
+              {
+                "address": "H36PxAnwj4AhBWGhQYv26CiFxAryUMgRzgrzdmVWcuog",
+                "owner": "81aYsyAGaXdNZgZN4kWXthsTKpLp3zTHo8S1TBkeeQ7Y",
+                "ui_amount": 17354632.56027,
+                "pct": 1.7355,
+                "tag": null
+              }
+            ],
+            "total_holders": 290,
+            "insider_network_pct_raw": 0.0,
+            "insider_network_count": 0,
+            "graph_insiders_detected": 0,
+            "lp_locked_pct_rugcheck_summary": 100.0,
+            "market_count": 1
+          },
+          "warnings": []
+        },
+        "failed_criteria": [
+          {
+            "criterion": 1,
+            "name": "bundle",
+            "reason": "RugCheck bundle/safety flags: Creator history of rugged tokens"
+          },
+          {
+            "criterion": 2,
+            "name": "insider_concentration",
+            "reason": "Top-10 non-LP wallets hold 27.86% (max 25%)"
+          },
+          {
+            "criterion": 3,
+            "name": "upside_5x_10x",
+            "reason": "Liquidity $4,335 below $30,000; Upside score 40/100 below 60"
+          }
+        ],
+        "why_this_could_fail": [
+          "Top-10 non-LP wallets control 27.9% of supply",
+          "Already up 658% in 24h - late entry risk even if under the blowoff cap",
+          "Liquidity is only $4,335; a modest sell can move the price sharply",
+          "Primary trading history is only 5.5 hours old",
+          "High meme-coin beta: even a clean setup can go to zero on a sector fade or a dev dump"
+        ],
+        "links": {
+          "dexscreener": "https://dexscreener.com/solana/8vakuqcvbkqrkvslagwa1qkkz2q7rpgpwe5veyamdgng",
+          "solscan": "https://solscan.io/token/28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump",
+          "rugcheck": "https://rugcheck.xyz/tokens/28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump",
+          "pumpfun": "https://pump.fun/coin/28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump",
+          "fomo": "https://fomo.family/tokens/solana/28B9kDm6XtQNqAkzuiKH3Zu1L8cVM6SLW4iRamFspump"
+        },
+        "sources": [
+          "dex_boosts_latest",
+          "dex_boosts_top",
+          "rpc_bonding_curve"
+        ],
+        "holder_source": "rpc_getMultipleAccounts_on_rugcheck_top_accounts",
+        "top10_non_lp_pct": 27.865,
+        "max_single_non_lp_pct": 3.691,
+        "insider_network_pct": 0.0,
+        "creator_pct": 0.0,
+        "lp_locked_pct": 100.0,
+        "primary_lp_locked_pct": 100.0,
+        "graduated": false,
+        "venue": null,
+        "liveness": null,
+        "launchpad": "pumpfun",
+        "fomopad_registered": null,
+        "fresh_pair": false,
+        "fresh_graduation": false,
+        "near_graduation": true,
+        "graduation_progress_pct": 111.58,
+        "price_usd": 1.825e-05
       }
     ],
-    "newly_flagged": [],
+    "newly_flagged": [
+      {
+        "mint": "73R7L2jLfnweJTXxTiccHMZV6mECaVELPUy3PkHopump",
+        "symbol": "PUMPDOG",
+        "name": "Pump Dog",
+        "market_cap_usd": 279181.0,
+        "liquidity_usd": 36929.91,
+        "volume_24h_usd": 378031.49,
+        "price_change_24h_pct": 646.0,
+        "age_hours": 0.5718111888888889,
+        "passed_all_three": true,
+        "notify_reason": "new",
+        "upside_score": 66,
+        "upside": {
+          "passed": true,
+          "score": 66,
+          "min_score": 60,
+          "breakdown": [
+            {
+              "name": "mcap_headroom",
+              "max": 25,
+              "points": 20,
+              "why": "$279,181 has more headroom but also more early-rug risk"
+            },
+            {
+              "name": "liquidity_depth",
+              "max": 15,
+              "points": 9.0,
+              "why": "liq $36,930 is thin; liq/mcap 13.2% is healthy"
+            },
+            {
+              "name": "volume_velocity",
+              "max": 20,
+              "points": 13.0,
+              "why": "24h vol $378,031; vol/mcap 1.4x is very active; 9518 txns"
+            },
+            {
+              "name": "buy_sell_balance",
+              "max": 15,
+              "points": 15,
+              "why": "buy ratio 65.1% (buyers in control)"
+            },
+            {
+              "name": "non_parabolic_entry",
+              "max": 15,
+              "points": 3.0,
+              "why": "+646% in 24h is already extended; only 0.6h old"
+            },
+            {
+              "name": "socials_profile",
+              "max": 5,
+              "points": 5,
+              "why": "DexScreener socials/profile present"
+            },
+            {
+              "name": "multi_pool_traction",
+              "max": 5,
+              "points": 1,
+              "why": "Single pool only"
+            }
+          ],
+          "reason": "Upside score 66/100 with structural cap headroom",
+          "inputs": {
+            "market_cap_usd": 279181.0,
+            "liquidity_usd": 36929.91,
+            "volume_24h_usd": 378031.49,
+            "liq_mcap": 0.1323,
+            "vol_mcap": 1.3541,
+            "buy_ratio": 0.6507,
+            "txns_24h": 9518.0,
+            "price_change_24h_pct": 646.0,
+            "age_hours": 0.57,
+            "has_socials": true,
+            "pair_count": 1
+          }
+        },
+        "bundle": {
+          "passed": true,
+          "reason": "No bundled-supply, sniper, copycat, or large coordinated-cluster flags",
+          "checks": [
+            {
+              "name": "rugcheck_risks",
+              "result": "pass",
+              "risk_count": 0,
+              "bundle_hits": [],
+              "mutable_metadata": false
+            },
+            {
+              "name": "rugged_flag",
+              "result": "pass",
+              "rugged": false
+            },
+            {
+              "name": "insider_network_clusters",
+              "result": "pass",
+              "network_count": 0,
+              "graph_insiders_detected": 0,
+              "large_clusters": [],
+              "huge_clusters": []
+            },
+            {
+              "name": "rpc_launch_signatures",
+              "result": "info",
+              "detail": {
+                "performed": true,
+                "target": "7g7YEe3bLsRGie3yyB6RpcfZJ5cj5hiNxCfkVb1TgZQJ",
+                "signatures_fetched": 40,
+                "unique_slots_in_batch": 20,
+                "oldest_block_time": 1795654572,
+                "newest_block_time": 1795654583,
+                "note": "Signature list has no signers; full early-buyer clustering would need getTransaction and was not run"
+              }
+            }
+          ],
+          "warnings": [],
+          "rpc_launch_check": {
+            "performed": true,
+            "target": "7g7YEe3bLsRGie3yyB6RpcfZJ5cj5hiNxCfkVb1TgZQJ",
+            "signatures_fetched": 40,
+            "unique_slots_in_batch": 20,
+            "oldest_block_time": 1795654572,
+            "newest_block_time": 1795654583,
+            "note": "Signature list has no signers; full early-buyer clustering would need getTransaction and was not run"
+          }
+        },
+        "concentration": {
+          "passed": true,
+          "reason": "Top-10 non-LP 2.74% / max wallet 0.279% / insider nets 0.0% / creator 0.0% / LP locked 100.0%",
+          "metrics": {
+            "holder_source": "rpc_getMultipleAccounts_on_rugcheck_top_accounts",
+            "holder_notes": [
+              "RPC getTokenLargestAccounts returned 429 (method rate-limited on this public endpoint)",
+              "Live balances refreshed via RPC; the top-N set itself comes from RugCheck (a larger wallet not in that snapshot could be missed)"
+            ],
+            "top10_non_lp_pct": 2.74,
+            "max_single_non_lp_pct": 0.279,
+            "insider_network_pct": 0.0,
+            "insider_network_pct_may_overlap": true,
+            "creator_pct": 0.0,
+            "creator": "9M7Le1RkLEDu57EK6jTqpH7VR5GrKKKhWrBZNtwAae8E",
+            "mint_authority": null,
+            "freeze_authority": null,
+            "lp_locked_pct": 100.0,
+            "primary_lp_locked_pct": 100.0,
+            "primary_pool": {
+              "pubkey": "7g7YEe3bLsRGie3yyB6RpcfZJ5cj5hiNxCfkVb1TgZQJ",
+              "market_type": "pump_fun_amm",
+              "usd": 36773.14
+            },
+            "unlocked_secondary_pools": [],
+            "excluded_holders": [
+              {
+                "owner": "7g7YEe3bLsRGie3yyB6RpcfZJ5cj5hiNxCfkVb1TgZQJ",
+                "pct": 6.7277,
+                "tag": "lp_market"
+              },
+              {
+                "owner": "7g7YEe3bLsRGie3yyB6RpcfZJ5cj5hiNxCfkVb1TgZQJ",
+                "pct": 0.0,
+                "tag": "lp_market"
+              }
+            ],
+            "wallet_holders": [
+              {
+                "address": "E3CjTjRynXXyr4TUw9XbSZQpQMkQ7Ww6CbzDYX5puE6k",
+                "owner": "9535Brwu5RZucMceV9BM1r4bn94LJhsn68aA4YuTXGTw",
+                "ui_amount": 2752796.73812,
+                "pct": 0.2793,
+                "tag": null
+              },
+              {
+                "address": "69g8phyKsBwcpiGtNiE4p44XpvmykrWLADtxsmYbmiPH",
+                "owner": "8wdcoExbnjrZtcb461h3tYHF113rnycDAqmhD1LCDqtV",
+                "ui_amount": 2746333.002486,
+                "pct": 0.2787,
+                "tag": null
+              },
+              {
+                "address": "7hZ8pWSu37714Ve1n4Szz8aV9B4Xth796BDztdkGBqfG",
+                "owner": "ASge6PWqzskGKvRfk5Jjs2GNGVvoKe7efSrx6aRm6Ez9",
+                "ui_amount": 2730144.106698,
+                "pct": 0.277,
+                "tag": null
+              },
+              {
+                "address": "D1w1swcQJabvDQENmkeF5Aai5Z6GZG2XqL1MwZfvP3HM",
+                "owner": "6i81swtFPyKJYfLg5WxkKximMjekLy44c9W3nrumpwQM",
+                "ui_amount": 2721357.433481,
+                "pct": 0.2761,
+                "tag": null
+              },
+              {
+                "address": "4GBdLNRHiWEVgBzAwVYKa1c6K6rzHgBgSVUxhd1mFh5K",
+                "owner": "7Z9riZgXEZRVGYcwb7yJ4Lo4792JMAAPc6G4e8ZDxKii",
+                "ui_amount": 2719207.935246,
+                "pct": 0.2759,
+                "tag": null
+              },
+              {
+                "address": "4PXQLMsPFEgHSNptd7eDG7XoWUUrsUm79ytR11oXEBLm",
+                "owner": "5VzGjv2Cmb2DCvWxtoQ8KetXQkS3vm4pKfu7LhaZ1Knp",
+                "ui_amount": 2716815.439706,
+                "pct": 0.2757,
+                "tag": null
+              },
+              {
+                "address": "GYsfsazbGEfw4Yx4ms3nMgsRZPvKoZTwcDf3tUtDtUR",
+                "owner": "F1A5NsunbLJSFutBkYf7a5zJGkszugSxxAGfWj693tMv",
+                "ui_amount": 2682071.860751,
+                "pct": 0.2722,
+                "tag": null
+              },
+              {
+                "address": "DFor3QT82xwQnQff3RJe485adAVBjFHQZWqAjoDduZct",
+                "owner": "6mEsubW8RbPC81L46nZgeNG3gN4jz7NFwtm6wehcU25u",
+                "ui_amount": 2651625.749323,
+                "pct": 0.2691,
+                "tag": null
+              },
+              {
+                "address": "8P5oN1zE5VBciVHpTHQ2Ebk7mueeJa11Sc4FpFiz9mCc",
+                "owner": "G9FuankzcghcobegPYyaC6is3S1UjRLvnRP9B8tGLdit",
+                "ui_amount": 2646136.769885,
+                "pct": 0.2685,
+                "tag": null
+              },
+              {
+                "address": "2qv6KchfvMgDCmgqRgTBGXfmyTRFHPsgaBzs1apiuxdY",
+                "owner": "As5LKq6LVRCqzgAyFpcdirWe8HHgDBjw1doBFcLyw2AR",
+                "ui_amount": 2641025.242299,
+                "pct": 0.268,
+                "tag": null
+              },
+              {
+                "address": "4pkSzrbx4V6kobMUZwLNt3HLwnFz2qFRXDacMKKMxxdp",
+                "owner": "F8B4m2PyCeQpqEfkcVgGNU1jhL34chn4pFs5hdkCwRUy",
+                "ui_amount": 2634669.918026,
+                "pct": 0.2674,
+                "tag": null
+              },
+              {
+                "address": "DbFKfvMvsMGUjapEjgFhB1U4FGPQUgf2t4n4Ug64e1Gh",
+                "owner": "6xXFSE9wCez2zJnfzHRQ3P2VmdBG4kqJex4jCzm91q3o",
+                "ui_amount": 2632098.110012,
+                "pct": 0.2671,
+                "tag": null
+              },
+              {
+                "address": "FySjikaqEBvmJHKAQBBGwoAco9nE53hyhbfgb5zxviiq",
+                "owner": "HK8nxyCiQztB7LwhzoyN96GfkF477vYYXFrbzYQHpnLZ",
+                "ui_amount": 2609886.972275,
+                "pct": 0.2648,
+                "tag": null
+              },
+              {
+                "address": "7LJA25mhF8hFtAqrmoiecQVf2AWynq6VeYs4j1vkUx9Y",
+                "owner": "AUdmqvKPFtCBWaDc5jpvntrtQNtbWcSFieXbCVAdnBsW",
+                "ui_amount": 2603100.277384,
+                "pct": 0.2641,
+                "tag": null
+              },
+              {
+                "address": "9Vo5ftEEG8kkGcNP5C9eWt392bXVwgVRb96qVahyD5Lk",
+                "owner": "JCaV6nCKAXgPVG8GPma5x7ju4APSkFeeKtoetXgbv1TQ",
+                "ui_amount": 2601080.847731,
+                "pct": 0.2639,
+                "tag": null
+              }
+            ],
+            "total_holders": 1718,
+            "insider_network_pct_raw": 0.0,
+            "insider_network_count": 0,
+            "graph_insiders_detected": 0,
+            "lp_locked_pct_rugcheck_summary": 100.0,
+            "market_count": 1
+          },
+          "warnings": []
+        },
+        "failed_criteria": [],
+        "why_this_could_fail": [
+          "Already up 646% in 24h - late entry risk even if under the blowoff cap",
+          "Liquidity is only $36,930; a modest sell can move the price sharply",
+          "Primary trading history is only 0.6 hours old",
+          "High meme-coin beta: even a clean setup can go to zero on a sector fade or a dev dump"
+        ],
+        "links": {
+          "dexscreener": "https://dexscreener.com/solana/7g7yee3blsrgie3yyb6rpcfzj5cj5hinxcfkvb1tgzqj",
+          "solscan": "https://solscan.io/token/73R7L2jLfnweJTXxTiccHMZV6mECaVELPUy3PkHopump",
+          "rugcheck": "https://rugcheck.xyz/tokens/73R7L2jLfnweJTXxTiccHMZV6mECaVELPUy3PkHopump",
+          "pumpfun": "https://pump.fun/coin/73R7L2jLfnweJTXxTiccHMZV6mECaVELPUy3PkHopump",
+          "fomo": "https://fomo.family/tokens/solana/73R7L2jLfnweJTXxTiccHMZV6mECaVELPUy3PkHopump"
+        },
+        "sources": [
+          "dex_profiles_latest",
+          "rpc_bonding_curve"
+        ],
+        "holder_source": "rpc_getMultipleAccounts_on_rugcheck_top_accounts",
+        "top10_non_lp_pct": 2.74,
+        "max_single_non_lp_pct": 0.279,
+        "insider_network_pct": 0.0,
+        "creator_pct": 0.0,
+        "lp_locked_pct": 100.0,
+        "primary_lp_locked_pct": 100.0,
+        "graduated": true,
+        "venue": null,
+        "liveness": null,
+        "launchpad": "pumpfun",
+        "fomopad_registered": null,
+        "fresh_pair": true,
+        "fresh_graduation": true,
+        "near_graduation": false,
+        "graduation_progress_pct": 100.0,
+        "price_usd": 0.0002792
+      }
+    ],
     "already_alerted": [],
     "discovery": {
       "mode": "fresh",
       "window_sec": 3600.0,
-      "unique_mints_discovered": 163,
-      "unique_mints_in_scope": 96,
-      "dropped_stale_profiles_boosts": 67,
+      "unique_mints_discovered": 237,
+      "unique_mints_in_scope": 101,
+      "dropped_stale_profiles_boosts": 136,
       "counts": {
         "gt_new_pools": 100,
         "gt_new_pools_in_window": 100,
-        "dex_profiles_boosts": 53,
+        "dex_profiles_boosts": 84,
         "migrations": 6,
         "near_graduation": 11,
         "dex_pool_lists": 0
@@ -9348,7 +9822,7 @@
           "status": "partial",
           "fully_paginated": false,
           "in_window": 100,
-          "oldest_pool_created_at": "2026-11-25T09:56:44Z",
+          "oldest_pool_created_at": "2026-11-26T00:49:40Z",
           "note": "GeckoTerminal free plan caps new_pools at page 10, so this feed often covers only the most recent few minutes, not a full hour."
         },
         {
@@ -9400,21 +9874,21 @@
           "name": "dexscreener:dex_profiles_latest",
           "url": "https://api.dexscreener.com/token-profiles/latest/v1",
           "status": "ok",
-          "items": 21,
+          "items": 27,
           "fully_paginated": false
         },
         {
           "name": "dexscreener:dex_boosts_latest",
           "url": "https://api.dexscreener.com/token-boosts/latest/v1",
           "status": "ok",
-          "items": 17,
+          "items": 28,
           "fully_paginated": false
         },
         {
           "name": "dexscreener:dex_boosts_top",
           "url": "https://api.dexscreener.com/token-boosts/top/v1",
           "status": "ok",
-          "items": 15,
+          "items": 29,
           "fully_paginated": false
         },
         {
@@ -9422,32 +9896,32 @@
           "account": "39azUYFWPz3VHgKCf3VChUwbpURdCHRxjWVowf5jUJjg",
           "url": "https://api.mainnet-beta.solana.com",
           "status": "ok",
-          "signatures": 46,
+          "signatures": 63,
           "transactions": 10,
           "mints": 6
         },
         {
           "name": "geckoterminal:pump-fun/pools:default",
           "url": "https://api.geckoterminal.com/api/v2/networks/solana/dexes/pump-fun/pools",
-          "pages_fetched": 3,
-          "items": 40,
+          "pages_fetched": 6,
+          "items": 100,
           "status": "partial",
           "fully_paginated": false
         },
         {
           "name": "geckoterminal:pump-fun/pools:h24_volume",
           "url": "https://api.geckoterminal.com/api/v2/networks/solana/dexes/pump-fun/pools?sort=h24_volume_usd_desc",
-          "pages_fetched": 2,
-          "items": 20,
-          "status": "partial",
+          "pages_fetched": 1,
+          "items": 0,
+          "status": "error",
           "fully_paginated": false
         }
       ],
       "dexscreener_enrich": {
-        "batches": 6,
+        "batches": 8,
         "batches_failed": 0
       },
-      "sol_price_usd": 67.58,
+      "sol_price_usd": 70.64,
       "pumpfun_api": {
         "status": "skipped",
         "reason": "pump.fun frontend API returns Cloudflare 403 from this host; not bypassed. Near-graduation uses GeckoTerminal pump-fun pools plus on-chain bonding-curve accounts via public RPC."
@@ -9455,21 +9929,21 @@
       "gt_new_pools_coverage_note": "Free GeckoTerminal pagination stops at page 10 (~few minutes of new pools). Hour-long PumpSwap graduations come from on-chain MigrateV2 signatures."
     },
     "http_stats": {
-      "geckoterminal_http_200": 8,
-      "geckoterminal_http_429": 26,
-      "geckoterminal_429": 26,
+      "geckoterminal_http_200": 10,
+      "geckoterminal_http_429": 24,
+      "geckoterminal_429": 24,
       "geckoterminal_fail": 8,
-      "dexscreener_http_200": 10,
+      "dexscreener_http_200": 12,
       "rpc_fresh_getSignaturesForAddress_http_200": 1,
       "rpc_fresh_getTransaction_http_200": 10,
-      "rpc_fresh_getTransaction_http_429": 108,
-      "rpc_fresh_fail": 36,
-      "rpc_fresh_getMultipleAccounts_http_200": 2,
-      "rugcheck_http_200": 20,
-      "rpc_getTokenSupply_ok": 10,
-      "rpc_getTokenLargestAccounts_429": 4,
-      "rpc_getMultipleAccounts_ok": 10,
-      "rpc_getSignaturesForAddress_ok": 9
+      "rpc_fresh_getTransaction_http_429": 159,
+      "rpc_fresh_fail": 53,
+      "rpc_fresh_getMultipleAccounts_http_200": 3,
+      "rugcheck_http_200": 16,
+      "rpc_getTokenSupply_ok": 8,
+      "rpc_getTokenLargestAccounts_429": 1,
+      "rpc_getMultipleAccounts_ok": 8,
+      "rpc_getSignaturesForAddress_ok": 7
     },
     "http_errors": [
       "geckoterminal 429 https://api.geckoterminal.com/api/v2/networks/solana/new_pools?page=6",
@@ -9519,8 +9993,322 @@
     ],
     "dry_run": false
   },
-  "notify_now": false,
-  "newly_flagged": [],
-  "newly_flagged_count": 0,
-  "runtime_sec": 95.56
+  "notify_now": true,
+  "newly_flagged": [
+    {
+      "mint": "73R7L2jLfnweJTXxTiccHMZV6mECaVELPUy3PkHopump",
+      "symbol": "PUMPDOG",
+      "name": "Pump Dog",
+      "market_cap_usd": 279181.0,
+      "liquidity_usd": 36929.91,
+      "volume_24h_usd": 378031.49,
+      "price_change_24h_pct": 646.0,
+      "age_hours": 0.5718111888888889,
+      "passed_all_three": true,
+      "notify_reason": "new",
+      "upside_score": 66,
+      "upside": {
+        "passed": true,
+        "score": 66,
+        "min_score": 60,
+        "breakdown": [
+          {
+            "name": "mcap_headroom",
+            "max": 25,
+            "points": 20,
+            "why": "$279,181 has more headroom but also more early-rug risk"
+          },
+          {
+            "name": "liquidity_depth",
+            "max": 15,
+            "points": 9.0,
+            "why": "liq $36,930 is thin; liq/mcap 13.2% is healthy"
+          },
+          {
+            "name": "volume_velocity",
+            "max": 20,
+            "points": 13.0,
+            "why": "24h vol $378,031; vol/mcap 1.4x is very active; 9518 txns"
+          },
+          {
+            "name": "buy_sell_balance",
+            "max": 15,
+            "points": 15,
+            "why": "buy ratio 65.1% (buyers in control)"
+          },
+          {
+            "name": "non_parabolic_entry",
+            "max": 15,
+            "points": 3.0,
+            "why": "+646% in 24h is already extended; only 0.6h old"
+          },
+          {
+            "name": "socials_profile",
+            "max": 5,
+            "points": 5,
+            "why": "DexScreener socials/profile present"
+          },
+          {
+            "name": "multi_pool_traction",
+            "max": 5,
+            "points": 1,
+            "why": "Single pool only"
+          }
+        ],
+        "reason": "Upside score 66/100 with structural cap headroom",
+        "inputs": {
+          "market_cap_usd": 279181.0,
+          "liquidity_usd": 36929.91,
+          "volume_24h_usd": 378031.49,
+          "liq_mcap": 0.1323,
+          "vol_mcap": 1.3541,
+          "buy_ratio": 0.6507,
+          "txns_24h": 9518.0,
+          "price_change_24h_pct": 646.0,
+          "age_hours": 0.57,
+          "has_socials": true,
+          "pair_count": 1
+        }
+      },
+      "bundle": {
+        "passed": true,
+        "reason": "No bundled-supply, sniper, copycat, or large coordinated-cluster flags",
+        "checks": [
+          {
+            "name": "rugcheck_risks",
+            "result": "pass",
+            "risk_count": 0,
+            "bundle_hits": [],
+            "mutable_metadata": false
+          },
+          {
+            "name": "rugged_flag",
+            "result": "pass",
+            "rugged": false
+          },
+          {
+            "name": "insider_network_clusters",
+            "result": "pass",
+            "network_count": 0,
+            "graph_insiders_detected": 0,
+            "large_clusters": [],
+            "huge_clusters": []
+          },
+          {
+            "name": "rpc_launch_signatures",
+            "result": "info",
+            "detail": {
+              "performed": true,
+              "target": "7g7YEe3bLsRGie3yyB6RpcfZJ5cj5hiNxCfkVb1TgZQJ",
+              "signatures_fetched": 40,
+              "unique_slots_in_batch": 20,
+              "oldest_block_time": 1795654572,
+              "newest_block_time": 1795654583,
+              "note": "Signature list has no signers; full early-buyer clustering would need getTransaction and was not run"
+            }
+          }
+        ],
+        "warnings": [],
+        "rpc_launch_check": {
+          "performed": true,
+          "target": "7g7YEe3bLsRGie3yyB6RpcfZJ5cj5hiNxCfkVb1TgZQJ",
+          "signatures_fetched": 40,
+          "unique_slots_in_batch": 20,
+          "oldest_block_time": 1795654572,
+          "newest_block_time": 1795654583,
+          "note": "Signature list has no signers; full early-buyer clustering would need getTransaction and was not run"
+        }
+      },
+      "concentration": {
+        "passed": true,
+        "reason": "Top-10 non-LP 2.74% / max wallet 0.279% / insider nets 0.0% / creator 0.0% / LP locked 100.0%",
+        "metrics": {
+          "holder_source": "rpc_getMultipleAccounts_on_rugcheck_top_accounts",
+          "holder_notes": [
+            "RPC getTokenLargestAccounts returned 429 (method rate-limited on this public endpoint)",
+            "Live balances refreshed via RPC; the top-N set itself comes from RugCheck (a larger wallet not in that snapshot could be missed)"
+          ],
+          "top10_non_lp_pct": 2.74,
+          "max_single_non_lp_pct": 0.279,
+          "insider_network_pct": 0.0,
+          "insider_network_pct_may_overlap": true,
+          "creator_pct": 0.0,
+          "creator": "9M7Le1RkLEDu57EK6jTqpH7VR5GrKKKhWrBZNtwAae8E",
+          "mint_authority": null,
+          "freeze_authority": null,
+          "lp_locked_pct": 100.0,
+          "primary_lp_locked_pct": 100.0,
+          "primary_pool": {
+            "pubkey": "7g7YEe3bLsRGie3yyB6RpcfZJ5cj5hiNxCfkVb1TgZQJ",
+            "market_type": "pump_fun_amm",
+            "usd": 36773.14
+          },
+          "unlocked_secondary_pools": [],
+          "excluded_holders": [
+            {
+              "owner": "7g7YEe3bLsRGie3yyB6RpcfZJ5cj5hiNxCfkVb1TgZQJ",
+              "pct": 6.7277,
+              "tag": "lp_market"
+            },
+            {
+              "owner": "7g7YEe3bLsRGie3yyB6RpcfZJ5cj5hiNxCfkVb1TgZQJ",
+              "pct": 0.0,
+              "tag": "lp_market"
+            }
+          ],
+          "wallet_holders": [
+            {
+              "address": "E3CjTjRynXXyr4TUw9XbSZQpQMkQ7Ww6CbzDYX5puE6k",
+              "owner": "9535Brwu5RZucMceV9BM1r4bn94LJhsn68aA4YuTXGTw",
+              "ui_amount": 2752796.73812,
+              "pct": 0.2793,
+              "tag": null
+            },
+            {
+              "address": "69g8phyKsBwcpiGtNiE4p44XpvmykrWLADtxsmYbmiPH",
+              "owner": "8wdcoExbnjrZtcb461h3tYHF113rnycDAqmhD1LCDqtV",
+              "ui_amount": 2746333.002486,
+              "pct": 0.2787,
+              "tag": null
+            },
+            {
+              "address": "7hZ8pWSu37714Ve1n4Szz8aV9B4Xth796BDztdkGBqfG",
+              "owner": "ASge6PWqzskGKvRfk5Jjs2GNGVvoKe7efSrx6aRm6Ez9",
+              "ui_amount": 2730144.106698,
+              "pct": 0.277,
+              "tag": null
+            },
+            {
+              "address": "D1w1swcQJabvDQENmkeF5Aai5Z6GZG2XqL1MwZfvP3HM",
+              "owner": "6i81swtFPyKJYfLg5WxkKximMjekLy44c9W3nrumpwQM",
+              "ui_amount": 2721357.433481,
+              "pct": 0.2761,
+              "tag": null
+            },
+            {
+              "address": "4GBdLNRHiWEVgBzAwVYKa1c6K6rzHgBgSVUxhd1mFh5K",
+              "owner": "7Z9riZgXEZRVGYcwb7yJ4Lo4792JMAAPc6G4e8ZDxKii",
+              "ui_amount": 2719207.935246,
+              "pct": 0.2759,
+              "tag": null
+            },
+            {
+              "address": "4PXQLMsPFEgHSNptd7eDG7XoWUUrsUm79ytR11oXEBLm",
+              "owner": "5VzGjv2Cmb2DCvWxtoQ8KetXQkS3vm4pKfu7LhaZ1Knp",
+              "ui_amount": 2716815.439706,
+              "pct": 0.2757,
+              "tag": null
+            },
+            {
+              "address": "GYsfsazbGEfw4Yx4ms3nMgsRZPvKoZTwcDf3tUtDtUR",
+              "owner": "F1A5NsunbLJSFutBkYf7a5zJGkszugSxxAGfWj693tMv",
+              "ui_amount": 2682071.860751,
+              "pct": 0.2722,
+              "tag": null
+            },
+            {
+              "address": "DFor3QT82xwQnQff3RJe485adAVBjFHQZWqAjoDduZct",
+              "owner": "6mEsubW8RbPC81L46nZgeNG3gN4jz7NFwtm6wehcU25u",
+              "ui_amount": 2651625.749323,
+              "pct": 0.2691,
+              "tag": null
+            },
+            {
+              "address": "8P5oN1zE5VBciVHpTHQ2Ebk7mueeJa11Sc4FpFiz9mCc",
+              "owner": "G9FuankzcghcobegPYyaC6is3S1UjRLvnRP9B8tGLdit",
+              "ui_amount": 2646136.769885,
+              "pct": 0.2685,
+              "tag": null
+            },
+            {
+              "address": "2qv6KchfvMgDCmgqRgTBGXfmyTRFHPsgaBzs1apiuxdY",
+              "owner": "As5LKq6LVRCqzgAyFpcdirWe8HHgDBjw1doBFcLyw2AR",
+              "ui_amount": 2641025.242299,
+              "pct": 0.268,
+              "tag": null
+            },
+            {
+              "address": "4pkSzrbx4V6kobMUZwLNt3HLwnFz2qFRXDacMKKMxxdp",
+              "owner": "F8B4m2PyCeQpqEfkcVgGNU1jhL34chn4pFs5hdkCwRUy",
+              "ui_amount": 2634669.918026,
+              "pct": 0.2674,
+              "tag": null
+            },
+            {
+              "address": "DbFKfvMvsMGUjapEjgFhB1U4FGPQUgf2t4n4Ug64e1Gh",
+              "owner": "6xXFSE9wCez2zJnfzHRQ3P2VmdBG4kqJex4jCzm91q3o",
+              "ui_amount": 2632098.110012,
+              "pct": 0.2671,
+              "tag": null
+            },
+            {
+              "address": "FySjikaqEBvmJHKAQBBGwoAco9nE53hyhbfgb5zxviiq",
+              "owner": "HK8nxyCiQztB7LwhzoyN96GfkF477vYYXFrbzYQHpnLZ",
+              "ui_amount": 2609886.972275,
+              "pct": 0.2648,
+              "tag": null
+            },
+            {
+              "address": "7LJA25mhF8hFtAqrmoiecQVf2AWynq6VeYs4j1vkUx9Y",
+              "owner": "AUdmqvKPFtCBWaDc5jpvntrtQNtbWcSFieXbCVAdnBsW",
+              "ui_amount": 2603100.277384,
+              "pct": 0.2641,
+              "tag": null
+            },
+            {
+              "address": "9Vo5ftEEG8kkGcNP5C9eWt392bXVwgVRb96qVahyD5Lk",
+              "owner": "JCaV6nCKAXgPVG8GPma5x7ju4APSkFeeKtoetXgbv1TQ",
+              "ui_amount": 2601080.847731,
+              "pct": 0.2639,
+              "tag": null
+            }
+          ],
+          "total_holders": 1718,
+          "insider_network_pct_raw": 0.0,
+          "insider_network_count": 0,
+          "graph_insiders_detected": 0,
+          "lp_locked_pct_rugcheck_summary": 100.0,
+          "market_count": 1
+        },
+        "warnings": []
+      },
+      "failed_criteria": [],
+      "why_this_could_fail": [
+        "Already up 646% in 24h - late entry risk even if under the blowoff cap",
+        "Liquidity is only $36,930; a modest sell can move the price sharply",
+        "Primary trading history is only 0.6 hours old",
+        "High meme-coin beta: even a clean setup can go to zero on a sector fade or a dev dump"
+      ],
+      "links": {
+        "dexscreener": "https://dexscreener.com/solana/7g7yee3blsrgie3yyb6rpcfzj5cj5hinxcfkvb1tgzqj",
+        "solscan": "https://solscan.io/token/73R7L2jLfnweJTXxTiccHMZV6mECaVELPUy3PkHopump",
+        "rugcheck": "https://rugcheck.xyz/tokens/73R7L2jLfnweJTXxTiccHMZV6mECaVELPUy3PkHopump",
+        "pumpfun": "https://pump.fun/coin/73R7L2jLfnweJTXxTiccHMZV6mECaVELPUy3PkHopump",
+        "fomo": "https://fomo.family/tokens/solana/73R7L2jLfnweJTXxTiccHMZV6mECaVELPUy3PkHopump"
+      },
+      "sources": [
+        "dex_profiles_latest",
+        "rpc_bonding_curve"
+      ],
+      "holder_source": "rpc_getMultipleAccounts_on_rugcheck_top_accounts",
+      "top10_non_lp_pct": 2.74,
+      "max_single_non_lp_pct": 0.279,
+      "insider_network_pct": 0.0,
+      "creator_pct": 0.0,
+      "lp_locked_pct": 100.0,
+      "primary_lp_locked_pct": 100.0,
+      "graduated": true,
+      "venue": null,
+      "liveness": null,
+      "launchpad": "pumpfun",
+      "fomopad_registered": null,
+      "fresh_pair": true,
+      "fresh_graduation": true,
+      "near_graduation": false,
+      "graduation_progress_pct": 100.0,
+      "price_usd": 0.0002792
+    }
+  ],
+  "newly_flagged_count": 1,
+  "runtime_sec": 112.4
 }
