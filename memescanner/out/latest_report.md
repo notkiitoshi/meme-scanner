@@ -9,28 +9,34 @@ Read-only research / instant alerts. Fake signals are never invented. **Default 
 - Passed all 3 (including already-alerted): **10**
 - Discovered: 228835 unique mints
 - Deeply inspected: 53
-- Runtime: 128.2s
+- Runtime: 63.49s
 - Data sources: dexscreener, geckoterminal, rugcheck, solana_rpc, solana_rpc_pumpswap, solana_rpc_raydium_v4, pumpfun_api, geckoterminal_dex_pools, solana_rpc_meteora_dbc, fomopad_registry
 
 ## Fresh pairs & graduating
 
-- Fresh scan at 2026-11-26 14:58:59 HST (2026-11-27T00:58:59Z) in 128.2s
+- Fresh scan at 2026-11-26 23:37:26 HST (2026-11-27T09:37:26Z) in 63.49s
 - Window: last 3600s
-- Discovered: 239 | in scope: 115 | gated: 4 | inspected: 4
-- Passed all 3: **0** | near passes: 4 | newly flagged: 0
+- Discovered: 152 | in scope: 84 | gated: 6 | inspected: 6
+- Passed all 3: **0** | near passes: 6 | newly flagged: 0
 
-- NEAR hoss `EvTaKHSWxhvqfdLNLJnuX8DMZyQA8Kg9nTNmhQhYpump` score=45 [Fomo](https://fomo.family/tokens/solana/EvTaKHSWxhvqfdLNLJnuX8DMZyQA8Kg9nTNmhQhYpump)
-  - WHY THIS COULD FAIL: Top-10 non-LP wallets control 20.6% of supply
-  - WHY THIS COULD FAIL: Already up 415% in 24h - late entry risk even if under the blowoff cap
-- NEAR KAI `G2ZDG8q3QMYk3KR58JFFYsvaTk4Gy94UzMo7Re7spump` score=75 [Fomo](https://fomo.family/tokens/solana/G2ZDG8q3QMYk3KR58JFFYsvaTk4Gy94UzMo7Re7spump)
-  - WHY THIS COULD FAIL: Top-10 non-LP wallets control 26.6% of supply
-  - WHY THIS COULD FAIL: Already up 734% in 24h - late entry risk even if under the blowoff cap
-- NEAR SCENARIO `He6jCxsh1Txq3iMPbmi9ke9JAim4tpQ3uEG6k9bzpump` score=41 [Fomo](https://fomo.family/tokens/solana/He6jCxsh1Txq3iMPbmi9ke9JAim4tpQ3uEG6k9bzpump)
-  - WHY THIS COULD FAIL: Top-10 non-LP wallets control 27.4% of supply
-  - WHY THIS COULD FAIL: Already up 917% in 24h - late entry risk even if under the blowoff cap
-- NEAR FLOKIMAS `J25aXtTx91Eg3MNe6P2bP4Qyvu7yYDeEFmRyw3UTpump` score=40 [Fomo](https://fomo.family/tokens/solana/J25aXtTx91Eg3MNe6P2bP4Qyvu7yYDeEFmRyw3UTpump)
-  - WHY THIS COULD FAIL: Already up 410% in 24h - late entry risk even if under the blowoff cap
-  - WHY THIS COULD FAIL: Liquidity is only $3,125; a modest sell can move the price sharply
+- NEAR FLOKIMAS `J25aXtTx91Eg3MNe6P2bP4Qyvu7yYDeEFmRyw3UTpump` score=41 [Fomo](https://fomo.family/tokens/solana/J25aXtTx91Eg3MNe6P2bP4Qyvu7yYDeEFmRyw3UTpump)
+  - WHY THIS COULD FAIL: Top-10 non-LP wallets control 18.3% of supply
+  - WHY THIS COULD FAIL: Already up 696% in 24h - late entry risk even if under the blowoff cap
+- NEAR CREDITS `B41wDynVRaPDrQjTMCospcAdd4mUkx9i7Btgacppump` score=41 [Fomo](https://fomo.family/tokens/solana/B41wDynVRaPDrQjTMCospcAdd4mUkx9i7Btgacppump)
+  - WHY THIS COULD FAIL: A single non-LP wallet holds 4.7% and can dump
+  - WHY THIS COULD FAIL: Top-10 non-LP wallets control 25.3% of supply
+- NEAR TXC `38RE7ZQZ8Y4DmnHE6iuceWQkQE6T2qZkJyB9YfcSpump` score=40 [Fomo](https://fomo.family/tokens/solana/38RE7ZQZ8Y4DmnHE6iuceWQkQE6T2qZkJyB9YfcSpump)
+  - WHY THIS COULD FAIL: A single non-LP wallet holds 11.6% and can dump
+  - WHY THIS COULD FAIL: Top-10 non-LP wallets control 36.9% of supply
+- NEAR SWIPE `Fr2nmNWyYiVDSSXirw1wKSHj4dE2BvvGnN4gfAHcpump` score=40 [Fomo](https://fomo.family/tokens/solana/Fr2nmNWyYiVDSSXirw1wKSHj4dE2BvvGnN4gfAHcpump)
+  - WHY THIS COULD FAIL: Top-10 non-LP wallets control 25.5% of supply
+  - WHY THIS COULD FAIL: Already up 350% in 24h - late entry risk even if under the blowoff cap
+- NEAR morning `EnNSCXyfrUt8Qdehh3gNuKnUMrkrDrJJsEmnqnHDV3UG` score=31 [Fomo](https://fomo.family/tokens/solana/EnNSCXyfrUt8Qdehh3gNuKnUMrkrDrJJsEmnqnHDV3UG)
+  - WHY THIS COULD FAIL: Only 0.0% of LP is locked/burned on a liquidity-weighted basis
+  - WHY THIS COULD FAIL: Liquidity is only $30,139; a modest sell can move the price sharply
+- NEAR BASKET `G9SMS3DB7FNDQZR6hvpB9VrfS9KNXtXKVFySZx11Gya2` score=28 [Fomo](https://fomo.family/tokens/solana/G9SMS3DB7FNDQZR6hvpB9VrfS9KNXtXKVFySZx11Gya2)
+  - WHY THIS COULD FAIL: Only 0.0% of LP is locked/burned on a liquidity-weighted basis
+  - WHY THIS COULD FAIL: Liquidity is only $30,219; a modest sell can move the price sharply
 
 ## Coverage
 
